@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.175
+A retailer's spec says every ship notice must carry the client's vendor number. The client's system doesn't send it.
+
+00:00:07.175 --> 00:00:15.001
+You won't ask the client to rebuild anything. You'll write one small expression that moves the number to where the partner needs it.
+
+00:00:15.001 --> 00:00:25.051
+Keep three ideas apart. Jason is the format. Orderful Jason and Mosaic are two shapes of it. And Jason-ah-tah is the language that reshapes it.
+
+00:00:25.051 --> 00:00:33.101
+Jason is text that describes data, like a set of labelled boxes. A box can hold a value, more boxes, or a list.
+
+00:00:33.101 --> 00:00:39.376
+Curly brackets hold an object. Square brackets hold a list. And text sits in double quotes.
+
+00:00:39.376 --> 00:00:50.026
+Watch the traps. Quoted zero zero seven is text, but plain seven is a number. Keep store codes and U P Cs as text, or the leading zeros vanish.
+
+00:00:50.026 --> 00:00:54.401
+Keys are case sensitive, and one stray comma breaks the whole payload.
+
+00:00:54.401 --> 00:01:03.526
+When Orderful translates X twelve, each segment becomes an object, and each loop becomes a list. That's Orderful Jason, the standard shape.
+
+00:01:03.526 --> 00:01:10.876
+Mosaic is the second shape: simple business fields, like order number and ship-to, without E D I jargon.
+
+00:01:10.876 --> 00:01:19.726
+The choice is made per channel, with the Use Mosaic Integration switch. Ask the developer which shape their code reads, before you touch it.
+
+00:01:19.726 --> 00:01:29.626
+Now Jason-ah-tah. If Jason is a filing cabinet, Jason-ah-tah is a set of instructions: go to the lines drawer, and copy every U P C.
+
+00:01:29.626 --> 00:01:34.526
+A dot walks into a box. So ship-to dot code gives zero zero seven.
+
+00:01:34.526 --> 00:01:41.176
+Square brackets pick or filter. Lines, where quantity is over three, gives only the matching line.
+
+00:01:41.176 --> 00:01:48.201
+And curly brackets build a new object for each line. Functions like sum, exists, and string do the rest.
+
+00:01:48.201 --> 00:01:57.476
+A real lesson: a wrong path fails silently. Write U P C in capitals when the field is lower case, and you get nothing back. No error.
+
+00:01:57.476 --> 00:02:04.876
+Then the validator says the field is missing, and you blame the source data. So always test paths on a real payload.
+
+00:02:04.876 --> 00:02:15.702
+Another trap: one line versus many. A path that matches one value returns a value, but several return a list. Add empty square brackets to force a list.
+
+00:02:15.702 --> 00:02:23.502
+The fix loop: read the exact error, find the source value, write the smallest expression, and test on a fresh document.
+
+00:02:23.502 --> 00:02:31.077
+Remember: Jason is the format, Orderful Jason and Mosaic are its two shapes, and Jason-ah-tah reshapes it.
+
+00:02:31.077 --> 00:02:35.002
+Next, we open the Orderful Suite App inside NetSuite.
+

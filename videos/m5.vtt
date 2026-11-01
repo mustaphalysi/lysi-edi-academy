@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.826
+Monday morning. A retailer writes: your invoice says twelve cases, but we received ten. Your client asks for help.
+
+00:00:07.826 --> 00:00:13.576
+The answer is not in Orderful. It lives in the client's NetSuite. Let's learn to find it.
+
+00:00:13.576 --> 00:00:18.801
+Every company needs one place where the truth lives. That place is called an E R P.
+
+00:00:18.801 --> 00:00:26.701
+Think of it as a filing cabinet plus a rulebook. Every document has its drawer, and the rules decide what can happen next.
+
+00:00:26.701 --> 00:00:35.051
+NetSuite is a cloud E R P by Oracle, and our system of record. When NetSuite and an email disagree, NetSuite wins.
+
+00:00:35.051 --> 00:00:41.751
+Inbound E D I becomes NetSuite records. Outbound E D I is built from NetSuite records.
+
+00:00:41.751 --> 00:00:48.476
+NetSuite is a database of records. A record is one thing: one customer, one item, one order.
+
+00:00:48.476 --> 00:00:55.376
+Three records matter most, linked in order. First, an inbound eight fifty becomes a Sales Order.
+
+00:00:55.376 --> 00:01:03.251
+When the warehouse ships, a user clicks Fulfill, and NetSuite creates an Item Fulfillment. That drives the eight fifty six.
+
+00:01:03.251 --> 00:01:08.401
+When it is time to bill, NetSuite creates an Invoice. That drives the eight ten.
+
+00:01:08.401 --> 00:01:16.851
+Each record has a status, like Pending Fulfillment or Billed. Statuses often decide when an outbound document can fire.
+
+00:01:16.851 --> 00:01:20.326
+Next, there are three kinds of I D. Don't mix them up.
+
+00:01:20.326 --> 00:01:26.826
+The internal I D is NetSuite's own number. It never changes, and scripts and A P Is use it.
+
+00:01:26.826 --> 00:01:36.501
+The document number is the human label, like S O one oh five eight two. The external I D is a key an outside system stamps on a record.
+
+00:01:36.501 --> 00:01:45.726
+Custom field prefixes tell you where they live. Cust body is the header. Cust col is a line. Cust entity is a customer or vendor.
+
+00:01:45.726 --> 00:01:52.576
+To look at data safely, use Suite Q L. A select only reads, so you can look before you change anything.
+
+00:01:52.576 --> 00:02:01.651
+And always know your account. Production is the real business. A sandbox is a test copy, with S B one at the end of the account I D.
+
+00:02:01.651 --> 00:02:09.576
+A real lesson: a sandbox refresh copies production over the sandbox, and can wipe the connector setup you built there.
+
+00:02:09.576 --> 00:02:14.626
+So ask the client to warn you before any refresh, and keep notes to rebuild.
+
+00:02:14.626 --> 00:02:25.126
+Back to Monday. Find the Sales Order, open Related Records, and compare fulfillment with invoice. Often, the invoice was built from the order, not the shipment.
+
+00:02:25.126 --> 00:02:31.576
+Remember: Sales Order, Item Fulfillment, Invoice. Follow the chain, then talk about E D I.
+
+00:02:31.576 --> 00:02:35.551
+Next up: the Orderful platform, the other side of the wire.
+

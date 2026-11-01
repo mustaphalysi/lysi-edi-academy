@@ -1,0 +1,71 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.550
+A small candle maker gets five orders a month from a big retailer. No developer, but the retailer still wants E D I, and a compliant label on every carton.
+
+00:00:10.550 --> 00:00:17.375
+Two halves today: Web E D I, the human way to trade, and the G S one, one twenty eight shipping label.
+
+00:00:17.375 --> 00:00:24.300
+Think of your taxes. You can fill in the form yourself on a website, or your software can file it automatically.
+
+00:00:24.300 --> 00:00:28.375
+The rules and the checks are the same. Only the hands are different.
+
+00:00:28.375 --> 00:00:35.850
+Web E D I is Orderful's browser app. A person reads the order on screen, and fills in a form to answer it.
+
+00:00:35.850 --> 00:00:43.225
+Orderful turns the form into X twelve, validates it, and delivers it, with the same checks as an integration.
+
+00:00:43.225 --> 00:00:49.700
+Each order opens a workflow: an eight fifty five, an eight fifty six, an eight ten, then completed.
+
+00:00:49.700 --> 00:00:58.625
+Two rules confuse every new user. First, a saved draft does not move the workflow. The step only counts after you click Send.
+
+00:00:58.625 --> 00:01:07.775
+Second, valid is not sent, and sent is not accepted. Invalid, valid, sent, delivered, and finally the partner's nine ninety seven.
+
+00:01:07.775 --> 00:01:15.450
+Also watch for the upgrade moment. When volume rises, or chargebacks start, it's time to talk about an integration.
+
+00:01:15.450 --> 00:01:23.950
+Now, labels. At the retailer's warehouse, nobody opens your cartons. A scanner reads the barcode, and looks up your eight fifty six.
+
+00:01:23.950 --> 00:01:31.325
+If the label is missing, or doesn't match, the carton is received by hand, and the retailer bills you for that work.
+
+00:01:31.325 --> 00:01:37.800
+The key number on the label is the S S C C, an eighteen-digit code for one carton or one pallet.
+
+00:01:37.800 --> 00:01:43.625
+In the barcode, it starts with zero zero, which tells the scanner: an S S C C follows.
+
+00:01:43.625 --> 00:01:50.275
+Then an extension digit, the client's G S one prefix, a serial number per carton, and a check digit.
+
+00:01:50.275 --> 00:01:57.375
+Five rules make a label compliant. Unique per carton, never reused. Built from the client's own prefix.
+
+00:01:57.375 --> 00:02:03.825
+Identical to the number in the eight fifty six. Big enough to scan. And on the retailer's own template.
+
+00:02:03.825 --> 00:02:11.000
+In Orderful, first set the G S one prefix on the client's E D I account. No prefix, no barcode.
+
+00:02:11.000 --> 00:02:18.226
+Then pack the shipment, clear the errors on the eight fifty six, pick the retailer's template, and download the labels.
+
+00:02:18.226 --> 00:02:24.226
+Scan one, and compare its number with the eight fifty six, before the first real shipment leaves.
+
+00:02:24.226 --> 00:02:32.776
+A real lesson. Our barcode once printed just under the minimum height. It scanned fine in the office, but a strict warehouse could flag it.
+
+00:02:32.776 --> 00:02:41.126
+In one line: Web E D I is the same rules with human hands, and every label is a promise that matches the eight fifty six.
+
+00:02:41.126 --> 00:02:45.226
+Next, we visit the partner portals that many retailers use.
+

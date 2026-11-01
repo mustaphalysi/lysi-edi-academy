@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.075
+When something fails, the most valuable skill is not fixing it. It's knowing who should fix it.
+
+00:00:06.075 --> 00:00:13.750
+Ask the wrong person, and you lose days and look unprepared. A consultant answers this before writing any email.
+
+00:00:13.750 --> 00:00:21.150
+Think of a leak in a building. Before calling anyone, you find where the water comes from: the roof, the pipes, or the tenant.
+
+00:00:21.150 --> 00:00:30.875
+In E D I, a problem can live in four places. First, the partner's file: broken X twelve syntax, missing required data, or wrong codes.
+
+00:00:30.875 --> 00:00:35.825
+The partner fixes that. Send them the exact segment, and the correct form.
+
+00:00:35.825 --> 00:00:43.925
+Second, our mapping or code: Jason-ah-tah, a Workato step, or an A P I payload builder. That's ours to fix.
+
+00:00:43.925 --> 00:00:51.900
+Third, our Orderful config: the relationship, the channel, Auto Send, I S A I Ds, and rules. Also ours.
+
+00:00:51.900 --> 00:00:59.500
+Fourth, the client's process or data, like missing items or unclear scope. The client fixes it, with our guidance.
+
+00:00:59.500 --> 00:01:09.575
+Some rules come from X twelve itself, not from any guideline. In an N one segment, the qualifier and the code must be both present, or both absent.
+
+00:01:09.575 --> 00:01:14.000
+You can't relax that in a guideline. The file is simply malformed.
+
+00:01:14.000 --> 00:01:22.426
+Now, a real lesson. A supplier sent eight fifty fives where backordered lines had a date, but no zero six eight qualifier.
+
+00:01:22.426 --> 00:01:31.426
+We drafted an email asking them to add it. Then we read our own mapper. It already took the expected date from another segment in the file.
+
+00:01:31.426 --> 00:01:40.126
+And zero six eight is a ship date anyway, not a delivery date. We dropped two of three requests, and looked like experts, not nitpickers.
+
+00:01:40.126 --> 00:01:48.476
+So, check our side first. Open our mapper or our config, and confirm we can't handle it. Then ask only for what must change.
+
+00:01:48.476 --> 00:01:56.176
+One firm rule: never edit a big partner's shared guideline. Hundreds of suppliers validate against the same one.
+
+00:01:56.176 --> 00:02:03.651
+If you edit it to make your client pass, you can break everyone else. Fix it on our side, or ask the partner or Orderful.
+
+00:02:03.651 --> 00:02:14.676
+A gotcha: publishing a guideline you own can archive the old version, and leave the relationship pointing at nothing, with its channels wiped. Always re-check after a publish.
+
+00:02:14.676 --> 00:02:25.376
+Last, mark hypotheses as hypotheses. Say: likely cause, not verified yet. A wrong cause stated as fact costs more trust than saying: I'm checking.
+
+00:02:25.376 --> 00:02:33.101
+To recap: locate the problem, check what we can fix ourselves, then ask the right owner for exactly what must change.
+
+00:02:33.101 --> 00:02:36.251
+Next, we'll learn to speak a partner's A P I.
+

@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.825
+Let's apply everything to one partner. Our client is Harbor Lane Apparel, and the partner is Nordstrom.
+
+00:00:06.825 --> 00:00:18.125
+Nordstrom orders for many stores at once, but ships to a few distribution centers, called D Cs. Get this wrong, and you lose store detail, or send the truck to the wrong place.
+
+00:00:18.125 --> 00:00:27.525
+Picture a school ordering books for its classrooms. Everything goes to the front office, but ten books are for room three, and twelve are for room seven.
+
+00:00:27.525 --> 00:00:33.050
+You deliver to one place, but you keep the per-room counts on the packing list and on the bill.
+
+00:00:33.050 --> 00:00:40.700
+In a Nordstrom eight fifty, the D C is the front office. It's the ship-to in the N one segment, where the truck goes.
+
+00:00:40.700 --> 00:00:47.900
+The store is the classroom. The store split arrives in an S D Q segment, a list of store and quantity pairs.
+
+00:00:47.900 --> 00:00:53.926
+So here is the key decision. Split the order by store location, not by ship-to address.
+
+00:00:53.926 --> 00:01:01.451
+If you split by ship-to, you split by D C. You lose the store detail that the eight fifty six and eight ten must carry.
+
+00:01:01.451 --> 00:01:07.976
+Two mapping records make this work. A D C mapping holds each D C code and its real address.
+
+00:01:07.976 --> 00:01:15.526
+A store mapping holds each store code and links it to its D C. So the D C address still flows to the Sales Order.
+
+00:01:15.526 --> 00:01:22.051
+With hundreds of stores, load them by C S V. And get the store directory from the partner early.
+
+00:01:22.051 --> 00:01:27.876
+Now consolidation. The eight fifty five is one acknowledgment per original P O.
+
+00:01:27.876 --> 00:01:32.976
+The eight fifty six and the eight ten are grouped by ship-to, so one per D C.
+
+00:01:32.976 --> 00:01:40.826
+And plan for change orders, the eight sixty. A change or a cancel must find the store-level orders that the split created.
+
+00:01:40.826 --> 00:01:48.976
+Finally, the B O L trap. The bill of lading is the carrier's shipping number. The partner uses it to match the truck at the dock.
+
+00:01:48.976 --> 00:01:56.802
+Two rules apply. First, every fulfillment in the group must be Shipped. If one is only packed, the eight fifty six waits.
+
+00:01:56.802 --> 00:02:05.902
+Second, one B O L per P O per D C, shared by every fulfillment. Mixed B O L numbers bring a compliance violation.
+
+00:02:05.902 --> 00:02:14.277
+On one project, the B O L only existed in testing, because someone typed it in by hand. Fix the source, not the test.
+
+00:02:14.277 --> 00:02:19.977
+So remember. The ship-to is where the truck goes. The S D Q is who the goods are for.
+
+00:02:19.977 --> 00:02:26.202
+Split by store, acknowledge per P O, ship and invoice per D C, with one shared B O L.
+
+00:02:26.202 --> 00:02:32.102
+Next, we'll follow orders into a three P L warehouse, and meet the nine hundred series.
+

@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.000
+A new client lands on your desk. It's tempting to open Orderful and start building. Don't.
+
+00:00:06.000 --> 00:00:12.750
+Projects rarely fail in the code. They fail in the first two weeks, when nobody writes down what we are building.
+
+00:00:12.750 --> 00:00:22.225
+Think of an architect and a family who wants a house. Before any concrete is poured, the architect asks questions and draws a plan everyone signs.
+
+00:00:22.225 --> 00:00:29.525
+Onboarding works the same way. The kickoff and the requirements are your plan. Everything after is building to it.
+
+00:00:29.525 --> 00:00:36.975
+Here is the mental model. Every E D I project is a grid. Partners, documents, direction, channel, and date.
+
+00:00:36.975 --> 00:00:45.975
+Direction is inbound to the client, or outbound from it. The channel is the road: A S 2, a VAN, S F T P, or an A P I.
+
+00:00:45.975 --> 00:00:52.575
+Your first job is to fill that grid with facts, write it down, and get it agreed. That grid is the scope.
+
+00:00:52.575 --> 00:01:00.401
+Before the kickoff, do twenty minutes of homework. Read what was sold, open the client's Orderful org, and read the history.
+
+00:01:00.401 --> 00:01:06.501
+In the kickoff, ask about their world. Their business, their systems, their partners, and their dates.
+
+00:01:06.501 --> 00:01:13.926
+Ask where orders, stock, shipments and invoices live today. That system of record decides what we integrate with.
+
+00:01:13.926 --> 00:01:22.451
+Ask how each partner identifies each party in the envelope. Some need many I S A IDs, which changes the setup and the price.
+
+00:01:22.451 --> 00:01:27.526
+And always ask for real production files. They show the truth and save hours.
+
+00:01:27.526 --> 00:01:33.976
+Now write the answers into the requirements matrix. One row per partner, one column per decision.
+
+00:01:33.976 --> 00:01:41.526
+Each ticked document becomes one relationship in Orderful. Outreach, testing and the tracker read from it too.
+
+00:01:41.526 --> 00:01:46.726
+You rarely go live with everyone at once. So you split the partners into waves.
+
+00:01:46.726 --> 00:01:55.926
+Wave one proves the pattern: a partner with a real deadline and the full set. Eight fifty, eight fifty five, eight fifty six, and eight ten.
+
+00:01:55.926 --> 00:02:02.901
+Keep shared cutovers together. Partners on one VAN mailbox switch on the same day, so they share a wave.
+
+00:02:02.901 --> 00:02:09.451
+A common trap is scope creep. Mid-project, the client asks: can you also add five more partners?
+
+00:02:09.451 --> 00:02:16.101
+Don't silently absorb it. Add it to the matrix as a new wave, re-estimate, and confirm the dates.
+
+00:02:16.101 --> 00:02:23.851
+Within a day of the kickoff, send a short recap with clear owners, real dates, and ops at orderful dot com in copy.
+
+00:02:23.851 --> 00:02:30.126
+So remember. Understand before you build. Fill the grid, agree who does what, and plan in waves.
+
+00:02:30.126 --> 00:02:34.601
+Next, we'll take that matrix into Orderful and set up the partners.
+

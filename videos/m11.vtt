@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.025
+A live client calls. Over a hundred orders landed in NetSuite with the wrong ship-to address, and trucks are due in two days.
+
+00:00:08.025 --> 00:00:14.350
+The E D I files were fine. The problem was how the customer records were set up in NetSuite.
+
+00:00:14.350 --> 00:00:24.200
+Think of a mailroom. Letters arrive, and the mailroom decides which desk each one goes to. If the directory is wrong, perfect letters reach the wrong desk.
+
+00:00:24.200 --> 00:00:35.375
+In NetSuite, every trading partner is a Customer record. The Orderful SuiteApp is the mailroom. It reads each eight fifty and creates a Sales Order for the right customer.
+
+00:00:35.375 --> 00:00:43.975
+First, know the two I S A IDs. Your client's ID lives on the Subsidiary. The partner's ID lives on the Customer record.
+
+00:00:43.975 --> 00:00:52.100
+The client's ID is the sender on outbound documents. The partner's ID routes each inbound order to the right customer.
+
+00:00:52.100 --> 00:01:00.100
+Now open the customer's E D I tab. Paste the partner's production ID and test ID, without the qualifier.
+
+00:01:00.100 --> 00:01:06.500
+Orderful shows Z Z slash BigBox prod. In NetSuite, you enter only BigBox prod.
+
+00:01:06.500 --> 00:01:14.475
+Then add one Enabled Transaction Type line per document in scope. If a type is not listed, it is not processed.
+
+00:01:14.475 --> 00:01:22.301
+Each line has three key settings. Auto Send means send as soon as it's created. Off means wait for a person to click.
+
+00:01:22.301 --> 00:01:32.101
+Consolidation means one document per transaction, per original P O, or per ship-to. Most retailers expect one acknowledgment per P O.
+
+00:01:32.101 --> 00:01:37.151
+And Test Mode stays on while testing. You turn it off on purpose at go-live.
+
+00:01:37.151 --> 00:01:44.501
+Big partners often send all their stores under one I S A ID. So how does each order find the right store?
+
+00:01:44.501 --> 00:01:48.501
+Step one. The sender ID finds the parent customer.
+
+00:01:48.501 --> 00:01:54.851
+Step two. One routing field picks the child, for example the ship-to code in the N one segment.
+
+00:01:54.851 --> 00:01:58.676
+No child matches? The order falls back to the parent.
+
+00:01:58.676 --> 00:02:06.376
+When many stores share one setup, a parent with child sub-customers scales best. A new store is a new child in minutes.
+
+00:02:06.376 --> 00:02:12.426
+But use only one routing method per partner. Mixing two gives unpredictable results.
+
+00:02:12.426 --> 00:02:21.001
+A common mistake is fixing data by hand during testing. If a field like the B O L is missing, fix the source, not the test.
+
+00:02:21.001 --> 00:02:27.376
+And always test routing with real ship-to codes from production samples, not one happy-path order.
+
+00:02:27.376 --> 00:02:40.251
+So remember. The customer record is the mailroom directory. The I S A ID finds the customer, one routing method picks the child, and the transaction lines decide what goes back out.
+
+00:02:40.251 --> 00:02:44.801
+Next, a real case study that puts it all together, with Nordstrom.
+

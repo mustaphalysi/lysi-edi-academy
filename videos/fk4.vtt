@@ -1,0 +1,59 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.100
+Most of our work is North American X twelve. But some clients trade in Europe, where the standard is edi-fact.
+
+00:00:07.100 --> 00:00:16.400
+Picture AgriCo, a crop protection maker moving to a new E R P by a fixed date. It trades with a distributor and a warehouse partner.
+
+00:00:16.400 --> 00:00:24.875
+First, Orderful E U is a separate world: a different site, different users, and different orgs. Think of a second office abroad.
+
+00:00:24.875 --> 00:00:34.725
+A user invited only on the U S site lands on a company setup page. The fix: invite them in the E U org, and send them the E U link.
+
+00:00:34.725 --> 00:00:40.650
+And some internal tools only see the U S platform. In Europe, you check things by hand.
+
+00:00:40.650 --> 00:00:50.300
+Edi-fact documents have names, not numbers. The purchase order is ORDERS, like an eight fifty. The order response is like an eight fifty five.
+
+00:00:50.300 --> 00:01:01.350
+The despatch advice is the ship notice, like an eight fifty six. The invoice is like an eight ten. And the control message acknowledges syntax, like a nine ninety seven.
+
+00:01:01.350 --> 00:01:08.700
+For the warehouse, an instruction to despatch is like a nine forty. That's AgriCo telling its warehouse: please ship.
+
+00:01:08.700 --> 00:01:15.725
+Next, identity. European partners use a G L N, a thirteen digit global location number.
+
+00:01:15.725 --> 00:01:25.575
+In the U N B envelope, the qualifier for a G L N is fourteen. Inside the N A D segments, the same G L N uses code nine.
+
+00:01:25.575 --> 00:01:30.950
+A wrong qualifier, like Z Z instead of fourteen, means messages go nowhere.
+
+00:01:30.950 --> 00:01:42.125
+Versions matter too. The U N H header names the exact flavour. If the partner asks for D ninety six A, E A N com, the guideline must match all of it.
+
+00:01:42.125 --> 00:01:49.000
+Transport is usually A S 2. Each side has an A S 2 I D, a U R L, and a certificate.
+
+00:01:49.000 --> 00:01:56.925
+Test and production usually have separate connections. Test often works while production still fails. Prove them separately.
+
+00:01:56.925 --> 00:02:05.425
+Last, the Jason shape you deliver. Standard Jason mirrors the E D I segments. It's what custom middleware usually reads.
+
+00:02:05.425 --> 00:02:15.700
+Mosaic is a simplified Jason, made by a transformation that someone must build. If Mosaic is on and no transformation exists, delivery fails.
+
+00:02:15.700 --> 00:02:25.250
+And a gotcha. In the channel dialog, Done only closes the dialog. Nothing is stored until you click Save on the relationship. Reload and check.
+
+00:02:25.250 --> 00:02:37.200
+To recap: E U is separate. Get the G L N and qualifiers right, match the exact version, prove test and production separately, and deliver the Jason the developer reads.
+
+00:02:37.200 --> 00:02:40.350
+Next: labels, lots, and warehouses.
+

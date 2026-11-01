@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.300
+A client asks on Slack: which NetSuite field is mapped to R E F B X in the ship notice we send? The old way: dig through mappings, and reply tomorrow.
+
+00:00:10.300 --> 00:00:19.950
+With A I connected to our systems, the answer came back in minutes, checked three ways: the files actually sent, the Orderful rules, and the NetSuite mapping.
+
+00:00:19.950 --> 00:00:27.750
+The surprise: that ship notice never sends R E F B X at all. A definite answer, with proof, the same morning.
+
+00:00:27.750 --> 00:00:36.275
+Think of an A I assistant as a very fast new analyst. They've read every E D I book, but they have never seen your client's system.
+
+00:00:36.275 --> 00:00:45.825
+Give them the actual file, the actual spec, and a clear question, and they're brilliant. Ask something vague, and you get a confident answer that may be wrong.
+
+00:00:45.825 --> 00:00:54.025
+A I multiplies your E D I knowledge. It doesn't replace it. If you can't tell whether an answer is right, the tool can't help you.
+
+00:00:54.025 --> 00:01:00.875
+Here's the loop. You give evidence, the A I answers with citations, you verify, and only then do you act.
+
+00:01:00.875 --> 00:01:09.450
+A strong prompt has a goal, the context, and the evidence: the raw payload from the Rules Editor, the error text, and the spec page.
+
+00:01:09.450 --> 00:01:16.775
+Add a verification ask, like: cite the segment for every claim, and mark anything unproven as not verified.
+
+00:01:16.775 --> 00:01:21.250
+And add constraints: draft only, don't send or change anything.
+
+00:01:21.250 --> 00:01:27.900
+Then verify the output. It's a draft from a fast colleague, not a fact. Check each claim against the source.
+
+00:01:27.900 --> 00:01:36.625
+Watch for invented details: a qualifier that doesn't exist, a position off by one, or a platform feature that only sounds right.
+
+00:01:36.625 --> 00:01:45.375
+Use the built-in checksums. S E one says how many segments the set should have. If the A I read fewer, it read a filtered view.
+
+00:01:45.375 --> 00:01:54.350
+That really happened. An assistant twice reported empty ship notices, but the files were complete. A one-line count check would have caught it.
+
+00:01:54.350 --> 00:02:00.775
+And prove any mapping or script in sandbox, with a real test document, not just by reading it.
+
+00:02:00.775 --> 00:02:10.750
+Keep secrets out. Never paste keys, tokens, passwords, or bank details into a prompt. Credentials stay in files that tools read directly.
+
+00:02:10.750 --> 00:02:17.025
+Real client data stays inside the approved, connected workspace, never in a public chatbot.
+
+00:02:17.025 --> 00:02:26.475
+In a good session, the A I does the slow parts: reading, comparing, drafting. You do the judgment: verifying, fixing, and deciding who sends.
+
+00:02:26.475 --> 00:02:34.200
+So remember: feed it evidence, ask for citations, verify every claim, keep secrets out, and let a human send.
+
+00:02:34.200 --> 00:02:38.475
+Next: our A I toolkit. Skills, connectors, and memories.
+

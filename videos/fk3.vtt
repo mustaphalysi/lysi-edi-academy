@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.250
+Some clients aren't E R P systems. They're platforms with their own A P I, like a marketplace we'll call BuyHub.
+
+00:00:07.250 --> 00:00:16.475
+BuyHub buys by E D I, but receives confirmations and invoices as Jason through its A P I. We translate each one exactly.
+
+00:00:16.475 --> 00:00:22.425
+Think of an interpreter: every word lands in the other language, same meaning, nothing extra.
+
+00:00:22.425 --> 00:00:30.400
+Start with the eight fifty five, the order confirmation. Each line has an ack code: fulfilled, rejected, or left open.
+
+00:00:30.400 --> 00:00:39.325
+I A, I P, and I S mean accepted. Backordered, I B, is accepted too; the later date travels as the expected delivery.
+
+00:00:39.325 --> 00:00:47.800
+I R, and R one to R seven, mean rejected, with the reason in the line error. I H means on hold: the line stays open.
+
+00:00:47.800 --> 00:00:57.725
+The gotcha: BuyHub accepts exactly one confirmation per P O. A second post gets a four oh nine conflict. So check first, and post once.
+
+00:00:57.725 --> 00:01:08.475
+Buyers also want the supplier's order number back. One supplier sends it in B A K zero eight, another in R E F C O. Our mapper picks the source per sender.
+
+00:01:08.475 --> 00:01:12.450
+Now the eight ten, the invoice. Money is where bugs hide.
+
+00:01:12.450 --> 00:01:22.325
+Totals and charges are type N two, with two implied decimals. So T D S fifteen sixty nine means fifteen dollars and sixty nine cents.
+
+00:01:22.325 --> 00:01:31.200
+Tax can sit at the header or on the lines: don't count it twice. Each charge code goes to its own field, like shipping or fuel surcharge.
+
+00:01:31.200 --> 00:01:40.050
+Then always re-add the lines, plus tax, plus charges, and compare with the total. If they disagree, stop. Never post a wrong invoice.
+
+00:01:40.050 --> 00:01:51.300
+Some invoices need a decision. A credit memo has negative quantities. Posted as a normal invoice, it's a negative invoice. Ask the buyer how credits should arrive.
+
+00:01:51.300 --> 00:01:56.200
+An invoice with no real P O can't match any order. Hold it and ask.
+
+00:01:56.200 --> 00:02:04.900
+Two more traps. First, a two oh one success is not proof. An A P I can say success and still drop a field it doesn't store.
+
+00:02:04.900 --> 00:02:09.275
+So when a new field goes live, ask the buyer to confirm they see it.
+
+00:02:09.275 --> 00:02:16.825
+Second, duplicates. One extra click can post twice. After a batch, check for exactly one job per document.
+
+00:02:16.825 --> 00:02:21.450
+If a duplicate slipped through, tell the buyer right away which one to ignore.
+
+00:02:21.450 --> 00:02:31.525
+To recap: map codes exactly, post once, treat N two as implied decimals, re-add totals, hold odd invoices, and verify on the buyer's side.
+
+00:02:31.525 --> 00:02:35.225
+Next, we cross the ocean, to Europe and edi-fact.
+

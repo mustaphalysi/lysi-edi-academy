@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.575
+Glacier Coolers just won a big order. Three thousand coolers, shipping next week. What could go wrong?
+
+00:00:06.575 --> 00:00:12.900
+This is order to cash: one order's life, from "they ordered" to "cash in the bank", when our client sells.
+
+00:00:12.900 --> 00:00:19.675
+Remember the restaurant. Our client is the kitchen. It confirms, cooks, serves, bills, and gets paid.
+
+00:00:19.675 --> 00:00:26.075
+Every step leaves a document. And every document comes from, or creates, a record in NetSuite.
+
+00:00:26.075 --> 00:00:33.975
+Step one. The retailer sends an eight fifty purchase order. Orderful checks it, and the connector creates a Sales Order.
+
+00:00:33.975 --> 00:00:41.375
+Every value must find a home. The P O number, the ship window, the distribution center address, and each item.
+
+00:00:41.375 --> 00:00:48.400
+If an item or address can't be matched, there is no Sales Order. And no Sales Order means nothing ships.
+
+00:00:48.400 --> 00:00:55.626
+Step two. The client confirms with an eight fifty five, built from the Sales Order. It says what will really ship.
+
+00:00:55.626 --> 00:01:03.251
+If the retailer changes the order, an eight sixty arrives. Apply it before the warehouse picks, or you ship the wrong thing.
+
+00:01:03.251 --> 00:01:11.601
+Step three. The warehouse picks and packs. In NetSuite, that is the Item Fulfillment, and it builds the eight fifty six ship notice.
+
+00:01:11.601 --> 00:01:21.676
+The eight fifty six is the hardest document. It must match the real boxes. Same quantities, same cartons, and every S S C C label barcode.
+
+00:01:21.676 --> 00:01:29.326
+A late or wrong ship notice is the most common chargeback, because the dock must open and count every box by hand.
+
+00:01:29.326 --> 00:01:34.676
+Step four. The client creates an Invoice in NetSuite, and that builds the eight ten.
+
+00:01:34.676 --> 00:01:43.076
+Invoice after the ship notice, only what shipped, at the P O price. A rejected invoice can delay cash by a month or two.
+
+00:01:43.076 --> 00:01:49.651
+Step five. Some partners send an eight twenty remittance, and finance applies it as a Customer Payment.
+
+00:01:49.651 --> 00:01:57.776
+Many partners only use the core three. Eight fifty in, eight fifty six out, and eight ten out, plus nine ninety sevens.
+
+00:01:57.776 --> 00:02:05.002
+A real lesson. A test order arrived, it was valid in Orderful, and acknowledged in a minute. Then it just sat.
+
+00:02:05.002 --> 00:02:15.177
+Weeks later, NetSuite said the eight fifty was never enabled for that partner. Check the record exists in the E R P, not just that it's green in Orderful.
+
+00:02:15.177 --> 00:02:20.727
+Remember, valid does not mean delivered. Watch invoices as closely as orders.
+
+00:02:20.727 --> 00:02:28.727
+Order in, confirm out, ship out, bill out, money in. Each step must match the one before it, and every mismatch has a price.
+
+00:02:28.727 --> 00:02:33.152
+Next, we flip sides: procure to pay, when our client is the buyer.
+

@@ -1,0 +1,74 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.575
+Your client goes live with a big retailer on Monday. The retailer asks for a test eight fifty five, eight fifty six, and eight ten.
+
+00:00:08.575 --> 00:00:15.450
+Test badly, and you bury the partner in broken files, or push a fake document into their real system.
+
+00:00:15.450 --> 00:00:22.050
+Think of a theater. Before opening night comes the dress rehearsal. Same script, but the seats are empty.
+
+00:00:22.050 --> 00:00:27.525
+E D I works the same way. Every partner connection has two lanes, called streams.
+
+00:00:27.525 --> 00:00:32.125
+The test stream is the rehearsal. Nothing ships, and nobody gets paid.
+
+00:00:32.125 --> 00:00:38.650
+The live stream, also called production, is opening night. A purchase order here is a real order.
+
+00:00:38.650 --> 00:00:44.900
+So what decides the lane? The envelope. Every X twelve file starts with an I S A segment.
+
+00:00:44.900 --> 00:00:52.225
+It says who sends, who receives, and one tiny flag, I S A fifteen. T means test. P means production.
+
+00:00:52.225 --> 00:00:57.150
+In Orderful, the envelope plus the relationship setup decides the stream.
+
+00:00:57.150 --> 00:01:04.500
+But some partners use one I D and P for everything. Then only the relationship status decides the lane.
+
+00:01:04.500 --> 00:01:13.175
+So before you say live, compare a test-period file with a recent one, check the relationship, and get the partner's go-live in writing.
+
+00:01:13.175 --> 00:01:17.825
+Next, the test plan. One happy-path order proves almost nothing.
+
+00:01:17.825 --> 00:01:26.175
+For every document, list the real scenarios, like multi-line, partial shipment, or pallet, and the evidence that proves each one.
+
+00:01:26.175 --> 00:01:33.275
+Then run the full loop. Get a test eight fifty, pull it into NetSuite, and check the sales order field by field.
+
+00:01:33.275 --> 00:01:40.175
+Fulfil it like the warehouse really will, to create the eight fifty six. Then bill it, to create the eight ten.
+
+00:01:40.175 --> 00:01:47.700
+Fix what validation names, send a new one, then confirm the partner's nine ninety seven, and their analyst's OK.
+
+00:01:47.700 --> 00:01:55.950
+A week-one surprise: a Valid test document sits on Pending for hours. Often, Auto Send for test is simply off.
+
+00:01:55.950 --> 00:02:03.025
+And validation is frozen at arrival. After a fix, send a new document. The old one will not change.
+
+00:02:03.025 --> 00:02:10.175
+A real lesson. A developer once typed the carrier by hand on every test shipment, so the ship notices passed.
+
+00:02:10.175 --> 00:02:16.775
+In production, nobody types it. So always test with the data the client's real process produces.
+
+00:02:16.775 --> 00:02:24.450
+Finally, certification. That is the partner's formal yes. Save the transaction numbers, the dates, and their message.
+
+00:02:24.450 --> 00:02:30.325
+After go-live, misses become chargebacks. Testing is the cheapest place to avoid them.
+
+00:02:30.325 --> 00:02:35.875
+In one line: rehearse on the test stream, follow a plan, and get proof for every pass.
+
+00:02:35.875 --> 00:02:40.050
+Next, we flip the switch: go-live, cutover, and hypercare.
+

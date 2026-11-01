@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.500
+Every day someone says: the retailer didn't get it. Or: it was sent yesterday. A pro never guesses.
+
+00:00:06.500 --> 00:00:12.575
+A pro opens the transaction and reads the facts. You'll learn where to look, and in which order.
+
+00:00:12.575 --> 00:00:20.300
+Think of a parcel tracking page. It shows the parcel was checked, sent, and signed for. A transaction works the same way.
+
+00:00:20.300 --> 00:00:27.425
+Every transaction in Orderful has three statuses. Read them left to right: each one depends on the one before.
+
+00:00:27.425 --> 00:00:35.375
+First, validation. Does the data follow the partner's guideline, and the X twelve rules? The answer is valid, or invalid.
+
+00:00:35.375 --> 00:00:42.500
+Second, delivery. Did the document leave Orderful and reach the channel? Pending, sent, delivered, or failed.
+
+00:00:42.500 --> 00:00:52.100
+Third, acknowledgment. Did the partner confirm with a nine ninety seven? In Europe, that message is called control, spelled C O N T R L.
+
+00:00:52.100 --> 00:01:00.375
+So where do you look? Start in the transactions list. Search by P O number, invoice number, or date, and check the status columns.
+
+00:01:00.375 --> 00:01:08.125
+Next, open the Rules Editor. It shows the original payload, exactly as it arrived. This is where you diagnose.
+
+00:01:08.125 --> 00:01:14.575
+Inside the Rules Editor, the Errors tab shows the current errors, checked against today's guideline.
+
+00:01:14.575 --> 00:01:22.075
+Then open the Audit Log, the clock icon. It's the real timeline: created, validated, sent, failed, resent.
+
+00:01:22.075 --> 00:01:27.725
+And for a fast human check, like a ship-to address or a P O date, use the Print View.
+
+00:01:27.725 --> 00:01:33.500
+Now, the classic mistake. Data View shows the data after translation and rules.
+
+00:01:33.500 --> 00:01:41.200
+If you diagnose from Data View, you may chase a problem that a rule already changed. Always start from the Rules Editor.
+
+00:01:41.200 --> 00:01:49.300
+Here's another trap. Invalid can be stale. Validation is set when the document arrives, and it does not update by itself.
+
+00:01:49.300 --> 00:01:57.400
+So if the header says invalid, but Errors says no errors found, the data is fine now. Just reprocess it, or resend it.
+
+00:01:57.400 --> 00:02:05.600
+Watch the numbers. If the audit log says transaction fifty nine, that's a short internal I D, not fifty nine errors.
+
+00:02:05.600 --> 00:02:15.125
+The business number is the P O or invoice number. Use it to search. The I S A control number is the envelope number that partners quote.
+
+00:02:15.125 --> 00:02:21.950
+On a big document, don't scroll. Use the Rules Editor search box and type the field name, like N one.
+
+00:02:21.950 --> 00:02:31.050
+To recap: read the statuses left to right, diagnose from the Rules Editor, confirm with Errors and the Audit Log. Then talk to anyone.
+
+00:02:31.050 --> 00:02:35.375
+Next, we'll take an error and answer the big question: whose fix is it?
+

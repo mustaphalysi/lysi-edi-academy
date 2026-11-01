@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.200
+A buyer calls: the order arrived short. The ship notice and the invoice both said forty eight coolers, but only twenty four came off the truck.
+
+00:00:09.200 --> 00:00:16.825
+To answer, you line up four documents for that order: the eight fifty, eight fifty five, eight fifty six, and eight ten.
+
+00:00:16.825 --> 00:00:22.800
+Think of a restaurant: the order, the waiter repeating it back, the ticket with the food, then the bill.
+
+00:00:22.800 --> 00:00:25.675
+Each step must agree with the one before it.
+
+00:00:25.675 --> 00:00:34.600
+The eight fifty is the purchase order. B E G holds the P O number and type, like S A for stand-alone, or D S for drop ship.
+
+00:00:34.600 --> 00:00:41.900
+N one loops name the parties. The ship-to code must exist in our lookup, or the order lands without a ship-to.
+
+00:00:41.900 --> 00:00:48.675
+Each P O one line holds the quantity, the unit, the price, and item numbers like the U P C.
+
+00:00:48.675 --> 00:00:55.675
+Watch the unit: E A is each, C A is case. A case price mapped as each is a very expensive bug.
+
+00:00:55.675 --> 00:01:01.450
+The eight fifty five is the acknowledgment, our promise. Each line gets an A C K code.
+
+00:01:01.450 --> 00:01:07.700
+Those codes are a family: I A accepted, I P accepted with a price change, I B backordered.
+
+00:01:07.700 --> 00:01:14.750
+One mapper only checked for I A, so price-changed lines were reported as rejected. Map by family.
+
+00:01:14.750 --> 00:01:20.225
+The eight fifty six, the ship notice, is the hardest. It's not a list. It's a tree.
+
+00:01:20.225 --> 00:01:28.900
+Each H L opens a level and points to its parent: shipment, order, pack, item. The truck, the P O, the carton, the product.
+
+00:01:28.900 --> 00:01:36.475
+The partner picks the shape. Pick and pack uses all four. Pallets add a tare level. Simple shipments skip the packs.
+
+00:01:36.475 --> 00:01:41.650
+Send a pack level to a partner who doesn't allow it, and every ship notice fails.
+
+00:01:41.650 --> 00:01:49.200
+And every S S C C in the ship notice must match the label on the real carton. Labels and A S N are twins.
+
+00:01:49.200 --> 00:01:57.325
+Finally, the eight ten is the invoice. Send it after the ship notice, and bill only what shipped: twenty four, not forty eight.
+
+00:01:57.325 --> 00:02:03.475
+The total uses two implied decimals, so three ninety one fifty six is sent with no dot.
+
+00:02:03.475 --> 00:02:08.825
+And include the remit-to code, or payment can stall even when the invoice is valid.
+
+00:02:08.825 --> 00:02:16.375
+So: eight fifty is what was ordered, eight fifty five what we promise, eight fifty six what shipped, eight ten what we bill.
+
+00:02:16.375 --> 00:02:21.375
+When a dispute comes in, line up all four for that P O before you say a word.
+
+00:02:21.375 --> 00:02:26.225
+Next: inventory, changes, warehouses, payments, and acknowledgments.
+

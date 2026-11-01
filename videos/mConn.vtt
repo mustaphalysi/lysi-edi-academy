@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.900
+Orderful shows a ship notice as Delivered. The retailer says they never got it. Who is right? Maybe both.
+
+00:00:06.900 --> 00:00:13.075
+Delivered means different things, depending on the road the document travelled. So let's learn the roads.
+
+00:00:13.075 --> 00:00:16.375
+First, every document travels on two legs.
+
+00:00:16.375 --> 00:00:24.475
+The partner leg connects Orderful and the trading partner. The client leg connects Orderful and our client's system, like NetSuite.
+
+00:00:24.475 --> 00:00:28.500
+When something did not arrive, your first question is: which leg?
+
+00:00:28.500 --> 00:00:35.900
+In Orderful, each road is called a communication channel. Each relationship gets a Test channel and a Live channel.
+
+00:00:35.900 --> 00:00:40.175
+Think of the document as a letter. There are four main ways to mail it.
+
+00:00:40.175 --> 00:00:50.225
+A VAN, or value-added network, is a shared post office in the middle. Connect once, and reach thousands of partners. But it often charges by volume.
+
+00:00:50.225 --> 00:00:57.675
+A S 2 is a secure courier. It signs and locks the box, and brings back a signed receipt, called an M D N.
+
+00:00:57.675 --> 00:01:06.075
+To set it up, both sides swap A S 2 I Ds, server addresses, and certificates. And remember, certificates expire.
+
+00:01:06.075 --> 00:01:14.525
+S F T P is a locked drop box, with an in folder and an out folder. You need a host, login, and key. There is no receipt.
+
+00:01:14.525 --> 00:01:24.300
+The A P I, or poller, is usually the client leg. Orderful puts each document in an inbox, and the client's system keeps asking: anything new?
+
+00:01:24.300 --> 00:01:31.000
+Now the key table. On A S 2, Delivered means the partner's server sent back a good M D N.
+
+00:01:31.000 --> 00:01:36.800
+On a VAN, it means the document reached the VAN mailbox. Not that the partner picked it up.
+
+00:01:36.800 --> 00:01:42.050
+On S F T P, the file was written to the folder. Not that anyone read it.
+
+00:01:42.050 --> 00:01:47.375
+On a poller, the client's system read it and approved it. Until then, it shows Sent.
+
+00:01:47.375 --> 00:01:54.975
+The partner's real "got it" is the nine ninety seven, the functional acknowledgment. If it is overdue, ask the partner.
+
+00:01:54.975 --> 00:02:02.850
+A real lesson: a client was moved off its old VAN in pieces. Documents piled up for weeks, and chargebacks followed.
+
+00:02:02.850 --> 00:02:10.650
+The rule now: set up and test every relationship, then switch everything together. VAN migrations are all or nothing.
+
+00:02:10.650 --> 00:02:18.875
+And after any setup change, open the relationship and check the channels yourself. A document with no channel never leaves.
+
+00:02:18.875 --> 00:02:26.875
+So when someone says "not received", answer three things: which leg, which road, and what the audit log and acknowledgment show.
+
+00:02:26.875 --> 00:02:31.625
+Next, we open up the A P I, and learn how systems prove who they are.
+

@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.975
+A client asks which label to use for a warehouse club. But their org has no relationship with that retailer.
+
+00:00:06.975 --> 00:00:14.925
+The client is a three P L, a warehouse that stores and ships goods for brands. The retailer was only a ship-to address.
+
+00:00:14.925 --> 00:00:23.050
+Think of a self-storage company that also packs parcels for small shops. The shop owns the goods. The storage company holds them.
+
+00:00:23.050 --> 00:00:31.600
+The shop sends a note: please ship twelve lanterns to this address. The storage company ships and replies: done, here are the boxes.
+
+00:00:31.600 --> 00:00:37.950
+That note and that reply are the nine hundred series, the warehouse family of X twelve documents.
+
+00:00:37.950 --> 00:00:45.776
+The retailer trades with the brand. The brand trades with the three P L. In a classic flow, the retailer is just the ship-to.
+
+00:00:45.776 --> 00:00:53.926
+The shipping pair is the nine forty and the nine forty five. The nine forty tells the warehouse: pick, pack and ship this order.
+
+00:00:53.926 --> 00:00:59.551
+The nine forty five comes back: shipped, with the pallets, items, lots, and carrier.
+
+00:00:59.551 --> 00:01:07.801
+The transfer pair is the nine forty three and nine forty four. Stock is on its way. Then, here is what actually arrived.
+
+00:01:07.801 --> 00:01:15.526
+The nine forty seven reports adjustments, like damage or recounts. And the eight forty six reports what's in stock.
+
+00:01:15.526 --> 00:01:25.476
+Careful, direction flips with your point of view. If the client is the brand, the nine forty is outbound. If the client is the three P L, it's inbound.
+
+00:01:25.476 --> 00:01:32.702
+In the nine forty five, each W twelve line shows ordered versus shipped. That's where short shipments show up.
+
+00:01:32.702 --> 00:01:39.277
+It also carries the warehouse lot. Food and beauty partners need lots for recalls and expiry dates.
+
+00:01:39.277 --> 00:01:43.652
+In NetSuite, when the client is the brand, the cycle looks like this.
+
+00:01:43.652 --> 00:01:51.327
+An eight fifty creates a Sales Order. Its location is the three P L, so a nine forty goes to that warehouse.
+
+00:01:51.327 --> 00:02:00.002
+The nine forty five comes back and creates an Item Fulfillment. That triggers the eight fifty six to the retailer, and then the eight ten.
+
+00:02:00.002 --> 00:02:07.677
+For receiving, a nine forty three tells the warehouse what's coming, and its nine forty four creates the Item Receipt.
+
+00:02:07.677 --> 00:02:16.927
+One real lesson. A three P L's nine forty fives were accepted, but with errors noted, for months. Nobody read past accepted.
+
+00:02:16.927 --> 00:02:23.177
+So after go-live, read the acknowledgment details and the pending list, not just the green ticks.
+
+00:02:23.177 --> 00:02:33.602
+To recap. Nine forty and nine forty five ship. Nine forty three and nine forty four receive. Nine forty seven adjusts, and eight forty six counts.
+
+00:02:33.602 --> 00:02:40.152
+The retailer is usually just the ship-to. Next, Track 4: mapping and the Orderful rules engine.
+

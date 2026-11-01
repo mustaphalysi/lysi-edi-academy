@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.100
+A supplier's invoices failed with the retailer three test rounds in a row. And each round took a full week.
+
+00:00:07.100 --> 00:00:17.125
+The cause was one line nobody wrote down. The invoice's P O number was filled with the client's internal order number, not the buyer's P O number.
+
+00:00:17.125 --> 00:00:23.400
+A one-page mapping spec, reviewed on day one, would have caught it. So pros write the map down first.
+
+00:00:23.400 --> 00:00:29.150
+Nobody builds a house without a plan. A mapping spec is the plan for an integration.
+
+00:00:29.150 --> 00:00:36.300
+It's a table, with one row per target field. Each row says where the value comes from, and what happens to it.
+
+00:00:36.300 --> 00:00:45.326
+A crosswalk is a translation table between two code lists. Like a phrasebook: the partner's code on the left, the client's value on the right.
+
+00:00:45.326 --> 00:00:54.001
+Why bother? Paper is the cheapest place to find a mistake. A minute on paper, an hour in code, a week in the partner's test portal.
+
+00:00:54.001 --> 00:00:59.976
+Let's build one row. Target: the invoice's P O number. Usage: mandatory.
+
+00:00:59.976 --> 00:01:08.751
+Source: the NetSuite field that holds the buyer's P O. Transformation: a direct copy. If missing: error, never send it empty.
+
+00:01:08.751 --> 00:01:14.826
+Then add a real example value, where it's built, and any open question with an owner's name.
+
+00:01:14.826 --> 00:01:20.926
+Where do the facts come from? From the partner: their spec, the guideline, and real sample files.
+
+00:01:20.926 --> 00:01:28.601
+From the client: the fields in their system and a few real records. Plus business rules that only the client can decide.
+
+00:01:28.601 --> 00:01:36.801
+You'll almost always need crosswalks. Units, like C A to Case. Items, store codes, carriers, and status codes.
+
+00:01:36.801 --> 00:01:45.251
+Decide early who maintains each one. Store lists change every month. If only a developer can update it, it will be wrong by spring.
+
+00:01:45.251 --> 00:01:53.101
+Turn every blank into an open question with an owner. Then group them: one short list for the client, one for the partner.
+
+00:01:53.101 --> 00:01:57.751
+Review the spec with the client. Walk the questions, not the whole table.
+
+00:01:57.751 --> 00:02:04.926
+Give the spec a version and a date, and record who signed it off. Months later, it answers "why?" in ten seconds.
+
+00:02:04.926 --> 00:02:13.026
+It also protects the team. If the client later wants something different, the signed spec shows it's a change request, not a defect.
+
+00:02:13.026 --> 00:02:20.951
+One real lesson: position is not meaning. Write "the item pair with qualifier V N", never a fixed position.
+
+00:02:20.951 --> 00:02:27.901
+Recap. Map on paper first. One row per target field, crosswalks with an owner, and a signed version.
+
+00:02:27.901 --> 00:02:31.527
+That's Track four. Next, you'll prove it all in testing.
+

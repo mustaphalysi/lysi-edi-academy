@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.075
+Once orders, ship notices and invoices flow, the partner asks for more: an inventory feed, order changes, payments.
+
+00:00:08.075 --> 00:00:14.675
+You don't need to memorize every element. Know what each document is for, who sends it, and where it breaks.
+
+00:00:14.675 --> 00:00:21.975
+Back to the restaurant. The menu board shows what's still available. That's the eight forty six, the inventory advice.
+
+00:00:21.975 --> 00:00:29.775
+Send the quantity code the partner wants, like available for sale, not on hand. And send zero when an item runs out.
+
+00:00:29.775 --> 00:00:35.100
+If you just drop the item, the partner may read it as no change, and keep selling it.
+
+00:00:35.100 --> 00:00:42.950
+Sometimes the customer changes the order. That's the eight sixty. The kitchen confirms the change with an eight sixty five.
+
+00:00:42.950 --> 00:00:49.700
+A change is a delta. Apply it to the order you already have: cut a quantity, add a line, move a date.
+
+00:00:49.700 --> 00:00:54.400
+Every message also gets a quick received stamp: the nine ninety seven.
+
+00:00:54.400 --> 00:01:01.750
+But a nine ninety seven only means the file arrived and its syntax is OK. It does not mean the buyer agrees.
+
+00:01:01.750 --> 00:01:10.500
+A buyer can accept an invoice's syntax and still refuse to pay. So read the acknowledgment itself before you tell the client anything.
+
+00:01:10.500 --> 00:01:17.325
+A big restaurant may send orders to a separate kitchen. For our client, that's their warehouse, the three P L.
+
+00:01:17.325 --> 00:01:24.825
+The supplier sends a nine forty: please pick, pack and ship. The warehouse answers with a nine forty five: shipped.
+
+00:01:24.825 --> 00:01:31.825
+The nine forty five usually triggers the ship notice. So a late nine forty five means a late A S N.
+
+00:01:31.825 --> 00:01:39.250
+Now, money. The eight twenty is the remittance. It says which invoices a payment covers, and any discount taken.
+
+00:01:39.250 --> 00:01:44.275
+Careful with numbers here. The eight twenty uses real decimals, with a dot.
+
+00:01:44.275 --> 00:01:51.950
+The invoice total uses two implied decimals, with no dot. Mix them up, and you are off by a factor of one hundred.
+
+00:01:51.950 --> 00:01:58.450
+Short payments are questions for the client's finance team. The eight twelve is a formal credit or debit.
+
+00:01:58.450 --> 00:02:05.250
+The eight sixty four is a text message for a person, like a chargeback warning. Route it to the right person.
+
+00:02:05.250 --> 00:02:12.450
+Now the classic trap: scope. A partner lists extra documents the client's E R P has never produced.
+
+00:02:12.450 --> 00:02:20.375
+So ask: mandatory for go-live, or later? Which system knows this data today? Then estimate each one as its own flow.
+
+00:02:20.375 --> 00:02:27.350
+Remember: the core four move the goods. These documents keep stock, changes, warehouses, and money in sync.
+
+00:02:27.350 --> 00:02:31.850
+Next, we pick up our tools: the terminal, Git, and the C L I.
+

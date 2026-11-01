@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.826
+A client's orders from BigBox kept failing with "item not found". The map took the first product ID on each line.
+
+00:00:07.826 --> 00:00:18.376
+But on some lines, BigBox sent the U P C first. One small Jason-ah-tah change, picking the ID by its label instead of its position, fixed every order.
+
+00:00:18.376 --> 00:00:28.051
+So what is Jason-ah-tah? Jason is how data travels after X twelve. Jason-ah-tah is a small language to read Jason and build new Jason.
+
+00:00:28.051 --> 00:00:35.001
+Think of it as a recipe card. Go to this drawer, take this item, change it like so, and put it in that box.
+
+00:00:35.001 --> 00:00:45.126
+On Connector projects, the NetSuite connector runs our Jason-ah-tah. Inbound, it builds the NetSuite record. Outbound, it shapes the partner's message.
+
+00:00:45.126 --> 00:00:53.426
+On the way out, our Jason-ah-tah runs first, and the Orderful rules run after it. So a rule can still change your perfect output.
+
+00:00:53.426 --> 00:00:59.626
+Five ideas let you read almost any Jason-ah-tah. First, paths walk the tree with dots.
+
+00:00:59.626 --> 00:01:06.451
+Second, arrays map by themselves. Ask for the quantity, and you get one value per line, with no loop.
+
+00:01:06.451 --> 00:01:13.026
+Third, square brackets filter. Ask for the N one where the code is S T, and you get the ship-to store.
+
+00:01:13.026 --> 00:01:19.301
+Fourth, functions start with a dollar sign. And fifth, curly braces build the target object.
+
+00:01:19.301 --> 00:01:26.626
+Now the traps. Every X twelve value arrives as text. Summing text fails, so convert to a number first.
+
+00:01:26.626 --> 00:01:34.126
+One item is not an array. A one-line order quietly gives you an object, not a list. Wrap it in square brackets.
+
+00:01:34.126 --> 00:01:40.326
+A misspelled path returns nothing, and shows no error. So always test on a real payload.
+
+00:01:40.326 --> 00:01:49.176
+Implied decimals. Three one five six eight can mean three hundred fifteen dollars and sixty eight cents. Convert exactly once.
+
+00:01:49.176 --> 00:01:56.376
+One team converted twice, and a twenty eight dollar invoice became over two thousand dollars. A check caught it.
+
+00:01:56.376 --> 00:02:01.926
+And pick IDs by qualifier, never by position. That was our opening story.
+
+00:02:01.926 --> 00:02:13.226
+Rule or Jason-ah-tah? If the fix needs to know anything about NetSuite, use Jason-ah-tah. If a partner just wants a value shaped differently, a rule is often cleaner.
+
+00:02:13.226 --> 00:02:20.452
+Work in a tight loop: change the map, reprocess, open the new transaction, read the errors. One fix at a time.
+
+00:02:20.452 --> 00:02:28.502
+A classic: someone rewrote a map for a day, then found an Orderful rule deleting the field afterwards. Check the rules first.
+
+00:02:28.502 --> 00:02:37.127
+Recap. Convert text to numbers, force lists, pick by qualifier, convert decimals once, and remember the rules run after you.
+
+00:02:37.127 --> 00:02:40.677
+Next, we'll see how guidelines judge every document.
+

@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:10.950
+Orderful shows your test eight fifty six as Valid, Delivered, and Accepted. All green. But the partner's website says: your last test failed. Nineteen errors.
+
+00:00:10.950 --> 00:00:15.300
+Which one is telling the truth? Both are. They answer different questions.
+
+00:00:15.300 --> 00:00:22.700
+Think of a driving test. You practise in your own car, with a friend who knows the rules. That's Orderful validation.
+
+00:00:22.700 --> 00:00:28.775
+But the licence comes from the examiner, who has their own checklist. That's the partner's portal.
+
+00:00:28.775 --> 00:00:36.050
+So there are three layers of OK. First, Orderful validation: the file matches the partner's guideline.
+
+00:00:36.050 --> 00:00:41.700
+Second, the nine ninety seven: the partner received the file, and its structure is fine.
+
+00:00:41.700 --> 00:00:49.500
+Third, the business check. Does this P O exist? Is this item on file? Is that store open? No guideline can know that.
+
+00:00:49.500 --> 00:00:58.850
+Partners report this third layer in their portal, by email, or with an eight twenty four, a document that says: rejected, for these business reasons.
+
+00:00:58.850 --> 00:01:08.175
+You will meet many portals: S P S Commerce, retailer test centers, drop-ship platforms like Rithum, and the retailer's own supplier website.
+
+00:01:08.175 --> 00:01:14.675
+They all follow the same loop. Read the partner's test plan, and note the test cases for each document.
+
+00:01:14.675 --> 00:01:21.450
+Get the test orders. Produce each response from the client's real process, through Orderful, on the test stream.
+
+00:01:21.450 --> 00:01:28.150
+Submit it in the portal, and read the result. Then fix the cause, and re-test only the case that failed.
+
+00:01:28.150 --> 00:01:31.975
+When it passes, save the evidence, and move on to go-live.
+
+00:01:31.975 --> 00:01:41.450
+Now, the error report. Nineteen errors often come from just three causes. One wrong value, repeated on every carton, counts many times.
+
+00:01:41.450 --> 00:01:45.650
+So group the errors by cause, then decide whose fix each one is.
+
+00:01:45.650 --> 00:01:54.125
+Behind every portal are people, often a small team serving hundreds of suppliers. Batch your submissions, and check your work first.
+
+00:01:54.125 --> 00:02:02.700
+Quote exact references: the test case, the P O number, the control number, and the date sent. Then you get an answer, not a question.
+
+00:02:02.700 --> 00:02:08.850
+And keep portal logins safe. Never paste a password into chat, email, or project notes.
+
+00:02:08.850 --> 00:02:17.725
+A real lesson. A testing team wrote: all scenarios certified, except drop ship. So bulk shipping could go live. Drop ship could not.
+
+00:02:17.725 --> 00:02:22.400
+Read certification messages literally, and report them case by case.
+
+00:02:22.400 --> 00:02:30.250
+In one line: green in Orderful means the file is well formed. The portal tells you if the business content is accepted.
+
+00:02:30.250 --> 00:02:33.276
+Next, drop-ship, and the Rithum platform.
+

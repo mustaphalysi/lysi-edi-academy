@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.550
+For nine days, a team told a client that a partner's gateway was stripping the data from their files. It sounded solid.
+
+00:00:07.550 --> 00:00:15.575
+It was wrong. Our relationship pointed at a stub guideline that dropped every field. One extra screen would have saved a week.
+
+00:00:15.575 --> 00:00:22.675
+Pilots use checklists not because they forget how to fly, but because confident people skip steps under pressure.
+
+00:00:22.675 --> 00:00:31.300
+Our checklist has three parts: verify before you say anything, write things down as you go, and draft messages for a human to send.
+
+00:00:31.300 --> 00:00:40.150
+First, production discipline. No production sends or changes without clear approval. And know your account and stream before every write.
+
+00:00:40.150 --> 00:00:48.800
+Record the state before a change. After it, reload and re-check everything it could touch. Some changes quietly reset other settings.
+
+00:00:48.800 --> 00:00:57.975
+Second, verify before you assert. Never say something is fixed, broken, or someone else's fault from memory, or from yesterday's screen.
+
+00:00:57.975 --> 00:01:05.175
+Check both orgs, the client's and the partner's. A document can be valid on one side and invalid on the other.
+
+00:01:05.175 --> 00:01:13.700
+Check every section. Diagnose from the Rules Editor, which shows the original file. The Data View shows it after translation.
+
+00:01:13.700 --> 00:01:21.700
+And mark your guesses: likely cause, not verified yet. A wrong cause stated as fact costs more trust than, I'm checking.
+
+00:01:21.700 --> 00:01:29.625
+Third, the project brain. Chat history disappears, so every project has a plain text file that survives everything.
+
+00:01:29.625 --> 00:01:38.500
+It holds open items by owner, key I Ds, decisions and why, and a dated log of what was verified. Update it while you work.
+
+00:01:38.500 --> 00:01:46.650
+Fourth, drafts, never sends. Never send a message on someone's behalf. You write the draft. They review it and send it themselves.
+
+00:01:46.650 --> 00:01:52.650
+Every draft starts with a where line: the exact thread to reply on, looked up, never guessed.
+
+00:01:52.650 --> 00:02:00.975
+Write short and human. Lead with the point. One ask per email, with the exact data, like the P O number and the segment.
+
+00:02:00.975 --> 00:02:06.775
+No em dashes. Use names as people write them. And if you were wrong, say so plainly.
+
+00:02:06.775 --> 00:02:13.700
+To Orderful's clients, we are the Orderful team. And we copy the ops mailbox on every customer thread.
+
+00:02:13.700 --> 00:02:21.100
+A classic: a team saw seventeen errors on an invoice, and drafted an email asking the partner to fix it.
+
+00:02:21.100 --> 00:02:30.575
+In the partner's org, the same invoice was valid. Our own relationship had the wrong guideline. Open both orgs before deciding whose fix it is.
+
+00:02:30.575 --> 00:02:37.000
+Remember: sweep, verify in both orgs, mark what isn't proven, and draft for the owner to send.
+
+00:02:37.000 --> 00:02:41.125
+Next: working with A I, and how it makes all of this faster.
+

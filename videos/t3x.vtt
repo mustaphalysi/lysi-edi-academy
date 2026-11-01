@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.300
+A client says BigBox has been live for a month. But every ship notice is stuck, and the acknowledgment is overdue.
+
+00:00:07.300 --> 00:00:15.200
+The partner's channel was a parking spot that delivered nowhere. Nobody tested the road. Let's set up partners in the right order.
+
+00:00:15.200 --> 00:00:21.950
+Think of opening a shipping lane between two ports. First the paperwork. Then both ports agree to trade.
+
+00:00:21.950 --> 00:00:30.000
+Then one lane per type of cargo. Each lane has a rulebook and a road. Before real cargo, send a test truck both ways.
+
+00:00:30.000 --> 00:00:37.700
+In Orderful, each company has an org. Its trading identity is an E D I account, a qualifier plus an ID.
+
+00:00:37.700 --> 00:00:46.950
+One matrix row becomes one partnership. Inside it, one relationship per document and direction, like eight fifty six out to BigBox.
+
+00:00:46.950 --> 00:00:52.100
+Each relationship holds the IDs, the guideline, the channels, and a status.
+
+00:00:52.100 --> 00:01:00.400
+Step one, forms. Many partners won't test until their paperwork is done, and only the client can sign it. Start on day one.
+
+00:01:00.400 --> 00:01:07.650
+Step two, the trade request. Until the partner accepts it, there is no partnership. Put a date on it and chase it.
+
+00:01:07.650 --> 00:01:16.300
+Step three, the outreach email. Copy ops at orderful dot com and the client. One partner per thread, and check every recipient.
+
+00:01:16.300 --> 00:01:23.750
+Step four, the relationships. Each one moves from Setup, to Testing, to Go-live ready, to Go Live, and then Live.
+
+00:01:23.750 --> 00:01:29.550
+On every relationship, check the qualifier and the IDs, and test versus production.
+
+00:01:29.550 --> 00:01:38.700
+Step five, the guideline. The leader owns it, usually the partner. Never edit a partner's shared guideline. Other suppliers use it too.
+
+00:01:38.700 --> 00:01:46.475
+And if we publish our own guideline, the old one is archived. Repoint the relationship and re-add the channels, which get wiped.
+
+00:01:46.475 --> 00:01:51.875
+Step six, the channels. Each relationship needs a test channel and a live channel.
+
+00:01:51.875 --> 00:01:59.000
+Watch for Keep In Orderful. It's a placeholder that delivers nowhere. Fine while building, fatal at go-live.
+
+00:01:59.000 --> 00:02:07.400
+Step seven, the connectivity test. Send test documents both ways, and check each nine ninety seven comes back Accepted.
+
+00:02:07.400 --> 00:02:14.200
+Look at the envelope too. I S A fifteen shows T for test, and the IDs should be the test IDs.
+
+00:02:14.200 --> 00:02:22.075
+A real lesson. Invoices showed seventeen errors in our client's org. In the partner's org, the same file was Valid.
+
+00:02:22.075 --> 00:02:29.350
+Our relationship had another partner's guideline by mistake. So check both orgs before you say whose fix it is.
+
+00:02:29.350 --> 00:02:38.825
+To recap. One row, one partnership, one relationship per document. Right IDs, the leader's guideline, real channels, and a tested road.
+
+00:02:38.825 --> 00:02:43.475
+Next, we'll set up the same customer and partner inside NetSuite.
+

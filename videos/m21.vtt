@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.150
+Glacier Coolers sends its very first ship notice to BigBox Retail. The file is perfect X twelve, and BigBox rejects it anyway.
+
+00:00:09.150 --> 00:00:19.150
+BigBox's spec wants a four digit ship-to code and a bill of lading reference. Glacier sent seven, not zero zero zero seven, and no bill of lading.
+
+00:00:19.150 --> 00:00:26.775
+Nothing was wrong with the X twelve. It just didn't follow BigBox's rules. Reading specs well is most of this job.
+
+00:00:26.775 --> 00:00:33.225
+Think of X twelve as the grammar of a language. A partner's spec is like a magazine's style guide.
+
+00:00:33.225 --> 00:00:38.675
+Two magazines can both use correct English, and still reject each other's articles.
+
+00:00:38.675 --> 00:00:46.125
+The spec is called an implementation guide, or I G. It's usually a P D F, thirty to two hundred pages long.
+
+00:00:46.125 --> 00:00:52.000
+Every page describes one segment. Learn to read its columns, and you can read any spec.
+
+00:00:52.000 --> 00:00:59.600
+The requirement says mandatory, optional, or conditional. The data type and length say what the value must look like.
+
+00:00:59.600 --> 00:01:03.450
+The code list shows the only values this partner accepts.
+
+00:01:03.450 --> 00:01:09.750
+Then come the notes, in the partner's own words. They are often the most important line on the page.
+
+00:01:09.750 --> 00:01:16.450
+In Orderful, the spec becomes a guideline: a machine-readable list of every segment, code, and length.
+
+00:01:16.450 --> 00:01:23.625
+Big partners keep their own guideline, called the leader guideline. Every supplier's documents are checked against it.
+
+00:01:23.625 --> 00:01:33.225
+So the spec usually reaches you as validation errors: a field path, a message, and often the allowed values. You fix, re-test, and repeat.
+
+00:01:33.225 --> 00:01:40.875
+To find the spec, ask the client first. Then check the relationship in Orderful, then the partner's supplier portal.
+
+00:01:40.875 --> 00:01:46.800
+And always ask for real sample files. They are the second authority, next to the P D F.
+
+00:01:46.800 --> 00:01:54.650
+When you fix something, fix it on our side: the mapping, the rules, or our data. Never edit a partner's shared guideline.
+
+00:01:54.650 --> 00:02:01.350
+Then prove the fix with a fresh test document. An old transaction keeps its old validation result.
+
+00:02:01.350 --> 00:02:09.400
+A real lesson: a client got twenty six errors from a food distributor, and the team almost asked them to fix their guideline.
+
+00:02:09.400 --> 00:02:19.575
+Then we read the P D Fs. The distributor has two specs: one for orders they send, one for orders they receive. The errors came from the wrong one.
+
+00:02:19.575 --> 00:02:25.525
+So always ask early: whose spec validates this document? That email was never sent.
+
+00:02:25.525 --> 00:02:30.100
+Remember: valid X twelve is not the bar. The partner's spec is.
+
+00:02:30.100 --> 00:02:37.350
+Next, we go deep into the eight fifty, eight fifty five, eight fifty six, and eight ten, segment by segment.
+

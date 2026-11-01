@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.450
+A supplier answered our test order. Every line said "I P". Our mapping only knew "I A", so it called every line rejected.
+
+00:00:08.450 --> 00:00:14.500
+The order was cancelled, and the test was burnt. We had built the buyer side with a seller's habits.
+
+00:00:14.500 --> 00:00:20.900
+This is procure to pay. In the restaurant, our client was the kitchen. Now our client is the diner.
+
+00:00:20.900 --> 00:00:28.475
+The diner orders, checks what arrives, checks the bill, and pays. Like BuyHub, which orders supplies for its customers.
+
+00:00:28.475 --> 00:00:35.675
+The documents keep the same numbers. Only the directions flip. What came in now goes out, and the other way round.
+
+00:00:35.675 --> 00:00:43.800
+So never guess the direction from the number. Before you open a mapping, ask one question. Which side of the trade is our client on?
+
+00:00:43.800 --> 00:00:48.800
+Step one. A Purchase Order in NetSuite becomes an eight fifty, going out.
+
+00:00:48.800 --> 00:00:54.375
+It must speak the supplier's language. Their item numbers, and the ship-to codes they know.
+
+00:00:54.375 --> 00:01:02.825
+Step two. The supplier answers with an eight fifty five. Each line has a code, and it is a family of codes, not yes or no.
+
+00:01:02.825 --> 00:01:11.550
+I A, accepted. I P, accepted with a new price. I Q, a new quantity. I B, backordered. Only I R means rejected.
+
+00:01:11.550 --> 00:01:19.000
+A mapping that only checks for I A treats everything else as a rejection. That was our burnt test. Map by family.
+
+00:01:19.000 --> 00:01:26.450
+Step three. The supplier's eight fifty six tells us what is coming. The dock can scan labels instead of counting.
+
+00:01:26.450 --> 00:01:33.350
+Should it create the Item Receipt right away, or only when goods are counted? It is the client's business decision.
+
+00:01:33.350 --> 00:01:40.700
+Step four. The supplier's eight ten invoice becomes a Vendor Bill. Before paying, finance runs a three-way match.
+
+00:01:40.700 --> 00:01:48.625
+Does the bill agree with the Purchase Order, and with the Item Receipt? Pay only what was ordered, received, and priced as agreed.
+
+00:01:48.625 --> 00:01:55.525
+Step five. The bill is paid in NetSuite, and some suppliers want an eight twenty remittance, to match the money.
+
+00:01:55.525 --> 00:02:03.900
+The NetSuite connector is strongest on the seller side. Buyer flows often need custom scripts, so plan for that extra build.
+
+00:02:03.900 --> 00:02:10.450
+A real lesson. A supplier's ship notices looked empty. The team blamed the supplier for a week.
+
+00:02:10.450 --> 00:02:19.025
+But the cause was on our side. Our guideline was missing those fields, so they were stripped on arrival. The Rules Editor showed the full file.
+
+00:02:19.025 --> 00:02:25.000
+So, check our side first. Same numbers, flipped directions, and usually more custom build.
+
+00:02:25.000 --> 00:02:29.675
+Next, we put all the documents side by side, in one family picture.
+

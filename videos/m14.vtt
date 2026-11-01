@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.400
+Picture your first month. A retailer wants the tracking number under one code, but your client's system sends another.
+
+00:00:07.400 --> 00:00:14.350
+One small Orderful rule fixes it in ten minutes, with no code release. That's the power you learn today.
+
+00:00:14.350 --> 00:00:18.325
+But first, the big idea under this whole track: the mapping.
+
+00:00:18.325 --> 00:00:25.875
+Imagine filling in a visa form, passport open. For every box you ask: where do I find this, and do I need to change it?
+
+00:00:25.875 --> 00:00:32.575
+Your name copies across. Your birth date needs a new format. And one box is not in the passport at all.
+
+00:00:32.575 --> 00:00:40.975
+That is a mapping. The passport is the source, like a partner's X twelve file. The form is the target, like a NetSuite sales order.
+
+00:00:40.975 --> 00:00:48.500
+So every target field gets three answers. The source. The transformation. And what to do when the value is missing.
+
+00:00:48.500 --> 00:00:57.850
+Almost every transformation is one of eight simple kinds: copy, format, crosswalk, default, calculation, condition, lookup, or drop.
+
+00:00:57.850 --> 00:01:05.450
+Now, the Orderful rule. It's a small formula attached to one spot in a document: one element, or a whole segment.
+
+00:01:05.450 --> 00:01:14.225
+Each time a document passes through, Orderful runs it and rewrites the data in flight. The client's system and the partner stay unchanged.
+
+00:01:14.225 --> 00:01:23.950
+Rules are scoped to one relationship: one partner, one document type, one direction. Like Glacier Coolers, eight fifty six, out to BigBox.
+
+00:01:23.950 --> 00:01:32.976
+Rules run before validation. The rule changes the data, and the guideline judges it. So a rule can fix an error, or create one.
+
+00:01:32.976 --> 00:01:39.926
+Build rules in the Rules Editor of a recent transaction. It shows the payload as it originally arrived.
+
+00:01:39.926 --> 00:01:47.426
+A simple rule always runs, like set C N. A conditional rule has three parts: an IF, a THEN, and a Default.
+
+00:01:47.426 --> 00:01:54.101
+Here is the trap. Leave the Default empty, and every value that does not match the IF is wiped out.
+
+00:01:54.101 --> 00:02:01.901
+A real lesson: a lookup had its safety net on the wrong call. One missing store code, and four live orders got stuck.
+
+00:02:01.901 --> 00:02:06.901
+So guard the outer call. Wrap lookup data inside if error, with a fallback.
+
+00:02:06.901 --> 00:02:13.651
+A new rule only shows as a preview. To prove it, send a new transaction and check that it is valid.
+
+00:02:13.651 --> 00:02:17.951
+Then write it into the mapping spec: what, why, which stream, which date.
+
+00:02:17.951 --> 00:02:26.101
+Recap. A mapping answers source, transformation, and what if missing. A rule is a partner-scoped fix, applied in flight.
+
+00:02:26.101 --> 00:02:30.801
+Next, we'll meet Jason-ah-tah, and learn when to use it instead of rules.
+

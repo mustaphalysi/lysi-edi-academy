@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.975
+A client writes: BigBox says they never got our ship notice. To answer, you may need five different screens.
+
+00:00:06.975 --> 00:00:13.625
+A beginner opens one screen and guesses. A pro knows where every answer hides. Let's draw the map.
+
+00:00:13.625 --> 00:00:19.750
+Orderful is a cloud E D I platform. Picture a big sorting center for business mail.
+
+00:00:19.750 --> 00:00:29.376
+Documents arrive from many senders. The center checks each one against the receiver's rules, translates it if needed, and sends it down the right road.
+
+00:00:29.376 --> 00:00:33.026
+And it keeps a copy, with the full history of everything.
+
+00:00:33.026 --> 00:00:42.376
+Now the building blocks. An organization, or org, is one company's space on Orderful. Our client has one, and the partner may have its own.
+
+00:00:42.376 --> 00:00:50.851
+An E D I account is one identity on the network: a qualifier plus an I D, like the values in the I S A envelope.
+
+00:00:50.851 --> 00:00:55.851
+A partnership simply says: Glacier Coolers trades with BigBox Retail.
+
+00:00:55.851 --> 00:01:05.726
+Inside it, each relationship is one document type in one direction, like the eight fifty six going out to BigBox. This is where a connection lives.
+
+00:01:05.726 --> 00:01:14.451
+Each relationship ties together a guideline, which is the partner's rules in machine form, and channels, the roads the document travels.
+
+00:01:14.451 --> 00:01:22.277
+Every document that passes through becomes a transaction, with three statuses: validation, delivery, and acknowledgment.
+
+00:01:22.277 --> 00:01:29.452
+Here is a key idea. When both sides are on Orderful, the same document exists twice, once in each org.
+
+00:01:29.452 --> 00:01:36.877
+Each side validates it against its own guideline. So it can be valid in the partner's org, and invalid in yours.
+
+00:01:36.877 --> 00:01:44.352
+A real lesson: inbound invoices were invalid in our client's org, and we almost asked the partner to fix them.
+
+00:01:44.352 --> 00:01:51.802
+Then we opened the same transaction in the partner's org. It was valid. Our own relationship had the wrong guideline.
+
+00:01:51.802 --> 00:02:01.802
+Also, a retailer's leader guideline is shared by hundreds of suppliers. Never edit, publish, or archive a partner's guideline. Fix your own side.
+
+00:02:01.802 --> 00:02:13.052
+Inside a transaction, the Data View shows the data after translation. The Rules Editor shows the original payload, as received. Diagnose from the Rules Editor.
+
+00:02:13.052 --> 00:02:22.352
+Every transaction also rides a stream: Test for onboarding, or Live for real business. A relationship has separate Test and Live channels.
+
+00:02:22.352 --> 00:02:31.552
+The map in one line: an org has partnerships, each partnership has relationships, and each relationship ties a guideline to its channels.
+
+00:02:31.552 --> 00:02:37.527
+So check both orgs, read the Rules Editor, and never report platform state from memory.
+
+00:02:37.527 --> 00:02:43.702
+Next, we follow the document down the road: A S 2, VAN, S F T P, and A P I.
+

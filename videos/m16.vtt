@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.700
+For nine days, a team blamed a partner's gateway for emptying their documents. Emails, a call, an investigation.
+
+00:00:07.700 --> 00:00:16.550
+But the problem was on our side. Our relationship used an almost empty guideline, so Orderful dropped every field it did not recognise.
+
+00:00:16.550 --> 00:00:21.200
+One extra look would have saved a week. That look starts with the guideline.
+
+00:00:21.200 --> 00:00:29.875
+Think of an airline's baggage rules. Maximum size, maximum weight, what may go in the bag. The check-in desk measures every bag.
+
+00:00:29.875 --> 00:00:39.600
+A guideline is a partner's E D I rulebook, turned into a checklist. Orderful runs it on every document, and the result is Valid or Invalid.
+
+00:00:39.600 --> 00:00:43.400
+And an invalid outbound document is never delivered.
+
+00:00:43.400 --> 00:00:49.950
+So what does it check? For each segment: is it mandatory or optional, and how many times may it repeat?
+
+00:00:49.950 --> 00:00:59.300
+For each element: the data type, the length, and the allowed codes. A D T M date in version four oh ten must be exactly eight digits.
+
+00:00:59.300 --> 00:01:07.775
+And syntax notes, the rules between elements. On the N one segment, N one oh three and N one oh four must come as a pair.
+
+00:01:07.775 --> 00:01:17.650
+Now, who owns it? Every relationship has a leader, usually the big retailer. Its guideline is shared by every customer trading with that partner.
+
+00:01:17.650 --> 00:01:25.450
+So never edit, publish, or archive a partner's guideline. Fix our side, or ask the partner or Orderful support.
+
+00:01:25.450 --> 00:01:33.675
+When a document fails, read the error literally: the element, the value, and the rule it broke. Then check that row in the guideline.
+
+00:01:33.675 --> 00:01:43.550
+And open the transaction in both orgs. One team saw seventeen errors and blamed the supplier. In the supplier's org, that invoice was valid.
+
+00:01:43.550 --> 00:01:48.250
+Our own relationship was using the wrong guideline, copied by mistake.
+
+00:01:48.250 --> 00:01:55.350
+After any fix, retest on a new transaction. Validation results are frozen when a document arrives.
+
+00:01:55.350 --> 00:02:04.700
+If the guideline is ours and we change it, watch the publish trap. Publishing creates a new guideline with a new I D, and archives the old one.
+
+00:02:04.700 --> 00:02:12.750
+Your relationship stays on the old, archived version. So repoint it, and re-add the delivery channels, because they get wiped.
+
+00:02:12.750 --> 00:02:18.750
+One more lesson. Valid does not mean correct. A guideline only checks what it defines.
+
+00:02:18.750 --> 00:02:26.175
+A loose guideline let an empty skeleton ship notice pass as valid. The retailer would have rejected it on sight.
+
+00:02:26.175 --> 00:02:35.650
+Recap. A guideline is the partner's rulebook as a checklist. Diagnose in both orgs, fix our side, and repoint after every publish.
+
+00:02:35.650 --> 00:02:39.675
+Next, we'll write it all down, in mapping specs and crosswalks.
+

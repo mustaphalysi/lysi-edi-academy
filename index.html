@@ -7202,7 +7202,38 @@ WX.t6_pasteSafe=el=>t6Quizlet(el,"Safe to paste?","8 items","Could this go into 
    Narrated whiteboard explainers (Manim + Kokoro TTS), one per module.
    Files live in videos/<id>.mp4 / .vtt / .jpg. Add a line here to attach one. */
 const VIDEOS={
-  mBiz:{title:"Whiteboard explainer: the business behind EDI",mins:"2:19"}
+  mBiz:{title:"Whiteboard explainer: the business behind EDI",mins:"2:18"},
+  m1:{title:"Whiteboard explainer: What This Job Actually Is",mins:"2:36"},
+  m3:{title:"Whiteboard explainer: Order-to-Cash: the Seller-Side Lifecycle",mins:"2:33"},
+  m4:{title:"Whiteboard explainer: Procure-to-Pay: the Buyer-Side Lifecycle",mins:"2:30"},
+  m5:{title:"Whiteboard explainer: NetSuite: the Customer's System of Record",mins:"2:36"},
+  m6:{title:"Whiteboard explainer: The Orderful Platform",mins:"2:44"},
+  mConn:{title:"Whiteboard explainer: How EDI Travels: AS2, VAN, SFTP & API",mins:"2:32"},
+  m9:{title:"Whiteboard explainer: APIs & Auth (the practical bits)",mins:"2:28"},
+  m8:{title:"Whiteboard explainer: JSON, Mosaic & JSONata",mins:"2:35"},
+  mOnb:{title:"Whiteboard explainer: Onboarding a Client: Kickoff, Requirements & Scope",mins:"2:35"},
+  t3x:{title:"Whiteboard explainer: Partner Setup in Orderful: Requests, Relationships, Outreach & Connectivity",mins:"2:43"},
+  m11:{title:"Whiteboard explainer: Customer & Trading-Partner Setup in NetSuite",mins:"2:45"},
+  m12:{title:"Whiteboard explainer: Case Study: Nordstrom (Setup Applied)",mins:"2:32"},
+  m13:{title:"Whiteboard explainer: 3PL Flows & the 900-Series",mins:"2:40"},
+  m14:{title:"Whiteboard explainer: Mapping Basics & the Orderful Rules Engine",mins:"2:31"},
+  m15:{title:"Whiteboard explainer: JSONata Mappings: Rules vs JSONata",mins:"2:41"},
+  m16:{title:"Whiteboard explainer: Guidelines & Validation",mins:"2:40"},
+  t4x:{title:"Whiteboard explainer: Mapping Specs & Crosswalks: Document the Map Before You Build It",mins:"2:32"},
+  m17:{title:"Whiteboard explainer: Testing: Prove It Before It Counts",mins:"2:40"},
+  t5x:{title:"Whiteboard explainer: Go-Live, Cutover & Hypercare",mins:"2:35"},
+  m18:{title:"Whiteboard explainer: Web EDI & GS1-128 Shipping Labels",mins:"2:45"},
+  mPortal:{title:"Whiteboard explainer: Partner Portals: Testing & Certification Outside Orderful",mins:"2:33"},
+  m21:{title:"Whiteboard explainer: Reading Trading-Partner Specs",mins:"2:37"},
+  m22:{title:"Whiteboard explainer: Transaction Deep-Dives I: The Order-to-Cash Core",mins:"2:26"},
+  t6x:{title:"Whiteboard explainer: Transaction Deep-Dives II: Changes, Inventory, Warehouses, Money & Acks",mins:"2:32"},
+  m23:{title:"Whiteboard explainer: Skills, Tooling & the CLI",mins:"2:30"},
+  m24:{title:"Whiteboard explainer: Ways of Working: Prod Discipline & Comms",mins:"2:41"},
+  mAI1:{title:"Whiteboard explainer: Working with AI: How We Do This Faster",mins:"2:38"},
+  fk1:{title:"Whiteboard explainer: Reading a Transaction Like a Pro",mins:"2:35"},
+  fk2:{title:"Whiteboard explainer: Diagnosing Errors: Whose Fix Is It?",mins:"2:36"},
+  fk3:{title:"Whiteboard explainer: Speaking a Partner's API: Acks, Invoices & Money",mins:"2:35"},
+  fk4:{title:"Whiteboard explainer: Europe & EDIFACT on Orderful EU",mins:"2:40"}
 };
 function videoBlock(id){const v=VIDEOS[id];if(!v)return"";
   return `<div class="vid-lesson"><div class="vl-head">▶ Watch first<span>${v.title} · ${v.mins}</span></div>

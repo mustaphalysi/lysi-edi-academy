@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.450
+It's late. A script posting invoices to Orderful gets a four oh one. A teammate says: the key is dead, ask for a new one.
+
+00:00:08.450 --> 00:00:17.050
+But the script sent the wrong header. Orderful expects one called orderful A P I key. One line fixed, no embarrassing email.
+
+00:00:17.050 --> 00:00:21.876
+An A P I lets one program ask another program to do something.
+
+00:00:21.876 --> 00:00:29.951
+Think of a restaurant. You don't walk into the kitchen. You give the waiter an order in a set format, and get back your food, or a reason.
+
+00:00:29.951 --> 00:00:36.551
+Every request has four parts. The method says what you want to do. The U R L says which thing you mean.
+
+00:00:36.551 --> 00:00:42.701
+The headers are labels, like who you are. And the body is the content you send, usually Jason.
+
+00:00:42.701 --> 00:00:49.151
+The main methods: GET reads. POST creates. PUT and PATCH change. DELETE removes.
+
+00:00:49.151 --> 00:00:54.526
+GET is safe to repeat. POST is not. Send it twice, and you may get two records.
+
+00:00:54.526 --> 00:01:02.976
+The answer has a status code. Two hundreds mean it worked. Four hundreds mean fix your request. Five hundreds mean their side failed.
+
+00:01:02.976 --> 00:01:07.976
+Four oh one: they don't know who you are. Four oh three: they know you, but you're not allowed.
+
+00:01:07.976 --> 00:01:12.776
+For a four oh one, check the header name first, then the key, then the environment.
+
+00:01:12.776 --> 00:01:18.851
+Now, auth. An A P I key is like a building badge: one long secret, sent with every call.
+
+00:01:18.851 --> 00:01:26.726
+O auth trades credentials for a token. NetSuite's token based auth signs each request with secrets that never travel.
+
+00:01:26.726 --> 00:01:34.101
+Next, duplicates. Networks fail halfway. You post an order, the connection drops, and you never see the answer.
+
+00:01:34.101 --> 00:01:41.751
+If you just retry, you may create it twice. So check before you create: search by the P O or invoice number first.
+
+00:01:41.751 --> 00:01:49.401
+Another trap: A P Is return one page at a time. Read only page one, and you may miss the problems on page two.
+
+00:01:49.401 --> 00:01:58.676
+Polling versus webhooks. With polling, your system asks every few minutes: anything new? With a webhook, the other system calls you right away.
+
+00:01:58.676 --> 00:02:09.126
+A real lesson: a poller must approve each document after processing it. If it never does, the oldest item blocks the queue, and everything behind it looks missing.
+
+00:02:09.126 --> 00:02:16.201
+To test safely: read first, know your environment, and keep keys out of chats. Then send one write at a time.
+
+00:02:16.201 --> 00:02:23.026
+Remember: method, U R L, headers, body, and a status code back. Reads are free. Writes need care.
+
+00:02:23.026 --> 00:02:27.876
+Next, we look inside the body: Jason, Mosaic, and Jason-ah-tah.
+

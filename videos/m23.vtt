@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:07.550
+Day three. A client's order failed in NetSuite. You find an old command in a chat that could re-post it. Do you run it?
+
+00:00:07.550 --> 00:00:14.850
+Which account would it hit, sandbox or production? Which key? Could it create a duplicate order for a real customer?
+
+00:00:14.850 --> 00:00:22.575
+The team built tools so you never have to guess. This module is about knowing which tool exists, and using it safely.
+
+00:00:22.575 --> 00:00:30.575
+A terminal, or C L I, is a text cockpit. You type a command, and the computer runs it. There's no "are you sure?" button.
+
+00:00:30.575 --> 00:00:38.275
+A skill is a checklist that can also do the work. It already knows the right host, the right credentials, and the safety rules.
+
+00:00:38.275 --> 00:00:43.350
+It's like a pilot using the airline's checklist, instead of flying from memory.
+
+00:00:43.350 --> 00:00:52.050
+Your toolbox: Git records every change, so it can be reviewed. The SuiteCloud C L I validates and deploys NetSuite projects.
+
+00:00:52.050 --> 00:01:01.825
+Claude Code is an A I assistant in your terminal that runs skills. And each customer's credentials live in a dot env file, which is never committed.
+
+00:01:01.825 --> 00:01:10.500
+You run a skill by typing a slash and its name. For example, slash item lookup maps a partner's part number to a NetSuite item.
+
+00:01:10.500 --> 00:01:18.975
+Git in a few commands: pull every morning, make a branch before every change, check status and diff, then commit and push for review.
+
+00:01:18.975 --> 00:01:24.350
+Before any write, know what you are pointed at: sandbox or production, test or live.
+
+00:01:24.350 --> 00:01:30.550
+Read before you write. Validate, inspect, dry-run. Then change one thing, and read it back.
+
+00:01:30.550 --> 00:01:38.625
+And don't fight the guard. When a skill refuses to touch production without approval, it's doing its job. Ask for the approval.
+
+00:01:38.625 --> 00:01:47.500
+If you must call the A P I by hand, read the key from the dot env file, send it in a header, never in the U R L, and start with a read.
+
+00:01:47.500 --> 00:01:54.800
+Here's a real lesson. A Workato A P I write returned success, but the recipe still held a broken step.
+
+00:01:54.800 --> 00:02:02.450
+Success is not working. Verify in the destination system: the order in NetSuite, the transaction in Orderful.
+
+00:02:02.450 --> 00:02:11.476
+Status screens can lie too. One platform showed processing long after a run had finished. Confirm by the side effects or the logs.
+
+00:02:11.476 --> 00:02:19.176
+When you solve something no skill covers, run slash update skills, so the next person finds a procedure, not a mystery.
+
+00:02:19.176 --> 00:02:24.551
+Remember: skill first, know your target, change one thing, and verify where it lands.
+
+00:02:24.551 --> 00:02:30.326
+Next, ways of working: how we verify, keep notes, and write messages people trust.
+
