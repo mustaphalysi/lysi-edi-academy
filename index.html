@@ -492,6 +492,101 @@ td code{white-space:nowrap}
 .cx-namediv span:last-child{background:linear-gradient(90deg,#0E7C86,transparent)}
 @media print{@page{size:A4 landscape;margin:7mm}.cx{
   background:#fff!important;border-color:#9fb5b9!important;box-shadow:none!important}}
+
+/* ================= INTERACTIVE WIDGETS (Track 7) ================= */
+.wx{margin:24px 0;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow);overflow:hidden}
+.wx-head{display:flex;align-items:center;gap:10px;padding:11px 15px;background:var(--surface-2);border-bottom:1px solid var(--line);
+  font-family:var(--mono);font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink)}
+.wx-head .wx-badge{padding:2px 8px;border-radius:20px;background:var(--accent-wash);color:var(--accent-ink);font-size:10.5px}
+.wx-body{padding:16px}
+.wx-btn{font:inherit;font-size:13px;padding:7px 13px;border-radius:9px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);cursor:pointer}
+.wx-btn:hover{border-color:var(--accent)}
+.wx-btn.pri{background:var(--accent);border-color:var(--accent);color:#fff}
+.wx-btn[disabled]{opacity:.45;cursor:default}
+.wx-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.wx-note{font-size:13.5px;color:var(--ink-2);line-height:1.55;margin:10px 0 0}
+.wx-ok{color:var(--good);font-weight:600}.wx-bad{color:var(--crit);font-weight:600}
+.wx select,.wx input[type=number],.wx input[type=text]{font:inherit;font-size:13px;padding:6px 8px;border-radius:8px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink)}
+.wx table{font-size:13px}
+
+/* ---- video player (step-through walkthrough) ---- */
+.vp-stage{position:relative;background:var(--ground);border-bottom:1px solid var(--line);min-height:300px;padding:14px}
+.vp-cap{padding:13px 16px;font-size:14.5px;line-height:1.55;color:var(--ink);min-height:62px;border-bottom:1px solid var(--line)}
+.vp-cap b{color:var(--accent-ink)}
+.vp-ctl{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--surface-2)}
+.vp-bar{flex:1;height:6px;border-radius:6px;background:var(--surface-3);overflow:hidden;cursor:pointer;position:relative}
+.vp-fill{height:100%;background:var(--accent);width:0;transition:width .3s}
+.vp-time{font-family:var(--mono);font-size:11.5px;color:var(--muted);white-space:nowrap}
+.vp-hl{outline:3px solid #F2B705;outline-offset:2px;border-radius:6px;animation:vpPulse 1.4s ease-in-out infinite;position:relative;z-index:2}
+@keyframes vpPulse{0%,100%{box-shadow:0 0 0 0 rgba(242,183,5,.55)}50%{box-shadow:0 0 0 7px rgba(242,183,5,0)}}
+.vp-cursor{position:absolute;width:18px;height:18px;border-radius:50%;background:rgba(242,183,5,.85);border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.35);
+  transition:left .7s ease,top .7s ease;pointer-events:none;z-index:5}
+
+/* ---- mock Orderful UI ---- */
+.mk{font-family:var(--sans);font-size:12.5px;color:#1d2433;background:#fff;border:1px solid #d9dee6;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.mk-top{display:flex;align-items:center;gap:10px;padding:8px 12px;background:#111;color:#fff;font-weight:700;font-size:12px}
+.mk-top .mk-star{color:#FF4A3D}
+.mk-top .mk-org{margin-left:auto;font-weight:500;font-size:11px;opacity:.85;padding:2px 8px;border:1px solid #444;border-radius:12px}
+.mk-wrap{display:grid;grid-template-columns:132px 1fr;min-height:250px}
+.mk-nav{background:#f6f7f9;border-right:1px solid #e3e6eb;padding:8px 0;font-size:11.5px}
+.mk-nav div{padding:5px 12px;color:#4b5563}.mk-nav .on{background:#e8f1f2;color:#0E7C86;font-weight:700}
+.mk-main{padding:12px 14px}
+.mk-h{font-size:15px;font-weight:700;margin:0 0 8px;display:flex;align-items:center;gap:8px}
+.mk-dir{font-size:10px;padding:1px 6px;border-radius:4px;background:#eef1f5;color:#4b5563;font-weight:700}
+.mk-cards{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.mk-card{border:1px solid #e3e6eb;border-radius:8px;padding:8px 10px}
+.mk-card small{display:block;color:#6b7280;font-size:10.5px;margin-bottom:2px}
+.mk-st{display:flex;justify-content:space-between;padding:2px 0}
+.mk-pill{font-size:10.5px;padding:1px 8px;border-radius:10px;font-weight:700}
+.p-ok{background:#e3f1e9;color:#2E7D57}.p-bad{background:#f8e4e2;color:#C0433B}.p-mid{background:#f6ecd8;color:#9a6a12}.p-gray{background:#eef1f5;color:#4b5563}
+.mk-tabs{display:flex;gap:2px;border-bottom:1px solid #e3e6eb;margin:6px 0 8px}
+.mk-tabs span{padding:5px 10px;font-size:11.5px;color:#6b7280;border-bottom:2px solid transparent}
+.mk-tabs span.on{color:#111;border-bottom-color:#111;font-weight:700}
+.mk-code{font-family:var(--mono);font-size:11.5px;background:#0f1d24;color:#d5e6e8;border-radius:8px;padding:9px 11px;line-height:1.6;white-space:pre-wrap;word-break:break-all}
+.mk-code .er{background:rgba(226,112,105,.35);border-radius:3px;padding:0 2px}
+.mk-err{border:1px solid #f1c4c0;background:#fdf1f0;border-radius:8px;padding:8px 10px;color:#7a2620;font-size:12px}
+.mk-tbl{width:100%;border-collapse:collapse;font-size:11.5px}
+.mk-tbl td,.mk-tbl th{border-bottom:1px solid #eef0f3;padding:5px 6px;text-align:left}
+.mk-tbl th{background:#f6f7f9;color:#6b7280;font-size:10.5px;text-transform:uppercase}
+.mk-modal{position:absolute;inset:40px 60px auto 60px;background:#fff;border:1px solid #d9dee6;border-radius:10px;box-shadow:0 12px 40px rgba(0,0,0,.25);padding:12px 14px;z-index:3}
+.mk-toggle{display:inline-block;width:30px;height:16px;border-radius:10px;background:#c9d0d9;position:relative;vertical-align:middle}
+.mk-toggle::after{content:"";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#fff;transition:left .2s}
+.mk-toggle.on{background:#0E7C86}.mk-toggle.on::after{left:16px}
+
+/* ---- inspector tabs ---- */
+.ins-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.ins-tabs button{font:inherit;font-size:12.5px;padding:6px 11px;border-radius:20px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);cursor:pointer}
+.ins-tabs button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* ---- scenario cards ---- */
+.sc-card{border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:10px 0;background:var(--surface)}
+.sc-card p{margin:0 0 9px;font-size:14px;color:var(--ink)}
+.sc-fb{margin-top:9px;font-size:13.5px;line-height:1.5;padding:9px 11px;border-radius:9px;display:none}
+.sc-fb.show{display:block}.sc-fb.good{background:var(--good-wash)}.sc-fb.bad{background:var(--crit-wash)}
+
+/* ---- segment explorer ---- */
+.seg-line{font-family:var(--mono);font-size:12.5px;padding:5px 9px;border-radius:7px;cursor:pointer;border:1px solid transparent;word-break:break-all}
+.seg-line:hover{background:var(--surface-2)}.seg-line.on{background:var(--accent-wash);border-color:var(--accent)}
+.seg-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}
+.seg-info{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--surface-2);font-size:13.5px;line-height:1.55;color:var(--ink-2)}
+@media (max-width:760px){.seg-grid{grid-template-columns:1fr}.mk-wrap{grid-template-columns:1fr}.mk-nav{display:none}.mk-cards{grid-template-columns:1fr}}
+
+/* ---- estimator / status writer ---- */
+.est-out{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.est-out div{border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--surface-2)}
+.est-out small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.est-out b{font-size:18px;color:var(--ink)}
+.sw-line{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);border-radius:9px;margin:6px 0;cursor:pointer;font-size:13.5px;line-height:1.45}
+.sw-line.on{border-color:var(--accent);background:var(--accent-wash)}
+.sw-line.good-r{border-color:var(--good);background:var(--good-wash)}.sw-line.bad-r{border-color:var(--crit);background:var(--crit-wash)}
+
+/* ---- label anatomy ---- */
+.lab{display:grid;grid-template-columns:1fr 1fr;gap:0;border:2px solid #111;border-radius:6px;background:#fff;color:#111;font-family:var(--sans);max-width:460px;margin:0 auto}
+.lab div{padding:8px 10px;border:1px solid #111;font-size:11.5px;cursor:pointer;min-height:52px}
+.lab div:hover{background:#fff7d6}.lab div.on{background:#ffe9a8}
+.lab .full{grid-column:1/3}
+.lab small{display:block;font-size:9.5px;font-weight:700;text-transform:uppercase;color:#555}
+.lab .bars{height:38px;background:repeating-linear-gradient(90deg,#111 0 2px,#fff 2px 4px,#111 4px 5px,#fff 5px 8px);margin:4px 0}
 </style>
 </head>
 <body>
@@ -533,8 +628,8 @@ const PROGRAM={
 const COURSES=[
   {
     id:"edi-orderful",code:"EDI",title:"EDI & Orderful Integration",
-    description:"Master the complete EDI delivery lifecycle—from business fundamentals and mappings to partner onboarding, testing, go-live, and operations.",
-    status:"available",modules:30,tracks:6,level:"Foundation → Advanced",view:"welcome"
+    description:"Master the complete EDI delivery lifecycle, from business fundamentals and mappings to partner onboarding, testing, go-live and operations, then the consultant field kit: real cases, interactive videos and simulators.",
+    status:"available",modules:38,tracks:7,level:"Beginner → Pro Consultant",view:"welcome"
   },
   {
     id:"workato-automation",code:"WKT",title:"Workato Automation",
@@ -1971,8 +2066,571 @@ why:"Credentials stay in .env/config, never in chat or commits; connect live sys
 ]}
 
 ]}
+,
+{track:"Consultant Field Kit — Real Cases",modules:[
+
+{id:"fk1",code:"7.1",title:"Reading a Transaction Like a Pro",mins:14,
+sub:"Statuses, the Rules Editor, the Errors tab and the Audit Log: how to find the truth about any document in two minutes.",
+html:`
+<p>Every day someone will tell you <em>"the retailer didn't get it"</em> or <em>"it was sent yesterday"</em>. A pro never guesses. You open the transaction and read the facts. This module teaches you exactly where to look and in which order. Start with the video.</p>
+<div data-widget="vidInvalid856"></div>
+<h4>The three statuses</h4>
+<p>Every transaction in Orderful has three statuses. Read them <strong>left to right</strong>, because each one depends on the one before it:</p>
+<div class="tbl-wrap"><table><thead><tr><th>Status</th><th>Question it answers</th><th>Common values</th></tr></thead><tbody>
+<tr><td><strong>Validation</strong></td><td>Does the data follow the partner's guideline (and X12 rules)?</td><td>Valid / Invalid</td></tr>
+<tr><td><strong>Delivery</strong></td><td>Did it leave Orderful and reach the channel?</td><td>Pending / Sent / Delivered / Failed</td></tr>
+<tr><td><strong>Acknowledgment</strong></td><td>Did the partner confirm with a 997 (or CONTRL in Europe)?</td><td>Not Acknowledged / Accepted / Rejected / Overdue</td></tr>
+</tbody></table></div>
+<div data-widget="statusDecoder"></div>
+<h4>Where to look, in order</h4>
+<ol>
+<li><strong>Transactions list</strong>: find it by PO number, invoice number or date. Look at the status columns first.</li>
+<li><strong>Rules Editor</strong>: the <em>original</em> payload, as it arrived. Diagnose here.</li>
+<li><strong>Errors</strong> (inside Rules Editor): the <em>current</em> errors against today's guideline.</li>
+<li><strong>Audit Log</strong> (clock icon): the real timeline. Created, validated, sent, failed, resent.</li>
+<li><strong>Print View</strong>: a human-readable page. Perfect to check a ship-to address or a PO date fast.</li>
+</ol>
+<div data-widget="inspector"></div>
+${A_GOT("<strong>Rules Editor vs Data View.</strong> Data View shows the data <em>after</em> translation and rules. If you diagnose from Data View you may chase a problem that a rule already changed. Always start from the Rules Editor: it shows what the partner really sent.")}
+${A_WARN("<strong>'Invalid' can be stale.</strong> Validation is set when the document arrives. If someone fixes the guideline or a channel later, the old status does not update by itself. If Errors says 'No errors found' but the header says Invalid, the data is fine now. Reprocess or resend it.")}
+<h4>Numbers that confuse beginners</h4>
+<ul>
+<li><strong>Transaction ID vs short ID.</strong> The audit log may say "Transaction (59)". That 59 is a short internal ID, <em>not</em> "59 errors". We once spent time chasing 59 errors that did not exist.</li>
+<li><strong>Business number</strong> = the PO number or invoice number. Use it to search.</li>
+<li><strong>ISA control number</strong> = the envelope number (e.g. 100000068). Partners quote it when they say "we sent file 68".</li>
+</ul>
+<h4>Finding a field fast</h4>
+<p>Big documents are long. In the Rules Editor JSON there is a <strong>search box</strong>. Type the field name (for example <code>warehouseLotNumber</code> or <code>N1</code>) instead of scrolling. On a 945 you'll find each line's lot number in <code>W12</code>; on an 856 the pallet ID in <code>MAN*GM</code>.</p>
+${A_KEY("Read the three statuses left to right, diagnose from the Rules Editor (original data), confirm with Errors (current errors) and the Audit Log (what really happened). Only then say anything to the client or the partner.")}`,
+quiz:[
+{q:"An 856 shows Invalid + Pending. What does that mean?",opts:["It was delivered but the partner rejected it","It failed validation, so Orderful never sent it","It is waiting for the partner's 997","It was deleted"],a:1,why:"Invalid blocks delivery. Pending means no send happened. The partner really never got it."},
+{q:"Where should you diagnose a validation error?",opts:["Data View","Rules Editor (original payload) and its Errors tab","The Partnerships page","The client's email"],a:1,why:"The Rules Editor shows the original payload as received; Errors shows the current errors."},
+{q:"The header says Invalid, but the Errors tab says 'No errors found'. Most likely?",opts:["Orderful is broken","The status is stale: the setup was fixed after the document arrived","The partner deleted it","It is a 997"],a:1,why:"Validation status is set on arrival and does not refresh by itself. Resend/reprocess."},
+{q:"For a poller channel, a document stays 'Sent' for days. What does that mean?",opts:["It failed","It's waiting in the client's inbox; their system hasn't read and approved it","The partner rejected it","It is a test document"],a:1,why:"Sent = in the inbox. Delivered only after the client's system approves it via the API."},
+{q:"The audit log says 'Transaction (59)'. What is 59?",opts:["The number of errors","A short internal transaction ID","The PO number","The ISA control number"],a:1,why:"It's a short internal ID, not an error count."}
+]},
+
+{id:"fk2",code:"7.2",title:"Diagnosing Errors: Whose Fix Is It?",mins:14,
+sub:"Syntax vs guideline vs our mapping vs our config. Check what we can fix ourselves before asking anyone.",
+html:`
+<p>When something fails, the most valuable skill is not fixing it. It's knowing <strong>who should fix it</strong>. Ask the wrong person and you lose days and look unprepared. A consultant answers this before writing any email.</p>
+<h4>Four places a problem can live</h4>
+<div class="tbl-wrap"><table><thead><tr><th>Where</th><th>Examples</th><th>Who fixes</th></tr></thead><tbody>
+<tr><td><strong>The partner's file</strong></td><td>Broken X12 syntax, missing required data, wrong codes</td><td>The partner (send them the exact segment + the correct form)</td></tr>
+<tr><td><strong>Our mapping / code</strong></td><td>JSONata, Workato step code, an API payload builder</td><td>Us</td></tr>
+<tr><td><strong>Our Orderful config</strong></td><td>Relationship, channel, Auto Send, Mosaic toggle, ISA IDs, rules</td><td>Us</td></tr>
+<tr><td><strong>The client's process/data</strong></td><td>Wrong system of record, missing items, unclear scope</td><td>The client, guided by us</td></tr>
+</tbody></table></div>
+<div data-widget="whoseFix"></div>
+<h4>Syntax rules come from X12 itself</h4>
+<p>Some rules are not in any partner's guideline. They come from the X12 standard. A classic: in an <code>N1</code> segment, the <strong>qualifier (N103)</strong> and the <strong>code (N104)</strong> must be both present or both absent. You can't "relax" that in a guideline; the file is simply malformed.</p>
+<div data-widget="segFixer"></div>
+<h4>Check our side first (a real lesson)</h4>
+<p>A supplier sent 855s where backordered lines (<code>ACK*IB</code>) had the date in ACK05 but no <code>068</code> qualifier. We drafted an email asking them to add 068. Then we read <strong>our own mapper</strong>: it already took the expected date from the line's <code>DTM*017</code>, which the file had. And 068 is a <em>ship</em> date, not a delivery date. We dropped two of three requests. The email got shorter, and we looked like experts instead of nitpickers.</p>
+${A_TIP("Before you ask a partner to change anything, open our mapper code or our config and confirm we can't handle it. Ask only for what truly has to change on their side.")}
+<h4>Never edit a partner's shared guideline</h4>
+<p>Big retailers' guidelines in Orderful are <strong>shared</strong>: hundreds of suppliers validate against the same one. If you edit it to make your client pass, you can break everyone else. Fix it on our side (rules, mapping, our relationship), or ask the partner / Orderful.</p>
+${A_GOT("Publishing a guideline you own can archive the old version and leave the relationship pointing at nothing, with its delivery channels wiped. After any publish, re-check the relationship's guideline and channels.")}
+<h4>Mark hypotheses as hypotheses</h4>
+<p>When you're not sure, say so: <em>"likely cause (not verified yet): …"</em>. A wrong cause stated as fact costs more trust than "I'm checking".</p>
+${A_KEY("Locate the problem first (partner file, our mapping, our config, client process). Check what we can fix ourselves. Then ask the right owner for exactly what they need to change, with the segment, the problem and the correct form.")}`,
+quiz:[
+{q:"An inbound 856 has N1*Z7***003. What's wrong and who fixes it?",opts:["Nothing, it's valid","Code without qualifier: X12 syntax error in the partner's file, the partner fixes it","Our guideline is too strict, edit it","The client must re-enter the order"],a:1,why:"N103/N104 must be paired. It's the sender's malformed file."},
+{q:"Before asking a partner to change their 855, you should:",opts:["Ask them immediately","Check whether our mapper/config already handles it","Edit their guideline","Wait a week"],a:1,why:"We dropped two requests once because our mapper already handled them."},
+{q:"Why must you never edit a big retailer's shared guideline?",opts:["It's slow","Many suppliers validate against it; your change can break them","Orderful charges for it","It deletes the partner"],a:1,why:"Shared guidelines affect every supplier using them."},
+{q:"You think you know the cause but haven't checked. How do you say it?",opts:["State it as fact","Say it's the likely cause and that it's not verified yet","Say nothing","Blame the partner"],a:1,why:"Mark hypotheses as unverified. It protects trust."}
+]},
+
+{id:"fk3",code:"7.3",title:"Speaking a Partner's API: Acks, Invoices & Money",mins:16,
+sub:"Turning 855s and 810s into a real buyer's API: ACK codes, one-shot confirmations, implied decimals, credits and duplicates.",
+html:`
+<p>Some clients are not ERPs, they are <strong>platforms with their own API</strong>, for example a B2B purchasing marketplace (we'll call it <strong>BuyHub</strong>). BuyHub buys from suppliers by EDI, but receives confirmations and invoices as JSON through its API. Our job: translate each 855 and 810 into the exact payload BuyHub expects.</p>
+<h4>855 → order confirmation</h4>
+<p>Each 855 line carries an <code>ACK</code> code. We map each code to "fulfilled", "rejected" or "left open", then compute the header status. Play with it:</p>
+<div data-widget="ackCalc"></div>
+<ul>
+<li><strong>IA / IP / IQ / IS</strong>: accepted (price or qty may change; IQ shortfall = rejected).</li>
+<li><strong>IB (backordered) / BP</strong>: accepted. The buyer agreed backorders are accepted and the later date travels as the expected delivery.</li>
+<li><strong>IR / R1–R7</strong>: rejected, with the reason in the line error.</li>
+<li><strong>IH / IF / IW</strong>: on hold, left open for a later confirmation.</li>
+</ul>
+${A_GOT("<strong>One confirmation per PO.</strong> BuyHub's API accepts exactly one confirmation per PO. A second post gets <code>409 Conflict: already completed</code>. So a wrong confirmation can't simply be re-sent. Check the payload <em>before</em> you post, and only post once.")}
+<h4>Vendor order numbers: per sender</h4>
+<p>Buyers want the supplier's own order number back. But suppliers put it in different places: one sends it in <code>BAK08</code>, another in <code>REF*CO</code>. Our mapper picks the source <strong>per sender</strong>, and never uses the PO number itself as the vendor's number.</p>
+<h4>810 → invoice: money is where bugs hide</h4>
+<div data-widget="n2Calc"></div>
+<ul>
+<li><strong>TDS01</strong> (total) and <strong>SAC05</strong> (charges) are type <strong>N2</strong>: implied 2 decimals. <code>TDS*1569</code> = $15.69.</li>
+<li><strong>TXI</strong> (tax) can be at header or line level. Don't count it twice.</li>
+<li><strong>SAC</strong> charges: freight codes → shipping; a fuel surcharge (<code>C650</code>) → its own field; recycling fees → their own field.</li>
+<li>Always <strong>re-add</strong> the lines + tax + charges and compare with TDS. If they disagree, stop and investigate. Never post a wrong invoice.</li>
+</ul>
+<h4>Special invoices: think before posting</h4>
+<ul>
+<li><strong>Credit memos</strong>: <code>BIG07 = CR</code> with negative quantities. Posting it as a normal invoice sends a negative "invoice". Ask the buyer how credits should arrive.</li>
+<li><strong>Non-PO invoices</strong>: a PO field like "ODD APPROVED" can't be matched to any order. Hold it and ask.</li>
+<li><strong>Two invoices, one PO</strong>: tell them apart with the supplier's order number (<code>REF*CO</code> → <code>vendor_order_number</code>).</li>
+</ul>
+${A_WARN("<strong>201 is not proof.</strong> An API may answer 201 'success' and still drop a field it doesn't store. After a new field goes live, ask the buyer to confirm they see it.")}
+${A_WARN("<strong>Duplicates.</strong> When posting by hand, one extra click can post twice. After a batch, check the job list: exactly one job per document. If a duplicate slipped through, tell the buyer right away which one to ignore.")}
+${A_KEY("Map codes exactly, respect one-shot APIs, treat N2 amounts as implied decimals, re-add totals before posting, hold credits and non-PO invoices for a decision, and verify on the buyer's side, not just the HTTP code.")}`,
+quiz:[
+{q:"TDS*1569 on an 810 means:",opts:["$1,569.00","$15.69","$156.90","1569 units"],a:1,why:"TDS01 is N2: two implied decimals."},
+{q:"With our live rules, a line with ACK*IB is:",opts:["Rejected","Accepted (backorder), with the later date as expected delivery","Left open forever","Deleted"],a:1,why:"The buyer agreed backorders are accepted."},
+{q:"You post a confirmation for a PO and realise it's wrong. You try again and get 409. Why?",opts:["Network error","The API accepts only one confirmation per PO","Wrong API key","The PO was cancelled"],a:1,why:"One confirmation per PO; the buyer must reset the order or issue a new PO."},
+{q:"An 810 has BIG07 = CR and quantity -4. What should you do?",opts:["Post it as normal","It's a credit memo: hold it and ask the buyer how credits should be sent","Delete it","Change the sign and post"],a:1,why:"Credits need an agreed method; a negative 'invoice' can break their books."},
+{q:"The invoice API returned 201. Is the new field definitely stored?",opts:["Yes, 201 means everything","Not necessarily: ask the buyer to confirm they see it","Only on Fridays","Only if the total is positive"],a:1,why:"201 proves the call was accepted, not that every field was stored."}
+]},
+
+{id:"fk4",code:"7.4",title:"Europe & EDIFACT on Orderful EU",mins:15,
+sub:"A separate platform, a different EDI language, GLNs, AS2, and choosing between standard JSON and Mosaic.",
+html:`
+<p>Most of our work is North American X12. But some clients trade in Europe, where the standard is <strong>EDIFACT</strong>. Here is a real setup (names changed): <strong>AgriCo</strong>, a crop-protection maker, moving to a new ERP by a fixed date. Its partners: a <strong>big distributor</strong> (sends orders, gets order responses and invoices) and a <strong>warehouse partner</strong> (receives "please ship" instructions, sends back ship notices).</p>
+<h4>Orderful EU is a separate world</h4>
+<ul>
+<li>Different site: <code>ui-eu.orderful.com</code> and <code>api-eu.orderful.com</code>.</li>
+<li>Different users and orgs. A user invited only on the US site lands on a "company setup" page there. The fix: invite them in the <strong>EU</strong> org and send them the EU link.</li>
+<li>Some internal tools and bots only see the US platform. In EU you check things by hand.</li>
+</ul>
+<h4>The EDIFACT documents you'll meet</h4>
+<div class="tbl-wrap"><table><thead><tr><th>EDIFACT</th><th>Means</th><th>Closest X12</th></tr></thead><tbody>
+<tr><td>ORDERS</td><td>Purchase order</td><td>850</td></tr>
+<tr><td>ORDRSP</td><td>Order response</td><td>855</td></tr>
+<tr><td>DESADV</td><td>Despatch advice (ship notice)</td><td>856</td></tr>
+<tr><td>INVOIC</td><td>Invoice</td><td>810</td></tr>
+<tr><td>INSDES</td><td>Instruction to despatch (to a warehouse)</td><td>940</td></tr>
+<tr><td>RECADV</td><td>Receiving advice</td><td>861</td></tr>
+<tr><td>CONTRL</td><td>Syntax acknowledgment</td><td>997</td></tr>
+</tbody></table></div>
+<div data-widget="edifact"></div>
+<h4>Identity: GLNs and qualifiers</h4>
+<p>European partners usually identify companies with a <strong>GLN</strong> (13-digit Global Location Number). In the UNB envelope the qualifier is <strong>14</strong>. Inside NAD segments, the same GLN uses code <strong>9</strong>. A wrong qualifier (for example <code>ZZ</code> instead of <code>14</code>) means messages go nowhere. Orderful also creates a default <code>ZZ/ORDFL…</code> account for every org. If nothing uses it, ignore it, and tell the client it's just a default.</p>
+<h4>Versions matter: D96A EANCOM</h4>
+<p>The UNH header names the exact flavour, e.g. <code>INSDES:D:96A:UN:EAN001</code>: directory D96A, agency UN, association <strong>EAN001</strong> (EANCOM). If the partner asks for "D96A EANCOM", the guideline must match all of it.</p>
+<h4>Transport: AS2</h4>
+<p>Each side has an AS2 ID, a URL and a certificate. Test and production usually have <strong>separate</strong> connections and IDs. It's normal for the test connection to work while production still fails. Treat them as two things to prove.</p>
+<h4>Standard JSON or Mosaic?</h4>
+<div data-widget="vidMosaic"></div>
+<ul>
+<li><strong>Standard JSON</strong>: mirrors the EDI segments. What custom integrations (like the client's own middleware) usually read.</li>
+<li><strong>Mosaic</strong>: a simplified JSON made by a transformation that someone must build. If Mosaic is ON and no transformation exists, delivery fails.</li>
+</ul>
+${A_GOT("In the channel dialog, <strong>Done</strong> only closes the dialog. Nothing is stored until you click <strong>Save</strong> on the relationship. Reload and check.")}
+${A_KEY("EU is a separate Orderful platform with EDIFACT documents. Get identities right (GLN, qualifier 14 in UNB, 9 in NAD), match the exact version (D96A EAN001), prove test and production AS2 separately, and deliver the JSON shape the client's developer actually reads.")}`,
+quiz:[
+{q:"A user can log in to ui.orderful.com but only sees 'company setup'. The client's org is on EU. Fix?",opts:["Reset their password","Invite them in the EU org and send the ui-eu link","Create a US org","Wait"],a:1,why:"US and EU are separate platforms with separate users."},
+{q:"The EDIFACT equivalent of an 856 ship notice is:",opts:["ORDERS","DESADV","INVOIC","CONTRL"],a:1,why:"DESADV = despatch advice."},
+{q:"In the UNB header, a GLN uses qualifier:",opts:["ZZ","14","01","92"],a:1,why:"14 = GLN (EAN location) in UNB. Inside NAD the code is 9."},
+{q:"Delivery fails with 'no Mosaic transformation'. The developer reads standard JSON. Fix?",opts:["Build a new partner","Turn Mosaic off on the channel, Save, and resend","Delete the transaction","Change the GLN"],a:1,why:"Mosaic ON without a transformation fails; standard JSON is what they parse."},
+{q:"Test AS2 works but production fails. Is that strange?",opts:["Yes, impossible","No: test and production are separate connections to prove separately","It means the certificate is fine","It means EDIFACT is wrong"],a:1,why:"Different IDs, URLs and certificates; prove each one."}
+]},
+
+{id:"fk5",code:"7.5",title:"Labels, Lots & Warehouses",mins:14,
+sub:"GS1-128 shipping labels, SSCC, carton vs pallet templates, mixed-lot pallets and the 940/945 warehouse flow.",
+html:`
+<p>Physical goods move with <strong>labels</strong>, and labels must match the EDI. A wrong label is a classic chargeback. Here's a real case (names changed): a <strong>print &amp; packaging 3PL</strong> ships vitamins for a <strong>brand</strong> to <strong>Costco Canada</strong>. The brand sends warehouse orders (940), the 3PL ships and reports back (945).</p>
+<h4>Who is who in a warehouse flow</h4>
+<ul>
+<li><strong>940 Warehouse Shipping Order</strong>: the brand tells the 3PL "ship these items to this store/DC".</li>
+<li><strong>945 Warehouse Shipping Advice</strong>: the 3PL tells the brand "shipped: these pallets, these lots, this carrier".</li>
+<li>The <strong>retailer</strong> (Costco) is not a trading partner here. It's just the <strong>ship-to</strong> on the 940. Check the 940's ship-to to know which retailer and country you're labelling for.</li>
+</ul>
+<div data-widget="labelAnatomy"></div>
+<h4>Carton vs pallet, single vs mixed</h4>
+<p>Label templates differ by <strong>level</strong> (carton or pallet) and <strong>pack method</strong> (single SKU or mixed). Orderful's free label library has certified templates per retailer:</p>
+<figure class="shot"><img alt="Orderful label library page for a Costco pallet template" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAG5A60DASIAAhEBAxEB/8QAHAABAAIDAQEBAAAAAAAAAAAAAAIDAQQFBgcI/8QAVRAAAQMCBAIGBgYDDAYJBQEAAQACAwQRBRITITFRBiJBYXGhFDIzUmKRBxUjcoGxQpLRFxgkNFNVVnOkssHTFjVEY7PCCDY3dHWC0uHxQ3aDxPCi/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwQF/8QAJREBAAICAQMEAgMAAAAAAAAAAAERAgMSBDFREyFBcQXwI6Hh/9oADAMBAAIRAxEAPwD7qiIgIiICIiAiIgIiICIiAiIgAXNgpab+SzF7QK9BRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0QUab+Xmmm/l5q9EFGm/l5ppv5eavRBRpv5eaab+Xmr0Qa5Y4C5Citl3qnwWsgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiCcXtAr1RF7QK9AUJJWRNDpHhoJDQSeJJsB81NatbQQ1wh1b3ikEjCDwNiD8wSPxQbSojrKeUsEczH582XKb3ymx+R2U9INgMURMfVs0jfL37rTpcIho5I3RSSZI7hjHG4AIaLX/8AJ5lBusmjkYXse0tDiy4PaDYj5ghGTRyNzMeCL2vftXMqMEFTRvpXVBETpZJRZu4Ly4ne/wAZt4b3UH9HoJM2aV1i7NYC3a472tc9c79w77h12SMkF2OBCktCmwuOmrXVLXklzS0i3G9v2ftvtbfQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQcHpT0og6M0lM51NLV1dXM2npaWIgOlkPAXPAcyuTRdO54MXjwzpPgr8DnnhkmgkdVMnikawXf122sQN7ftF5dO+j2IYnNguM4TEyor8HqtdtM+QME7DbM0E7BxyixO3Fedx7Bek/TmtjqqzAvqqHDqKqbBC+qZJJUzSxloALdmgEDc/wDxR7c9NOjIpZqn68odCHJqPEwIbnBLB4kAm3HYrlYZ9ImGYjj2L0ompG4Xh9PFOMR9IGR4eBsewWJtx4rzNR0Fr6Dox0SqKDBKeauwuWOavoA5jTUOtuS/g5zTe1yeJtyXHxjoL0ox/FcexQYP9XCofS1EVI2piOtpizmEjYE+tuLXA48UR9Ug6Y9HKmhkrYcZo300T2xySCQWa53qg8r9i4PST6TcLwl+Hw4bUYfWy1jpBqSVgjiiay93OcA7iQWjaxIO+y8Xi/QXpBjVJidQ3DMTNROIIQMQr4HySta8OJswBoygHcuvvwXucZ6KZulfRKbDcKp24dQPqPSRG1jGxtdHZvV2vvfgCg77OkeFtwqor6ivpY4qSTQq3iW7IZQQCwnmC4D8QtHov0qPSSbG2NpmRtw6tfSscJMwlA4O4bX/ABXz7GujfS52CdL+j1J0fFRDimKvr4awVkbQWukY7LlNjfqdtu3kL+h6F9D6mno+kNNj2HDRq8RdPCx0gOdttj1Tt+Kk9vZrGpmOXb9+newjphHi+I09BFSOZU5ZDVsc/wDi5abWvbrXPkvTL5vhH0dinxGmqK+khmhnbIZ4NQgU7r3ZlI9bbqn5r6O0BrQBwC4aJ2Tj/JD3fkMOmw2RHTTcf79/sV3u2URF3eAREQEREBERAREQEREBERAREQEREBERAREQEREBVieIvkZqNzRWzi/q3F91YuLifR8YkatrqpzIakxOewN3zRkEbgg22FxyvuEHXMsbb3kaLC5ueAWc7DfrN2NjvwXmIeg9FFWMndO97GRRxCJzQWkMdC4Xvx3hH6x7rb0fRijjfUEE5J2QNkjyjK4xyPkuR2l2ex7gEHYEsZAIkYQTYdYcVkSMc7KHtJ5ArzL+hFCZC6KV0TSzIWNjbYC5Jc3bZ+4AdxFlfS9EKKkxSjr43uz0zMobawcftOtttc6jr7HgOG9w7jqmFj2sdK0Oc7KBft5Keozfrt22O/DtXlqnoNTVUla99ZJ/C3EuBja4C+qCQDezrSncW3aNuIMp+hMEvpWWskjdOXglsbfVeJQb8z9u7c8m99w70mKUMVPruqYzFqGK7Tmu8EgtAHE3BFuOxU2V1LJStqmVEboHMD2vDrgtPaPmFzR0ejigjbTzmOSGtkrYX5AQHvz5g4fpC0jh2G1uS0p+hNFPS6bpnGYzOmfM+Jji9zo3RuuCLW67nAcA4ja2yD0Ynic3MJGW27ee4VMWJUc1Eysjna6nfbK/sNzYW8VxaToZQ0uINqzI+YtnM4bL1gSRJsbm2xkNrAWsEh6H08EdNDHVSNgg03BgY3rOYzJe/eOzmg9IiIgw71T4LWWy71T4LWQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBOL2gV61mnKbhWa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLUVWt8Pmmt8PmgtRVa3w+aa3w+aC1FVrfD5prfD5oLHeqfBaysdKSLWsq0BERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQSY3M4BW6bOSri9oFeghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIIabOSabOSmiCGmzkmmzkpoghps5Jps5KaIK3Rtym2ypWy71T4LWQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBOL2gV6oi9oFegIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiwSsbnggldLqFnJZ3cgndLqFndyWd3IJ3S6hZ3clndyCd0uoWd3JZ3cgndLqFndyWd3IJ3S6rOYLNndyCd0uoWd3JZ3cgndLqFndyWd3IJ3S6hZ3clndyCd0uoWd3JZ3cgndLqFndyWcgmijcjisgoMoiICIiAiIgIiIMO9U+C1lsu9U+C1kBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQTi9oFeqIvaBXoOL0k6T4d0XoY6iu1ZJJpBFT01OzPLO8/osb2n/APu0Lz3+l/TNsIqX/R5P6NlzktxOIyZeO0drl1v0eN9lU5rcV+nFsc4LosJwnUga4mzZXvALwPum34BfQEHK6PdIcP6TYUzEMPe8xlxY+ORuV8TxxY8djh//AGy6q8jjX1d0Dw/HektLTyPqK1zHOpw7qyTeq2w7Lk3Nu8rSGA9PX0Xpp6XxsxEjU9DFDH6ODx083rW7M3FB7taeK4rRYJhk+I4hNo0kABkkyl2UEgcACTuR2L51X9OsYxPAuilbgxZSVuI15pKmCVgc1sgu0h3EhocL7WNlV9IOBdIaT6O8SkrelstaxgDpYzQxRiUFzAG3HqgG525qj6BjOODCMNhrYsOr8RbLI1gjoYdR4Dt8xFxZo594XMx/pZV4f0gpcBwfBnYriUsBqpIzUCBkUIdlzFxB7drLg4xU9IOi3Q3DpTj8lZUT4hTRiV1NGzJE6wMdgLHx4rnVeC47P9M1RDT9KJaaeTB3TxzijjcY4TUECGx2IB3zHdB9Do8ZfU41U4ZJhldA6niY81Mkf2EhcAS1j/0iL2O3YV1V4Y9KajDOl3SllfUukw3CsPhqGRBjQblpLrG1yTbgSqMOw7pv0gwyPF5elIwmSrYJoKKCijkZC0i7Q4u3cbWv3qD6Ai+bn6Q8Rh6JVGpRxP6SxYl9TtgbfSkqSeq8duQi53tci23Fb4wjpxhVGMRPSduK1MLdSXD30Ucccw4ljHNs5p42PO1wg7vRHpF/pV0cgxf0X0XVfI3S1M9sry3jYcbX4KPSfpXRdF6aEzxT1VZUu06Wjpm5pZ3cmjkLi5/M2B4f0QOD/o1w9w4OlnIv/WvUMGp24l9MfSWtqbPkwmlpaWkBaOo2Vhe4+N7i/JxCom/pj0vpIzU130fVDKRnWlfT4lFNIG9pbGBdx7l6vBcZoekGEwYnh0wlpphdrrWIPaCOwg7LfXisbfTfR7gdZUYJSGWtxbEA2npnu+zdUy7d1hte3dbZQe1ReDlwHp7T0BrYel7KnEGDUNG+hjbBIeOmCLOA7M3HwWhW9PazGcD6LnCZo8Lmx2Z8UtXMwSClLNnNAOxcXbNvx5b7B9LWjS4xQVuK1+GU8+esoNP0mPI4aeo3MzcixuB2E96802i6X4Li9EW4tJjeG1L9GpbLBFHJTXG0rS22YA8Qb7cLrzXRXBscb9JnSdr+lErnUslC6sf6HGPTGmMkNI/QsAW3bzuqPrCL51g9V0n6difGKHHDguCmV8dDHDSskkna0kGR5eNrkHYf4XN7uk+O9EsIx13SWI1zcNYySkxCOPTbVh5yhrgNmuDiAbdh4bbwe+ReCp8C6e1uHCun6XNosQlbqCjjoY3QxHiIyTdxHAE79vFdroX0in6R4LLJW07afEaOpko62Jhu1szPWy924P7eKC49I7dOx0Z9F44b6f6Rqf7zJky2/G9/wXdXhHf9u7f/ALc//YXu0BaeLV31Xg1diGnqei08k+TNbNlaXWv2XsvMT0fTHHcarizFXYBhdPJpUzI6eOaWpAG8ji64aL8BxtxAXJGK4wzDumfRrG6qOuqKDDXzQ1rIhGZo3xu9Zo2BB22/+Q9zgWJ/XWAYfimlo+l07J9PNmyZmg2vYX48l0F8w6H4f0rx3obhM8GPHBKSOkZDTQRUjJXvDWhuo8v5kEgC21t7rapenlbgWE9IqbpGI6jFcBDPtIhkbVtk9k4AcCSQHWFhdB9FXD6SdIf9Hvqj+C6/1hiUNB7TLp6l+vwN7W4beK8/FgXT2poBWy9LY6XEHjUFE2hjMEZ46ZcbuI7CePiuJjHSF3SXo70OrJ4RBWR9KKWnq4RwjlYXhw/I/ig+roiICIiAiIgIiICIiAiIgIiICIiAiIgIUWCgre6wU2nqA9yplOyti9k3wQcmLpDHNC1zKGs1i1rjTuDBI3M4NAN3WB3BsTcA89lacbYMNfWmjqg0SMjZHlbmkzloaW9a1jmHbz5Kx1JhZg9GNDTmD+T0W5eN+Frcd1eZICwMLAWNsQ3LsLbj5WQcr/SqnyTu9CrDoGUSBoY4gs2IsHcSSABx3BNgbrsUtSyrpo54w8NkY14D2kGxFxf5qhzKF0jZHU0ZewktcYxcE3vY99z8yrhPE29ha/GwQXoqfSY+/wCSekx9/wAkFyKn0mPv+SsY9sgu0oJIiIIv4fiPzVFfWNoKR9Q6N8jW8WsLQbdpu4gAAbkkjgr38PxH5quphp54HR1MUcsRtdkjQ4GxuNj3oOGel9KZzDFQ1szhlF2CMAkiEgdZ4/l4+7jyXRq8XFJHTvNHVSNnaXDKGtLTa9nBzgQTw8eNk9Fwz0htR6DT67bZZNFuYWtax49g+QWxLJTzMLJYw9pBBDmgggixHyQSpKtlZA2VjXtBAOV7bEXF7cjx7CQr1qxPpoG5Yo2xjbZrQOAsPIAfgrPSY+/5ILkVPpMff8kFTGT2/JBcteurYMPpJKqpkEcUYu5xWwvFfSM9/oNBGXObA+Y6hAvwG3+Kxsy44zk9PR6I378dUzUSrk+kR2u1kGDzSNkP2WaSzpBe2wDT27bEr0mB49SY7TOlpy5r2G0kT/WYf2d65eAw4acDgmhmknNMJBTzSRWkbt1so7fPkvN9EjDF0zDcOqJainkifqSSMykjjv8AjbfvXGM88Zi5u309nTdNt17PTwnGcPn396vvfb2/t9JlNrLLTcKFRwb4rMfBel8NaiIgIiICIiAiIgw71T4LWWy71T4LWQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERBOL2gV6oi9oFeg+fdLTN0W6b0HTMQPmw19KaDEtJhc6FmbM2Ww4i9ge4d4XoXdOeiraD009IcO0cmfaoaXW5Zb5r91rrvkBwIIuDxC4zeh/RptSKlvR/CxOHZxIKSO+bje9uPeg+fY9JjvTnoJjWJehO+r21MU+F0hYWyzQxnruNt+sLkDjtt2LZp6P6KKjB24n6TTxwmPO5kmJzCRu24LNTNfut4L6lbay5L+i+ASV/pz8Ew51Xmz65pWF+bne1796o+bugw2Ok6Bz4VhU2F0tVjOu2nme5z9wRmOYniADx4EL1/wBKMb5Po1xtrGlxELXWHIPaSfkCvUT0NJVSQSVFLDM+B+pC6SMOMbveaTwPeFa9jZGOY9ocxwsWkXBCg+bdOMRosS6C4JNQ1UNRGMRogXRPDgDcbG3A9y6Y/wC3M/8A21/+yvSw9HMDp6U0sOD0EdOZRNpNpmBmoODrWtmHNbnoVJ6f6f6ND6ZpaPpGmNTTvfLm45b724XQfMcZwqbG+lvT7DqYXnnwqnEYv6zg0kD8SLKno7QfRtX9H6eetdBR1kcYZV09TiUsT4pWizwWl47b9i+qMoqSOslrI6WFlVK0NkmbGA94HAF3EgLRrOjOA4jV+lVuC4fU1G15ZqZj3G3Dci6qPl1ZS4UOicPSTozglRDQYdjsVbLme97quGK7TKwOJNuseNtgSeC+gVPT3o8zCfTKPFKWtllaPR6aCQOlmefVYGetcmw3G3bZelaxrWBjWgNAsABsAubSdHMDoK01tHg9BT1Tr3mip2Nfvx3AvuorzH0P5v3NcOzCztSe479V61MaqH9BvpBl6SVDJDgOMQxwV0rAXejzM6rHuAF8uXbxJ7gffUdFSYfTNpqKmhpoGklsUMYY0Em5sBtx3Vr2MkYWPaHMcLFrhcEIPP1fTvorRUD6yTH8PdE1uYCKoa97u4NBJJ/BeIxuo6QYz0OpOk+IUL2x0GNRYnBRNZaVtGwm2YdrrG/gLr6BT9EejdJVNqafAMMinYczZGUjGuaeYIGy7KDzFV9IXRWmwR2KDGqOWIR52RRygyvNtmhl75u4jbtsvGYNHh2BdCMCwjpnhbfRcWmllllqABHSyOJcwO7WEg8drb3tYr6JH0XwCGv9OiwTDmVebPrtpWB+bne17966NTS09ZTvp6qCOeB4s+OVgc1w5EHYoPllS3DujXSDAIuhuPTVDquuZDNhTKw1MWgbl7wCSWZR23/Irr4HW0lL9K3TWnqaqGCWqFAIGSPDXS2hIOUHjuQNua9hh2AYPg73vw3CqKje8Wc6ngbGXDvICnVYLhddWwVtXh1JPVU5Bhnkha58ZBuMriLix3QeG+jnHsOwHo8ei+M1lPh+KYTLJFLHUSCMSNLy5r2F1rtId/j2hUdLcUf0/wCi3STDcCpHVMFDpOirGOzMqZWuD3MYLdawB4Hckc177EcBwfGHMdieF0VY5mzHVEDZC3wJGy26emgo6dlPTQxwwsFmRxtDWtHIAcEHnKH6Qui9ZgbMUfjNHAzTzyRSyhssZ7Wll737LAb9l1z/AKMaeZ+F4tjMsEkDMYxOaugjkFnCFxGQkdhO57xYr0U3RjAKiu9OmwTDpKsuDjO+lYXlw4G9r3711gLCwQfO8QxKgwv6cI58QraakhPR7IJKiVsbS70gm1yRvsfkvWR9Lejc8rIoukGFSSvcGsYysjJcTsABfcq6v6PYLis7Z8RwigrJmtyCSopmSODbk2u4Ha5O3eqIuiHRmCZksXR3CY5WODmPZRRgtI3BBDdig+fYV9SdIMVx1/TTGHNrKbEJYY6Gor3U8cMI9QtaHNvcfpb32/HnYSzCGYp09GBU5iw04IdE3cRJ1H3eC43IJvY9tr8CvrNd0dwTE6ltTX4RQVU7QA2SenY9wHK5CvOF4e6SeQ0NMX1EWjM4xNvJHa2Vxtu23YdlbR4r6Pul+EM6FYZR4jXU2H1lJSxsfDVStjJZlGR4zWuHNsbjnbsXk8Xw2p6dRdNcewqF8tI6Onp6E5SPShC4PkLRxO7bDne3EFfWKro1gVdDTw1eDYfPFTtyQskpmOETeTQRsO4LowwxU8LIYI2RRMGVrGNAa0cgBwSx8voaP6K63BmYkZ6eBhjzvilxOVskZtu0t1L3HC1t+y60qqHCmdGOiFTg2EzYbR1fSqlnbFO9znvvmaJDmJIzBoI7rHtX0qbovgFRXGunwTDpKsuzGZ9KwvJ53te/et+poqSsEIqqWGfQkbNFqxh2m8cHNvwcOwjdRV6IiAiIgIiICIiAiIgIiICIiAiIgIiICwVlYKDXl4K6L2TfBUy8FdF7Jvgg1nQNDiNVo8U0W/yrPmsGnkudr991jQl93zCCWi3+VZ800W/yrPmo6Evu+YTQl93zCCQpw42EjT4KXorveCxFDI2QEiwHettBq+iu94K6GLSB3uSrEQEREEX8PxH5rErA9hBNu26y/h+I/NRmYXxkN4oNfRb/ACrPmmi3+VZ81HQl93zCaEvu+YQS0W/yrPmmi3+VZ81HQl93zCaEvu+YQTFMXC4e0+Cz6Kb7uCsp43MBLtr9iuQYAsAOS0sXwqnxnD30lSDldu1w4tPYQt5FJiJipawzywyjLGamHzp3QzpFTzwCmxGIx099B5kLSwHjtY2v+K9L0a6MRYBHI98gmq5RZ8lrADkO7816BFzx044zcPbv/Jb92HDKYr5qKv7UVHBvipR8FGp4N8VKPgurwLUREBERAREQEREGHeqfBay2XeqfBayAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIJxe0CvVEXtAr0HmcW6TYth+JzUtL0TxGvhZbLUQyRhr7gE2BN9ibfguPQfSLiOJip9C6GYpN6NO+mmyyxdSRvrNO/EXC98vA9BKyDD8O6Z1tS/JBT4/XSyO5NblJPyCqPZ4ZVzV2HQ1NRRy0c0gu6nlILmb8CRsttfPsN/036VUDMbgxynwOmqRqUlEKJs5MZ9UyOcb3I325/gtLE+neMU/wBH3SCd4hpekWCzx08+RuaM5pGAPaHfouaTa6ivpyL59jT+neFYTP0jOL0RbTRmomwf0UabYxu5utfMXAX32BPYFMHpv0gwpuO4XjNNh0c0etSYa6jbJnjIuzUkJuHOFj1eF0HvkXy6u+kXFJejHRHGcOpwZsUqjBNSAD7V4u3IHO9UF449gK6eI0n0hYbQyYvHj1DWywtMsmFNoQ2JwG5ayS+cm17X4oPS4n0hhwzpDguDvge+TFTMI5GkWZptDjfxuuyvmlbjNP0h6XfRti1KCIqpta8NPFp0QC0+BBH4LrTM6aY9i9eKXEGdHsNpZjDAXUbZ5am3F/WNg09lkHtHODGFzjZoFyVq4XilFjOHQ4hh84npZgTHIAQHWJB2O/EFeJw/E+kuKN6RdG6nFKanxbCHRE4hFTB7Z4pGFwvGSAHWG5BtvtwueL0HxOu6KfRTFj9biIq8PZTuFNhzKYMc2QylrRqAkuu7u2v3IPraLwbcM+kWSj+sT0ioIqwt1BhfoLTCDxyGS+fuv/8AK1ar6QKzE+j/AEddhMcVFiGNVRpHPqRmZSvaSH3Fxd1/VBtfyQfRkXi44+mWBYth5qMRb0gw6pmENQBRshkpr8JBk2LR23XtEBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQFgrKwUGvLwV0Xsm+Cpl4K6L2TfBBpuMmY5s11i7/iUzUSE8bd1k15fe8gghd/xJd/xKevL73kE15fe8gg2YM2mM9796sWrFPIZACbg9y2kBERAREQRfw/EfmozZtI5L37lJ/D8R+ajM8sjJHFBp3f8SXf8Snry+95Jry+95BBC7/iWWmTMLZrqWvL73kE15fe8gg3Rw3RU08jpAQ7e3arkBERAREQUVPBvipR8FGp4N8VKPggtREQEREBERAREQYd6p8FrLZd6p8FrICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgnF7QK9URe0CvQF8z6PYfNivRL6QcPp7a9TjGIxR3NgXFoA819MVFNRUtHq+i00MGtI6aXSjDc73cXOtxce0ndB8w6G4X0QxXovTST1tXT1lJAI66CTFZonQPaLOzMzjKLg22AXM6SQ9HXfRj0vrej1PWack9PBLWVEzpW1RjmYAWOc5xLRmIvtf8F9PxDoh0dxWs9Mr8EoKipuCZZIGlzrbdY263Dtut+TCsOmw0YbLQUr6ANDfRnQtMVgQQMlrWBAtt2K2jl9N/+oXSD/w6f/hlW9EP+pWA/wDh1P8A8Nq608ENVTyU9REyWGRpY+ORoc17TsQQdiFmGGKngjggjZFFG0MZGxoa1rQLAADgAFFfA6Os+r/o9+j2tMTpG0+LTSvYxuZxa2R5dYdpsDZfW8Z6a4Dh3RmXF/rOlmgdG7REUrXGZ1tmNAO5v8u21itDpJ0bkdiHRRmDYdFHRUGI60scDWxsiYQbnLt2ns5rsx9D+jcOJDEY8Cw9tWHZxKKdtw698w22dfe/FVHzfBMLqcGrPoroayMx1DG173sdsW52Z7HkQHWIXQ6OCl6WnGK3pLj9Yyop6qWOTDWVzqaOkjabC7WkE7fpHb8QV9LloqSoqqepmpYZKinzaEr4wXxZhZ2UncXGxtxXNr+iXR7FK4VtfgtBUVN7mWWBrnO2sM23W253RXg/o+ZhjemHTiPBHuloBHStheZHSZvs33Ic4kuBdexuQRa21ly4KR2L/wDR3pGUQ9IlozrSQxu6xDJi5zdtwcpvz4L7BT4dRUlRLUU1HTwzTBrZZI4mtc8NFmhxAubDYX4LWouj2D4biE9fQ4bTU1VUC0skUYaX733t37oPGU2GdAqrBBjDMYqBRZQ50j8ZnGS4vlcNS4d3cVpxTdBYeiOE0lbg1bT4HjdTJLHJX3ywy2sHveXkszgXaQdxc7C69nJ0J6LzVprJOj+GvnJJLjTMIcTxJFrE9669XRUmIUr6WspYamnfbNFNGHsdY3FwduKD5ri9O/oRi2CfUHSCun9NrYqf6nqaj0hjoXHcxg3c0C3rXtv+B+orkYX0VwDBJzPhmD0VLMbjUjhAdY8Rm4gdy66gIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAsFZWCg15eCui9k3wCpl4K2Np029Y8O5BIxsJuWj5Jps9xvyTKffd5JlPvu8kDTZ7jfkmmz3G/JMp993kmU++7yQAxrTcNAPcFJRyn33eSZT77vJBJFHKffd5JlPvu8kEkUcp993kmU++7yQH8PxH5qRAIsVEtJ/Td5JlPvu8kDTZ7jfkmmz3G/JMp993kmU++7yQNNnuN+SabPcb8kyn33eSZT77vJBkNDRYAAdyyo5T77vJMp993kgkijlPvu8kyn33eSCSKOU++7yTKffd5IKqng3xUo+ChUAgN6xO/apx8EFqIiAiIgIiICIiDDvVPgtZbLvVPgtZAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREE4vaBXqiL2gV6Aii57WesbKOvH73klpOUR8rEVevH73kmvH73kpcJyx8rEVevH73kmvH73klwcsfKxFXrx+95Jrx+95JcHLHysRRbIx3ArJIAuSq1bKKGozn5JqM5+SCaKGozn5JqM5+SCaKGozn5JqM5+SCaKGozn5KQc13AoMosEgC5KjqM5+SCaKGozn5JqM5+SCaKGozn5JqM5+SCaLAIIuCsoCIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICwVlYKDXl4K6P2LbcbKmXgrovZN8EHn3zdJjEzTpmexu4vcwP1b3tYEty22G5PhxUJpukzMuSme83ucjorWzR9rjxsZeziBx4ntmqffYABY9Kk+H5IKMLfih1fT4w0GZ2mLtcdO5sTawBtl238d7N6a0/SpPh+SelSfD8kG4i0/SpPh+SelSfD8kG4i0/SpPh+SvglMjTcbjkgtREQEREBERAREQEREBERAREQUVPBvipR8FGp4N8VKPggtREQEREBERAREQYd6p8FrLZd6p8FrICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgnF7QK9URe0CvQac19V115+GPExDYmoa+7ddzXBxc7a5Zn2tseAAs7YXG3qnMa7iLqOjH7qxOLhlpmZu3mopMddV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"><figcaption><b>labels.orderful.com</b> — a certified retailer template (public page). Each template lists its required and optional fields; check if it has a lot field.</figcaption></figure>
+<p>Read the template's field list before you promise anything. In our case: the Costco <em>Canada</em> pallet <strong>single</strong> template had one lot field, the pallet <strong>mixed</strong> template had <strong>no</strong> lot field, and there was no Canada carton template at all.</p>
+<h4>Mixed lots on one pallet</h4>
+<ul>
+<li>A label template holds <strong>one lot</strong>. So with several lots on a pallet, the lot goes on <strong>each case</strong> (the product case label with GS1 AI (10) = lot). That's the brand's or packer's case labelling, not the pallet label.</li>
+<li>In the 945: send the pallet ID once (<code>MAN*GM</code> SSCC), then <strong>one W12 line per lot</strong>, each with its lot (<code>W12-09</code>) and quantity. Check the partner's spec allows the loops to repeat (LX, MAN, W12 &gt; 1).</li>
+<li>Test the first real mixed-lot shipment on the <strong>test stream</strong> before go-live.</li>
+</ul>
+${A_TIP("Before answering a label question, check three things: who the retailer and country really are (the 940 ship-to), which templates exist with which fields, and what the partner's 945/856 spec allows.")}
+${A_WARN("The SSCC on the label must match the SSCC in the 856/945 (MAN*GM). Make every SSCC unique, built from the company's GS1 prefix. Reusing one is a chargeback waiting to happen.")}
+${A_KEY("Labels must match the EDI. One lot per label; mixed lots go on the cases. In the ship advice, one pallet ID with one W12 per lot. Always confirm the template's fields and the partner's spec before you promise.")}`,
+quiz:[
+{q:"In a 940/945 flow for a 3PL, the retailer (Costco) is usually:",opts:["The trading partner","Just the ship-to on the 940","The 3PL","The one sending the 945"],a:1,why:"The brand and 3PL trade the 940/945; the retailer is the destination."},
+{q:"A pallet has 3 lots of the same item. The pallet label template has one lot field. Best approach?",opts:["Print three pallet labels","Put the lot on each case label; the 945 sends one pallet ID with one W12 per lot","Leave lots out","Use a carton template on the pallet"],a:1,why:"One lot per label; mixed lots are shown on the cases and reported per lot in the 945."},
+{q:"The SSCC on the label must match:",opts:["The PO number","MAN*GM in the 856/945","The invoice number","The UPC"],a:1,why:"Label SSCC = MAN*GM. A mismatch triggers chargebacks."},
+{q:"Before promising a label template, you check:",opts:["Nothing","Its required/optional fields, the real retailer/country, and the partner's spec","Only the colour","Only the price"],a:1,why:"Templates differ (e.g. Canada mixed pallet had no lot field)."}
+]},
+
+{id:"fk6",code:"7.6",title:"Scoping, Estimates & Work Orders",mins:15,
+sub:"Find where the data really lives, ask the right questions, estimate with a rule of thumb, and write a work order a client can sign.",
+html:`
+<p>Consultants are paid for <strong>scoping well</strong>. A bad scope burns months. Real story (names changed): <strong>Glacier Coolers</strong> bought an Orderful setup built on <strong>Shopify</strong>. Months later, nothing worked. On a call we learned the truth: their wholesale orders, prices and stock live in <strong>Zoho Inventory</strong>. Shopify is retail only. The whole build was pointed at the wrong system.</p>
+<h4>Discovery: questions that save months</h4>
+<ol>
+<li><strong>Where do wholesale orders, prices, stock, shipments and invoices live today?</strong> (system of record)</li>
+<li>Who keys documents today, and how long does it take? (pain and value)</li>
+<li>Which partners, which documents, and through which network (SPS, direct AS2, a portal)?</li>
+<li>For the ship notice: where are BOL, tracking, pallet vs carton? (often nowhere)</li>
+<li>Which warehouse is the inventory of record?</li>
+<li>Dates that matter: busy season, contract deadlines.</li>
+</ol>
+${A_TIP("Log in and look. In the Glacier case, reading their Zoho setup showed sales orders, price lists, shipments with tracking and invoices were all there, but no BOL or pallet fields. The fix was 3 simple custom fields, and the client's logistics person fills them in.")}
+<h4>Estimate with a rule, then sanity-check</h4>
+<div data-widget="estimator"></div>
+<p>Phase the work so value lands early: <strong>Phase 1</strong> orders + acknowledgments + inventory (so new orders flow), <strong>Phase 2</strong> ship notices + invoices.</p>
+<h4>What a work order contains</h4>
+<ol>
+<li>Background (one paragraph: why this work).</li>
+<li>Objective (the outcome, in business words).</li>
+<li>In scope: each flow, with bullets and hours.</li>
+<li>Assumptions and client responsibilities (access, who adds fields, who tells us about new stores).</li>
+<li>Out of scope (other partners, other document types, history, label hardware).</li>
+<li>Phasing and timeline.</li>
+<li>Effort summary table.</li>
+<li>Pricing, then an <strong>Acceptance</strong> block for signatures.</li>
+</ol>
+<h4>Who is the contract with?</h4>
+<p>Some clients are Orderful's customers, and LYSI works behind Orderful. Others contract with LYSI directly. Settle this <strong>before</strong> pricing:</p>
+<ul>
+<li><strong>Through Orderful</strong>: the client-facing document says Orderful, shows no LYSI rate, and Orderful sets the client price.</li>
+<li><strong>Direct with LYSI</strong>: the work order says Lysi Consulting and shows our hourly rate, time and materials, billed monthly for hours used.</li>
+</ul>
+${A_GOT("Never put a client-facing document under a name the client doesn't know, and never show an internal rate on a document that goes through a partner. Check the commercial setup first.")}
+${A_KEY("Find the real system of record, ask the six discovery questions, estimate with the team rule and phase for early value, write the work order in eight parts, and settle who the contract is with before you show a price.")}`,
+quiz:[
+{q:"Why did the first Glacier Coolers build fail?",opts:["Bad EDI syntax","It was built on Shopify, but wholesale actually lived in Zoho Inventory","The partner refused EDI","Wrong AS2 certificate"],a:1,why:"Wrong system of record. Discovery would have caught it."},
+{q:"Team rule of thumb for a simple document flow?",opts:["2 h","About 12 h (complex 14 to 16 h) plus 8 to 10 h testing","100 h","It can't be estimated"],a:1,why:"12 h simple, 14-16 h complex, plus end-to-end testing."},
+{q:"What should Phase 1 usually deliver?",opts:["Invoices only","Orders, acknowledgments and inventory, so new orders flow early","Labels only","Nothing until everything is done"],a:1,why:"Value early: orders first, then ship notices and invoices."},
+{q:"Before putting a rate on a work order, you must know:",opts:["The client's logo","Whether the contract is with Orderful or directly with LYSI","The partner's GLN","The SSCC"],a:1,why:"Through Orderful vs direct changes the name and pricing on the document."}
+]},
+
+{id:"fk7",code:"7.7",title:"Running Projects Like a Consultant",mins:14,
+sub:"Daily sweeps, verified facts, short status updates, drafts with the right thread, and the tracker milestones.",
+html:`
+<p>Technical skill gets you hired. <strong>Reliability</strong> makes you senior. Clients and partners trust you when every message is correct, short and on time. These are the habits.</p>
+<h4>The daily sweep</h4>
+<ol>
+<li>Email: new replies on every project thread, and Orderful notifications ("Transaction Not Created", relationship status updates).</li>
+<li>Slack: project channels, plus the team-wide channels where escalations and staffing alerts land. Read those first.</li>
+<li>The platform: re-check any status you're about to report.</li>
+<li>Write it down: log what was verified in the project notes, the same day.</li>
+</ol>
+${A_WARN("<strong>Never report platform state from memory.</strong> 'It was fixed yesterday' is not a fact today. Re-check Orderful (both orgs: client and partner) before telling anyone something is done.")}
+<h4>Short status updates</h4>
+<div data-widget="statusWriter"></div>
+<p>Format that works: one line per partner. <strong>What happened → what's blocked → who owns the next step.</strong> No tool names for client channels, no feelings, no guesses.</p>
+<h4>Drafting emails</h4>
+<ul>
+<li>Simple English, short sentences, no jargon the client doesn't use.</li>
+<li>Always say <strong>which thread and which message to reply on</strong>, and who should be in cc (ops mailbox when required).</li>
+<li>One email = one ask, with the exact data (segment, PO, invoice number).</li>
+<li>When something goes wrong (a duplicate post, a wrong claim), say it plainly and say what to ignore or what changed.</li>
+</ul>
+<h4>The project tracker milestones</h4>
+<div class="tbl-wrap"><table><thead><tr><th>Milestone</th><th>Means</th></tr></thead><tbody>
+<tr><td>M2</td><td>Integration built, testing with the partner underway</td></tr>
+<tr><td><strong>M3</strong></td><td>Testing in the <strong>test environment is complete</strong>, the partner enters the go-live phase. It does <strong>not</strong> mean live yet.</td></tr>
+<tr><td>Go-Live Ready (GLR)</td><td>Ready to switch to production, with a date</td></tr>
+</tbody></table></div>
+${A_TIP("If someone asks 'how many went go-live ready since yesterday?', a date column is not proof of when it changed. Check the sheet's version history. Rows can be pre-filled with future dates or added later with old dates.")}
+<h4>Ownership changes</h4>
+<p>People leave and projects move. When you inherit one: read the history, re-verify the platform, introduce yourself on the client thread ("I'm your contact from now on"), and list what's open. Clients forgive a handover; they don't forgive silence.</p>
+${A_KEY("Sweep daily, verify before you report, write short updates with owners, draft emails with the exact thread, use milestones correctly (M3 = test complete, not live), and log what you verified.")}`,
+quiz:[
+{q:"A teammate says 'the 856 issue was fixed yesterday'. Before telling the client:",opts:["Tell them it's fixed","Re-check the platform today, both orgs","Ask the partner","Wait a week"],a:1,why:"Never report platform state from memory."},
+{q:"Milestone 3 (M3) means:",opts:["Live in production","Testing in the test environment is complete; go-live phase begins","Contract signed","Kickoff done"],a:1,why:"M3 = test complete, entering go-live. Not live yet."},
+{q:"Which status line is best?",opts:["'Working hard, all good!'","'Supplier B: 855s and 810 pushed to QA; 856 failed on N1 segments, partner to resend.'","'Probably fixed.'","'Our YAML cron trigger uses workspace variables.'"],a:1,why:"Facts, blocker, owner. Short."},
+{q:"How do you prove which rows changed in a shared tracker since yesterday?",opts:["Trust the date column","Compare with the sheet's version history","Ask everyone","Count rows"],a:1,why:"Dates can be pre-filled; version history shows real changes."}
+]},
+
+{id:"fk8",code:"7.8",title:"Safety, Trust & One-Way Doors",mins:12,
+sub:"Card data in EDI, test vs live, irreversible posts, cleaning up test orders, and what never goes public.",
+html:`
+<p>Some actions can be undone. Some can't. Pros know the difference and slow down at the <strong>one-way doors</strong>.</p>
+<h4>Payment card data does not belong in EDI files</h4>
+<p>A buyer once wanted to send a single-use card (number, expiry and <strong>security code</strong>) inside each 850 to a supplier. EDI files are stored in plain text by the platform, the AS2 logs and the partner. Card security codes must not be stored after authorization. So we did not just map it. We offered options: number + expiry only if the supplier confirms it can process it (no security code), or last 4 digits + a reference with the full card through the supplier's secure payment channel, or the supplier's existing method.</p>
+${A_GOT("Never copy card numbers, security codes, passwords or API keys into notes, chats, tickets or files. Not even 'just for testing'.")}
+<h4>Test vs live</h4>
+<ul>
+<li>The <strong>stream</strong> (Test/Live) is decided by the envelope (ISA IDs, ISA15 T/P). Before calling traffic "live", compare the envelope of the test-period files with the current ones.</li>
+<li>Never inject test data into the live stream.</li>
+<li>Tell the partner the PO number <strong>before</strong> a test order goes out, so they can find and cancel it.</li>
+</ul>
+<div data-widget="vidPending"></div>
+<h4>One-way doors</h4>
+<div class="tbl-wrap"><table><thead><tr><th>Action</th><th>Why it's one-way</th><th>Safe habit</th></tr></thead><tbody>
+<tr><td>Posting a confirmation to a one-per-PO API</td><td>Can't be re-sent</td><td>Check the payload byte for byte first</td></tr>
+<tr><td>Posting invoices by hand</td><td>Duplicates reach the buyer's books</td><td>One job per document; check the job list after</td></tr>
+<tr><td>Editing a shared partner guideline</td><td>Breaks other suppliers</td><td>Don't. Fix on our side.</td></tr>
+<tr><td>Publishing a guideline</td><td>Can orphan the relationship and wipe channels</td><td>Re-check relationship + channels right after</td></tr>
+<tr><td>Fulfilling a test order with tracking</td><td>Sends a real ship notice to the retailer</td><td>Cancel dead test orders; keep them away from live flows</td></tr>
+</tbody></table></div>
+<h4>Clean up after tests</h4>
+<p>Old test orders left "fulfilled" in a store can be picked up by a live ship-notice flow. If someone adds tracking later, a ship notice for a dead order goes to the retailer. Cancel test orders on both sides (retailer portal and the store), or use the cancellation as a test scenario.</p>
+<h4>Public vs private</h4>
+<p>Training pages, public repos and shared links are public. Use fake names and fake numbers there. Real client data, people's emails and IDs stay in private project notes.</p>
+${A_KEY("Slow down at one-way doors: no card data in EDI, prove test vs live from the envelope, check before one-shot posts, avoid duplicates, never edit shared guidelines, clean up test orders, and keep real data out of public places.")}`,
+quiz:[
+{q:"A buyer wants the card number, expiry and security code in every 850. What do you do?",opts:["Map it all into N9","Flag it: security codes must not be stored; propose safer options and get agreement first","Ignore it","Email the card to the supplier"],a:1,why:"EDI is stored in plain text; offer number+expiry only if accepted, last-4 + reference, or the supplier's method."},
+{q:"How do you prove traffic is test vs live?",opts:["The file name","The envelope: ISA IDs and ISA15 (T/P), compared with known test/live setup","The partner's word only","The colour in Orderful"],a:1,why:"The stream comes from the envelope."},
+{q:"Old test orders sit 'fulfilled' in the store with no tracking. Risk?",opts:["None","A live ship-notice flow may send a ship notice for a dead order if tracking is added","They'll be deleted","They block inventory"],a:1,why:"Clean them up or exclude them from live flows."},
+{q:"Where do real client names and IDs belong?",opts:["Public training pages","Private project notes","Public repos","Social media"],a:1,why:"Public material uses fake names and numbers."}
+]}
+
+]}
+
 /* __APPEND_TRACKS__ */
 ];
+
+
+/* ================= INTERACTIVE WIDGETS ENGINE (Track 7) =================
+   A module's html can contain <div data-widget="name"></div>. After a module renders,
+   mountWidgets() finds them and builds the widget from WX[name]. No external libraries. */
+const WX={};
+function wxShell(title,badge,inner){return `<div class="wx-head">${title}${badge?`<span class="wx-badge">${badge}</span>`:""}</div><div class="wx-body">${inner}</div>`;}
+function wxEsc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+
+/* ---------- mock Orderful screen builder (fake data only) ---------- */
+function mkPill(t){const c=/^(Valid|Delivered|Accepted|Live|On)$/.test(t)?"p-ok":/^(Invalid|Failed|Rejected)$/.test(t)?"p-bad":/^(Pending|Sent|Overdue|Processing)$/.test(t)?"p-mid":"p-gray";return `<span class="mk-pill ${c}">${t}</span>`;}
+function mkScreen(o){
+  const nav=["Tasks","Transactions","Products","Partnerships","Relationships","EDI Accounts","Comm. Channels","Guidelines"];
+  return `<div class="mk"><div class="mk-top">Orderful<span class="mk-star">✱</span><span class="mk-org">${o.org||"Glacier Coolers (demo)"}</span></div>
+  <div class="mk-wrap"><div class="mk-nav">${nav.map(n=>`<div class="${n===(o.nav||"Transactions")?"on":""}">${n}</div>`).join("")}</div>
+  <div class="mk-main">${o.body}</div></div></div>`;
+}
+function mkTxnHead(o){
+  return `<div class="mk-h" data-k="title">${o.doc} <span class="mk-dir">${o.dir}</span> <span class="mk-dir">${o.stream||"Test"}</span></div>
+  <div class="mk-cards">
+   <div class="mk-card" data-k="parties"><small>Sender → Receiver</small><b>${o.from}</b> → <b>${o.to}</b><br><span style="color:#6b7280">${o.ids||""}</span></div>
+   <div class="mk-card" data-k="status"><small>Transaction status</small>
+     <div class="mk-st"><span>Validation</span>${mkPill(o.v)}</div>
+     <div class="mk-st" data-k="delivery"><span>Delivery</span>${mkPill(o.d)}</div>
+     <div class="mk-st"><span>Acknowledgment</span>${mkPill(o.a)}</div></div></div>
+  <div class="mk-tabs">${["Details","Workflows","Rules Editor"].map(t=>`<span data-k="tab-${t}" class="${t===o.tab?"on":""}">${t}</span>`).join("")}${o.tab==="Rules Editor"?`<span data-k="tab-Errors" class="${o.sub==="Errors"?"on":""}" style="margin-left:auto">Errors ${o.errs?`<b style="color:#C0433B">${o.errs}</b>`:""}</span><span data-k="tab-Rules" class="${o.sub==="Rules"?"on":""}">Rules</span>`:""}</div>`;
+}
+
+/* ---------- generic "interactive video" player ---------- */
+function videoPlayer(el,title,frames){
+  let i=0,timer=null,playing=false;const DUR=6500;
+  el.innerHTML=`<div class="wx-head">▶ ${title}<span class="wx-badge">interactive video · ${frames.length} scenes</span></div>
+   <div class="vp-stage"></div><div class="vp-cap"></div>
+   <div class="vp-ctl"><button class="wx-btn" data-a="prev">◀</button><button class="wx-btn pri" data-a="play">▶ Play</button><button class="wx-btn" data-a="next">▶▶</button>
+   <div class="vp-bar"><div class="vp-fill"></div></div><span class="vp-time"></span></div>`;
+  const stage=el.querySelector(".vp-stage"),cap=el.querySelector(".vp-cap"),fill=el.querySelector(".vp-fill"),tm=el.querySelector(".vp-time"),pb=el.querySelector('[data-a=play]');
+  function show(n){
+    i=Math.max(0,Math.min(frames.length-1,n));const f=frames[i];
+    stage.innerHTML=f.screen+`<div class="vp-cursor" style="left:-40px;top:-40px"></div>`;
+    cap.innerHTML=`<b>Scene ${i+1}.</b> ${f.cap}`;
+    fill.style.width=((i+1)/frames.length*100)+"%";tm.textContent=(i+1)+" / "+frames.length;
+    if(f.hl){const t=stage.querySelector(`[data-k="${f.hl}"]`);if(t){t.classList.add("vp-hl");const cur=stage.querySelector(".vp-cursor");
+      requestAnimationFrame(()=>{const sr=stage.getBoundingClientRect(),tr=t.getBoundingClientRect();cur.style.left=(tr.left-sr.left+Math.min(tr.width-10,60))+"px";cur.style.top=(tr.top-sr.top+tr.height/2-9)+"px";});}}
+  }
+  function stop(){playing=false;clearInterval(timer);pb.textContent="▶ Play";}
+  function play(){playing=true;pb.textContent="⏸ Pause";if(i===frames.length-1)show(0);timer=setInterval(()=>{if(i>=frames.length-1){stop();return;}show(i+1);},DUR);}
+  pb.onclick=()=>playing?stop():play();
+  el.querySelector('[data-a=prev]').onclick=()=>{stop();show(i-1);};
+  el.querySelector('[data-a=next]').onclick=()=>{stop();show(i+1);};
+  el.querySelector(".vp-bar").onclick=e=>{stop();const r=e.currentTarget.getBoundingClientRect();show(Math.floor((e.clientX-r.left)/r.width*frames.length));};
+  show(0);
+}
+
+/* ===== VIDEO 1: diagnose an invalid ship notice ===== */
+WX.vidInvalid856=el=>{
+  const list=(hl)=>mkScreen({body:`<div class="mk-h">Transactions</div><table class="mk-tbl"><tr><th>Validation</th><th>Delivery</th><th>Type</th><th>Partner</th><th>Business #</th><th>Created</th></tr>
+   <tr ${hl?'data-k="row"':""}><td>${mkPill("Invalid")}</td><td>${mkPill("Pending")}</td><td>856 Ship Notice</td><td>BigBox Retail</td><td>PO-48213</td><td>10/29 11:33 PM</td></tr>
+   <tr><td>${mkPill("Valid")}</td><td>${mkPill("Sent")}</td><td>810 Invoice</td><td>BigBox Retail</td><td>INV-9921</td><td>10/29 11:35 PM</td></tr>
+   <tr><td>${mkPill("Valid")}</td><td>${mkPill("Delivered")}</td><td>855 PO Ack</td><td>BigBox Retail</td><td>PO-48213</td><td>10/29 11:29 PM</td></tr></table>`});
+  const head={doc:"856 Ship Notice",dir:"OUT",from:"Glacier Coolers",to:"BigBox Retail",ids:"ZZ/GLACIERT → 12/5550001T",v:"Invalid",d:"Pending",a:"Not Acknowledged"};
+  const raw=`ST*856*1068~BSN*00*SH1001*20261029*1830~HL*1**S~TD5**2*FDEG~
+<span class="er">N1*SF*GLACIER COOLERS*92~</span>
+N1*ST*BIGBOX DC 7*92*007~HL*2*1*O~PRF*PO-48213~
+<span class="er">N1*Z7***007~</span>
+HL*3*2*P~MAN*GM*00012345670000000017~HL*4*3*I~LIN*1*VN*CL-22~SN1**1*EA~`;
+  videoPlayer(el,"Diagnose an Invalid 856 in 6 scenes",[
+   {screen:list(true),hl:"row",cap:"The client says the retailer never got the ship notice. Start in <b>Transactions</b>. The 856 shows <b>Invalid</b> + <b>Pending</b>: it failed validation, so Orderful never sent it. The 810 and 855 next to it are fine."},
+   {screen:mkScreen({body:mkTxnHead({...head,tab:"Details"})+`<div class="mk-code">{ "transactionSets":[ { "beginningSegmentForShipNotice":[ ... ] } ] }</div>`}),hl:"status",cap:"Open it. Read the three statuses left to right: <b>Validation</b> (does it follow the partner's rules?), <b>Delivery</b> (did it leave Orderful?), <b>Acknowledgment</b> (did the partner say 'got it' with a 997?). Invalid blocks everything after it."},
+   {screen:mkScreen({body:mkTxnHead({...head,tab:"Rules Editor",sub:"Rules"})+`<div class="mk-code">${raw}</div>`}),hl:"tab-Rules Editor",cap:"Go to <b>Rules Editor</b>. It shows the <b>original payload as received</b>, before any change. Always diagnose here, not in Data View (which shows the data after translation)."},
+   {screen:mkScreen({body:mkTxnHead({...head,tab:"Rules Editor",sub:"Errors",errs:3})+`<div class="mk-err"><b>N1 (1 / 3)</b><br>If any of the following elements is present, then all of them must be present: identificationCodeQualifier, identificationCode.</div>`}),hl:"tab-Errors",cap:"Open <b>Errors</b>: 3 errors, all the same rule. In an N1 segment, the <b>qualifier</b> (N103, e.g. 92) and the <b>code</b> (N104, e.g. 007) must come <b>together</b>. One line has 92 but no code; another has a code but no 92."},
+   {screen:mkScreen({body:mkTxnHead({...head,tab:"Details"})+`<div class="mk-modal" data-k="audit"><b>Audit Log</b><table class="mk-tbl"><tr><th>Time</th><th>Action</th></tr><tr><td>10/29 11:33:58 PM</td><td>Created via AS2</td></tr><tr><td>10/29 11:33:59 PM</td><td>Validation: Processing → Invalid</td></tr></table></div>`}),hl:"audit",cap:"The <b>Audit Log</b> (clock icon) tells the true story: created, then validated as Invalid. Nothing was sent. So the retailer is right: they never got it."},
+   {screen:mkScreen({body:`<div class="mk-h">Decision</div><div class="mk-card"><b>Whose fix?</b> The N1 pair rule is <b>X12 syntax</b>, not a client choice. The sender's system built the file wrong, so the sender fixes and resends.<br><br><b>Before you ask them:</b> check nothing on our side can fix it (our map, our relationship config). Then send one clear message: the 3 segments, what is wrong, what correct looks like (<code>92*007</code>).</div>`}),cap:"Decide <b>whose fix it is</b> before you write to anyone. Syntax errors in the sender's file go back to the sender, with the exact segments and the correct form. That's what a pro message looks like."}
+  ]);
+};
+
+/* ===== VIDEO 2: switch a delivery channel off Mosaic ===== */
+WX.vidMosaic=el=>{
+  const rel=(modal,toggle,saved)=>mkScreen({org:"AgriCo EU (demo)",nav:"Relationships",body:`<div class="mk-h">Relationships</div><table class="mk-tbl"><tr><th>Type</th><th>Partner</th><th>Progress</th></tr><tr data-k="relrow"><td>DESADV IN</td><td>Warehouse Partner</td><td>Testing</td></tr><tr><td>ORDERS IN</td><td>Big Distributor</td><td>Testing</td></tr></table>
+   <div class="mk-card" style="margin-top:10px" data-k="channels"><small>Deliver transactions to communication channel</small>Test → <b>AgriCo Poller [T]</b> ${toggle?'<span class="mk-pill p-gray">Standard JSON</span>':'<span class="mk-pill p-mid">Mosaic</span>'}&nbsp; <span data-k="pencil">✎</span><br>Live → <b>AgriCo Poller [P]</b> ${toggle?'<span class="mk-pill p-gray">Standard JSON</span>':'<span class="mk-pill p-mid">Mosaic</span>'}</div>
+   ${saved?'<div style="margin-top:8px" data-k="save"><span class="mk-pill p-ok">Saved ✓</span></div>':'<div style="margin-top:8px" data-k="save"><span class="mk-pill p-gray">Save</span></div>'}
+   ${modal?`<div class="mk-modal" data-k="modal"><b>Edit channel</b><br><br>Channel: AgriCo Poller [T]<br><br>Use Mosaic Integration <span class="mk-toggle ${toggle?"":"on"}" data-k="toggle"></span><br><small style="color:#6b7280">ON = simplified JSON made by a Mosaic transformation. OFF = Orderful standard JSON.</small><br><br><span class="mk-pill p-gray" data-k="done">Done</span></div>`:""}`});
+  videoPlayer(el,"Fix a delivery that failed because of Mosaic",[
+   {screen:mkScreen({org:"AgriCo EU (demo)",body:mkTxnHead({doc:"DESADV",dir:"IN",from:"Warehouse Partner",to:"AgriCo",ids:"14/3770000000017 → 14/3700000000013",v:"Valid",d:"Failed",a:"Accepted",tab:"Workflows"})+`<div class="mk-err">Transformation Warning: no Mosaic transformation available for this channel.</div>`}),hl:"delivery",cap:"A warehouse partner's DESADV (EDIFACT ship notice) is <b>Valid</b> but delivery <b>Failed</b>. The warning says there is <b>no Mosaic transformation</b>. The channel asks for simplified JSON that nobody built."},
+   {screen:rel(false,false,false),hl:"channels",cap:"Go to <b>Relationships</b> and open the DESADV relationship. Under the delivery channels, both Test and Live are marked <b>Mosaic</b>. The client's developer reads <b>standard JSON</b> (mirrors the EDI segments), so Mosaic is the wrong choice here."},
+   {screen:rel(true,false,false),hl:"toggle",cap:"Click the pencil on the channel. <b>Use Mosaic Integration</b> is ON. Turn it OFF. Always ask the developer which JSON shape they parse <b>before</b> you change this."},
+   {screen:rel(true,true,false),hl:"done",cap:"Click <b>Done</b>. Careful: Done only closes the dialog. <b>Nothing is stored yet.</b>"},
+   {screen:rel(false,true,true),hl:"save",cap:"Click <b>Save</b> on the relationship. Now reload and check both channels show standard JSON. Only then is it really fixed."},
+   {screen:mkScreen({org:"AgriCo EU (demo)",body:mkTxnHead({doc:"DESADV",dir:"IN",from:"Warehouse Partner",to:"AgriCo",ids:"",v:"Valid",d:"Sent",a:"Accepted",tab:"Details"})+`<div class="mk-modal" data-k="audit"><b>Audit Log</b><table class="mk-tbl"><tr><td>14:10:35</td><td>Send Transaction → All Deliveries</td></tr><tr><td>14:10:35</td><td>Delivery Failed → Sent · added to polling inbox of AgriCo Poller [T]</td></tr></table></div>`}),hl:"audit",cap:"Old transactions don't re-send themselves after a channel change. Use <b>Send Transaction → All Deliveries</b>. For a <b>poller</b>: <b>Sent</b> = waiting in the inbox; it becomes <b>Delivered</b> only when the client's system reads it and approves it."}
+  ]);
+};
+
+/* ===== VIDEO 3: why is an outbound order stuck on Pending? ===== */
+WX.vidPending=el=>{
+  videoPlayer(el,"An order that never left: Pending vs Auto Send",[
+   {screen:mkScreen({org:"BuyHub (demo)",body:mkTxnHead({doc:"850 Purchase Order",dir:"OUT",from:"BuyHub",to:"FoodDistributor",ids:"ZZ/BUYHUB → 01/621000000",v:"Valid",d:"Pending",a:"Not Acknowledged",tab:"Details"})}),hl:"delivery",cap:"A test PO is <b>Valid</b> but <b>Pending</b> for hours. Valid means the data is fine. Pending means Orderful has not tried to send it."},
+   {screen:mkScreen({org:"BuyHub (demo)",body:mkTxnHead({doc:"850 Purchase Order",dir:"OUT",from:"BuyHub",to:"FoodDistributor",v:"Valid",d:"Pending",a:"Not Acknowledged",tab:"Details"})+`<div class="mk-modal" data-k="audit"><b>Audit Log</b><table class="mk-tbl"><tr><td>1:20:17 PM</td><td>Created (API)</td></tr><tr><td>1:20:18 PM</td><td>Validation: Processing → Valid</td></tr></table><small>No delivery event.</small></div>`}),hl:"audit",cap:"The audit log shows: created, validated... and then <b>nothing</b>. No delivery attempt at all. That points to the relationship setup, not to the data."},
+   {screen:mkScreen({org:"BuyHub (demo)",nav:"Relationships",body:`<div class="mk-h">850 OUT → FoodDistributor</div><div class="mk-card" data-k="auto"><small>Auto Send</small><div class="mk-st"><span>Live transactions</span><span class="mk-toggle on"></span></div><div class="mk-st"><span>Test transactions</span><span class="mk-toggle"></span></div></div>`}),hl:"auto",cap:"Open the relationship. <b>Auto Send for Test is OFF.</b> Test orders wait until someone presses <b>Generate and Send</b>. Sometimes that's on purpose, so the partner can be warned first."},
+   {screen:mkScreen({org:"BuyHub (demo)",body:`<div class="mk-h">Before you press send</div><div class="mk-card">1. Tell the partner the PO number <b>before</b> it goes, so they can find and cancel it.<br>2. Check the <b>stream</b> (Test vs Live) and the <b>ISA IDs</b> match what the partner set up.<br>3. Then Generate and Send, and confirm Delivery changes to Sent/Delivered.</div>`}),cap:"Pending isn't always a bug. Read the audit log, check the relationship, then act on purpose and tell the people involved."}
+  ]);
+};
+
+/* ===== Inspector: what each tab tells you ===== */
+WX.inspector=el=>{
+  const T={
+   "Details / Data View":"Shows the data <b>after</b> translation, in Orderful JSON. Good for reading values. <b>Not</b> the place to diagnose a validation error, because it may already be transformed by rules.",
+   "Rules Editor":"Shows the <b>original payload as received</b>, plus the rules applied to it. This is where you diagnose. It also has a search box: search the field name (e.g. <code>lotNumber</code>) instead of scrolling.",
+   "Errors":"The <b>current</b> validation errors against the guideline. If the header says Invalid but Errors says 'No errors found', the status is <b>stale</b>: the data is fine now (someone fixed the setup after it arrived).",
+   "Workflows":"Which business workflow the document belongs to (order, ack, ship, invoice) and its related documents. Handy to jump from a PO to its 855/856/810.",
+   "Audit Log (clock icon)":"The true timeline: created, validated, sent, failed, resent, approved. When someone says 'it was sent', the audit log proves it or not.",
+   "Print View":"A human-readable version (names, addresses, lines). Great for checking a ship-to or a PO quickly. Not every document type has one."
+  };
+  el.innerHTML=wxShell("Transaction inspector","click each tab",`<div class="ins-tabs">${Object.keys(T).map((k,i)=>`<button data-t="${k}" class="${i?"":"on"}">${k}</button>`).join("")}</div><div class="seg-info" id="insOut">${T["Details / Data View"]}</div>`);
+  el.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{el.querySelectorAll("[data-t]").forEach(x=>x.classList.remove("on"));b.classList.add("on");el.querySelector("#insOut").innerHTML=T[b.dataset.t];});
+};
+
+/* ===== Status decoder ===== */
+WX.statusDecoder=el=>{
+  const S=[
+   ["Valid · Pending","The data passed, but Orderful has not tried to deliver. Check the relationship (Auto Send off? no channel?) and the audit log."],
+   ["Invalid · Pending","Failed validation, so it was never sent. Open Rules Editor → Errors. Decide whose fix it is."],
+   ["Valid · Failed","Passed, but delivery to the channel failed (wrong channel, Mosaic with no transformation, AS2 down). Fix the channel, then Send Transaction → All Deliveries."],
+   ["Valid · Sent (poller)","Sitting in the client's inbox, waiting to be read. Becomes Delivered when their system approves it. If it stays Sent, their poller isn't picking it up."],
+   ["Valid · Delivered · Overdue","Delivered, but the partner's 997 (functional ack) didn't come back in time. Ask the partner if they received it; check their 997 setup."],
+   ["Valid · Delivered · Accepted","The happy path: passed, delivered, and the partner said 'got it'."]
+  ];
+  el.innerHTML=wxShell("Status decoder","what does this combination mean?",`<div class="wx-row">${S.map((s,i)=>`<button class="wx-btn" data-i="${i}">${s[0]}</button>`).join("")}</div><div class="seg-info" style="margin-top:12px" id="sdOut">Pick a status combination.</div>`);
+  el.querySelectorAll("[data-i]").forEach(b=>b.onclick=()=>{el.querySelector("#sdOut").innerHTML=`<b>${S[b.dataset.i][0]}</b>: ${S[b.dataset.i][1]}`;});
+};
+
+/* ===== Whose fix is it? ===== */
+WX.whoseFix=el=>{
+  const O=["The trading partner","Our mapping / code","Our Orderful config","The client (process/data)"];
+  const C=[
+   {p:"An inbound 856 from a supplier fails: N1*Z7***003 (code without qualifier).",a:0,w:"X12 syntax error in the sender's own file. Send them the exact segment and the correct form (N1*Z7**92*003)."},
+   {p:"The partner sends ACK*IB with the date in ACK05 but no 068 qualifier. You were about to ask them to add 068.",a:1,w:"Check our mapper first! It already takes the expected date from the line DTM*017. No need to ask the partner. Always check what we can handle before asking anyone."},
+   {p:"A test PO is Valid but stuck on Pending for 3 hours. The audit log shows no delivery attempt.",a:2,w:"Relationship config: Test Auto Send is off (or no channel). It's ours to check and act on."},
+   {p:"A delivery Failed: 'no Mosaic transformation available'. The client's developer reads standard JSON.",a:2,w:"Channel setting on our side: turn Mosaic off on that channel, Save, then resend."},
+   {p:"Wholesale orders don't create orders in Shopify because the client actually runs wholesale in Zoho, not Shopify.",a:3,w:"A scope/process fact on the client's side. The fix is a re-scope (integrate the system they really use), agreed with the client."},
+   {p:"The retailer's guideline (shared by hundreds of suppliers) seems stricter than its PDF.",a:2,w:"Never edit a partner's shared guideline. Fix on our side (rules/mapping/our relationship) or ask the partner/Orderful. Shared guidelines affect other customers."}
+  ];
+  el.innerHTML=wxShell("Whose fix is it?","6 real cases",C.map((c,i)=>`<div class="sc-card" data-c="${i}"><p>${i+1}. ${c.p}</p><div class="wx-row">${O.map((o,oi)=>`<button class="wx-btn" data-o="${oi}">${o}</button>`).join("")}</div><div class="sc-fb"></div></div>`).join("")+`<p class="wx-note" id="wfScore"></p>`);
+  let score={};
+  el.querySelectorAll(".sc-card").forEach(card=>{const c=C[card.dataset.c];card.querySelectorAll("[data-o]").forEach(b=>b.onclick=()=>{
+    const ok=+b.dataset.o===c.a;score[card.dataset.c]=ok;const fb=card.querySelector(".sc-fb");fb.className="sc-fb show "+(ok?"good":"bad");
+    fb.innerHTML=(ok?'<span class="wx-ok">Right.</span> ':'<span class="wx-bad">Not quite.</span> Best answer: <b>'+O[c.a]+'</b>. ')+c.w;
+    const n=Object.values(score).filter(Boolean).length;el.querySelector("#wfScore").innerHTML=`Score: <b>${n} / ${C.length}</b>`;});});
+};
+
+/* ===== N1 segment fixer ===== */
+WX.segFixer=el=>{
+  const L=[
+   {s:"N1*SF*GLACIER COOLERS*92",ok:false,opts:["N1*SF*GLACIER COOLERS*92*GLAC01","N1*SF*GLACIER COOLERS*92*","N1*SF**92*GLACIER COOLERS"],a:0,why:"Qualifier 92 needs its code in N104. Add the code (or drop both N103 and N104)."},
+   {s:"N1*ST*BIGBOX DC 7*92*007",ok:true},
+   {s:"N1*SN*BIGBOX STORE 7**007",ok:false,opts:["N1*SN*BIGBOX STORE 7*007*92","N1*SN*BIGBOX STORE 7*92*007","N1*SN*BIGBOX STORE 7*007"],a:1,why:"N103 is the qualifier (92 = assigned by buyer), N104 is the code. Order matters: 92 first, then 007."},
+   {s:"N1*Z7***007",ok:false,opts:["N1*Z7**92*007","N1*Z7*007","N1*Z7***92*007"],a:0,why:"N102 (name) can be empty, but N103 and N104 travel as a pair: **92*007."}
+  ];
+  el.innerHTML=wxShell("Segment fixer","N1 pairs",`<p class="wx-note" style="margin-top:0">Rule: in N1, <b>N103 (qualifier)</b> and <b>N104 (code)</b> must both be present or both be absent. Pick the correct fix for each broken line.</p>`+L.map((l,i)=>`<div class="sc-card"><p><code>${l.s}~</code> ${l.ok?'<span class="wx-ok">✓ valid as is</span>':'<span class="wx-bad">✗ invalid</span>'}</p>${l.ok?"":`<div class="wx-row">${l.opts.map((o,oi)=>`<button class="wx-btn" data-l="${i}" data-o="${oi}"><code>${o}~</code></button>`).join("")}</div><div class="sc-fb" id="sf${i}"></div>`}</div>`).join(""));
+  el.querySelectorAll("[data-l]").forEach(b=>b.onclick=()=>{const l=L[b.dataset.l],ok=+b.dataset.o===l.a,fb=el.querySelector("#sf"+b.dataset.l);fb.className="sc-fb show "+(ok?"good":"bad");fb.innerHTML=(ok?'<span class="wx-ok">Correct.</span> ':'<span class="wx-bad">Not this one.</span> ')+l.why;});
+};
+
+/* ===== ACK → API confirmation calculator (same logic as our live 855 mapper) ===== */
+WX.ackCalc=el=>{
+  const FUL=["IA","IP","IQ","IS","IC","IE","AC","AR","DR","SP","IB","BP"],REJ=["IR","ID","R1","R2","R3","R4","R5","R6","R7"],PEN=["IF","IH","IW"];
+  const lines=[{sku:"CL-22",ord:4,price:15.69,code:"IA",qty:4},{sku:"CL-45",ord:2,price:25.61,code:"IB",qty:2},{sku:"BAG-01",ord:3,price:9.80,code:"IR",qty:3}];
+  const codes=["IA","IB","BP","IQ","IR","R2","IH"];
+  function calc(){
+    let all=true,none=true,open=true,sub=0;const out=lines.map(l=>{
+      let f=0,r=0,note="";const c=l.code,q=+l.qty;
+      if(FUL.includes(c)){f=q;} else if(REJ.includes(c)){r=q;note="rejected";} else if(PEN.includes(c)){note="on hold, left open";}
+      if(c==="BP")f=l.ord-r; if(c==="IQ"&&r===0)r=Math.max(0,l.ord-f);
+      f=Math.min(f,l.ord);r=Math.min(r,l.ord-f);const p=l.ord-f-r;
+      if(f!==l.ord)all=false;if(f!==0)none=false;if(p!==0)open=false;sub+=f*Math.round(l.price*100);
+      return {l,f,r,p,note};});
+    const status=all?"success":(none&&open)?"error":"partial";
+    el.querySelector("#acOut").innerHTML=`<table><tr><th>SKU</th><th>Ordered</th><th>ACK</th><th>Fulfilled</th><th>Rejected</th><th>Open</th></tr>${out.map(o=>`<tr><td>${o.l.sku}</td><td>${o.l.ord}</td><td>${o.l.code}</td><td>${o.f}</td><td>${o.r}</td><td>${o.p}</td></tr>`).join("")}</table>
+     <p class="wx-note">Header status sent to the partner API: <b>${status}</b> · subtotal_cents: <b>${sub}</b> ($${(sub/100).toFixed(2)})</p>`;
+  }
+  el.innerHTML=wxShell("855 ACK → API confirmation","play with the codes",`<p class="wx-note" style="margin-top:0">Change the ACK code and quantity per line. This uses the same rules as our live 855 mapper: <b>IB (backorder) and BP count as accepted</b>, IR/R* are rejected, IH/IF/IW stay open. <b>success</b> = every line fully fulfilled; <b>error</b> = nothing fulfilled and nothing open; otherwise <b>partial</b>.</p>
+   <table><tr><th>SKU</th><th>Ordered</th><th>Price</th><th>ACK code</th><th>ACK qty</th></tr>${lines.map((l,i)=>`<tr><td>${l.sku}</td><td>${l.ord}</td><td>$${l.price.toFixed(2)}</td><td><select data-i="${i}" data-f="code">${codes.map(c=>`<option ${c===l.code?"selected":""}>${c}</option>`).join("")}</select></td><td><input type="number" min="0" max="${l.ord}" value="${l.qty}" data-i="${i}" data-f="qty" style="width:64px"></td></tr>`).join("")}</table><div id="acOut"></div>`);
+  el.querySelectorAll("[data-f]").forEach(x=>x.oninput=x.onchange=()=>{lines[x.dataset.i][x.dataset.f]=x.value;calc();});
+  calc();
+};
+
+/* ===== N2 implied decimal calculator ===== */
+WX.n2Calc=el=>{
+  el.innerHTML=wxShell("Implied decimals (N2)","TDS / SAC amounts",`<p class="wx-note" style="margin-top:0">X12 type <b>N2</b> means "number with 2 <b>implied</b> decimals": <code>TDS*1569</code> means <b>$15.69</b>, not $1,569. But some senders put a real decimal point (<code>TDS*15.69</code>). A safe mapper handles both.</p>
+   <div class="wx-row"><label>Raw value in the EDI file: <input type="text" id="n2v" value="1569" style="width:110px"></label><label><select id="n2t"><option value="n2">N2 (implied 2 decimals)</option><option value="r">R (real decimal)</option></select></label></div><p class="wx-note" id="n2o"></p>`);
+  const f=()=>{const s=el.querySelector("#n2v").value.trim(),t=el.querySelector("#n2t").value,n=Number(s);let o;
+    if(!isFinite(n)||s===""){o='<span class="wx-bad">Not a number.</span>';}
+    else if(t==="n2"){const cents=s.includes(".")?Math.round(n*100):Math.round(n);o=`Cents: <b>${cents}</b> → <b>$${(cents/100).toFixed(2)}</b>${s.includes(".")?' <span class="wx-note">(had a real decimal point, so read as dollars)</span>':""}`;}
+    else{o=`Cents: <b>${Math.round(n*100)}</b> → <b>$${n.toFixed(2)}</b>`;}
+    el.querySelector("#n2o").innerHTML=o;};
+  el.querySelector("#n2v").oninput=f;el.querySelector("#n2t").onchange=f;f();
+};
+
+/* ===== EDIFACT explorer ===== */
+WX.edifact=el=>{
+  const L=[
+   ["UNB+UNOC:3+3700000000013:14+3770000000017:14+261030:1410+00042'","Interchange header (like ISA). Sender and receiver with qualifier <b>14 = GLN</b> (a 13-digit global location number). Wrong qualifier = message goes nowhere."],
+   ["UNH+1+INSDES:D:96A:UN:EAN001'","Message header (like ST). Type <b>INSDES</b> (instruction to despatch), directory <b>D96A</b>, agency UN, association code <b>EAN001</b> = the EANCOM flavour."],
+   ["BGM+351+INS10045+9'","Beginning of message: document type code + document number + function (9 = original)."],
+   ["DTM+137:20261030:102'","Date/time: 137 = document date, format 102 = CCYYMMDD."],
+   ["NAD+CN+3770000000017::9'","Name and address: CN = consignee. Inside NAD the GLN qualifier is <b>9</b> (EAN), not 14. Two different places, two different codes."],
+   ["LIN+1++3760000000123:SRV'","Line item with the product GTIN."],
+   ["QTY+21:240'","Quantity: 21 = ordered quantity."],
+   ["UNT+8+1'","Message trailer (like SE): segment count + message reference."],
+   ["UNZ+1+00042'","Interchange trailer (like IEA)."]
+  ];
+  el.innerHTML=wxShell("EDIFACT explorer","click a segment",`<div class="seg-grid"><div>${L.map((l,i)=>`<div class="seg-line" data-i="${i}">${wxEsc(l[0])}</div>`).join("")}</div><div class="seg-info" id="edOut">Click a line to see what it means. In EDIFACT, <b>'</b> ends a segment, <b>+</b> separates elements, <b>:</b> separates components.</div></div>`);
+  el.querySelectorAll(".seg-line").forEach(s=>s.onclick=()=>{el.querySelectorAll(".seg-line").forEach(x=>x.classList.remove("on"));s.classList.add("on");el.querySelector("#edOut").innerHTML=L[s.dataset.i][1];});
+};
+
+/* ===== Label anatomy ===== */
+WX.labelAnatomy=el=>{
+  const Z={from:"<b>Ship From</b>: the warehouse or 3PL address the goods leave from.",to:"<b>Ship To</b>: the retailer's DC or store. Must match the N1*ST on the 856.",carrier:"<b>Carrier</b>: SCAC/name, plus PRO and BOL numbers when freight.",po:"<b>PO number</b>: the retailer's purchase order. Their dock team scans and matches it.",store:"<b>Store / Dept</b>: for mark-for or store-level labels.",lot:"<b>Lot / Expiry</b>: required by many food, health and big-box retailers. One lot field = <b>one lot per label</b>. Mixed lots on a pallet → lot printed on each case.",sscc:"<b>SSCC-18</b> barcode, GS1-128 with AI (00): 20 digits (00 + 18). <b>Unique per pallet/carton</b>, built from the company's GS1 prefix. Must match MAN*GM in the 856. A mismatch = chargeback."};
+  el.innerHTML=wxShell("Anatomy of a GS1-128 (MH10) shipping label","click each zone",`<div class="lab"><div data-z="from"><small>Ship from</small>Glacier Coolers DC</div><div data-z="to"><small>Ship to</small>BigBox Retail DC 7</div><div data-z="carrier"><small>Carrier</small>FDEG · BOL 774512</div><div data-z="po"><small>PO</small>PO-48213</div><div data-z="store"><small>Store / Dept</small>007 / 42</div><div data-z="lot"><small>Lot / Exp</small>LOT 0000061367 · 2027-06</div><div data-z="sscc" class="full"><small>SSCC</small><div class="bars"></div>(00) 0 0012345 670000000017</div></div><div class="seg-info" style="margin-top:12px" id="laOut">Click a zone of the label.</div>`);
+  el.querySelectorAll("[data-z]").forEach(z=>z.onclick=()=>{el.querySelectorAll("[data-z]").forEach(x=>x.classList.remove("on"));z.classList.add("on");el.querySelector("#laOut").innerHTML=Z[z.dataset.z];});
+};
+
+/* ===== Scope estimator ===== */
+WX.estimator=el=>{
+  const F=[["850 Purchase Order in","c"],["855 Acknowledgment out","s"],["856 Ship Notice out","c"],["810 Invoice out","s"],["846 Inventory out","s"]];
+  el.innerHTML=wxShell("Scope & estimate builder","team rule of thumb",`<p class="wx-note" style="margin-top:0">Team rule: about <b>12 h</b> for a simple document flow, <b>14 to 16 h</b> for a complex one (many partners, many fields, pallets/labels), plus <b>8 to 10 h</b> end-to-end testing. Tick what's in scope.</p>
+   <table><tr><th>In scope</th><th>Flow</th><th>Complexity</th></tr>${F.map((f,i)=>`<tr><td><input type="checkbox" checked data-i="${i}" data-k="on"></td><td>${f[0]}</td><td><select data-i="${i}" data-k="cx"><option value="s" ${f[1]==="s"?"selected":""}>Simple (12 h)</option><option value="c" ${f[1]==="c"?"selected":""}>Complex (14-16 h)</option></select></td></tr>`).join("")}</table>
+   <div class="wx-row" style="margin-top:10px"><label>Extra partners after the first (each, h): <input type="number" id="esTp" value="0" min="0" style="width:60px"></label><label>Example rate $/h: <input type="number" id="esRate" value="100" style="width:80px"></label></div>
+   <div class="est-out"><div><small>Hours</small><b id="esH"></b></div><div><small>Cost (T&amp;M)</small><b id="esC"></b></div><div><small>Calendar</small><b id="esW"></b></div></div>`);
+  const st=F.map(f=>({on:true,cx:f[1]}));
+  const calc=()=>{let lo=0,hi=0;st.forEach(s=>{if(!s.on)return;if(s.cx==="s"){lo+=12;hi+=12;}else{lo+=14;hi+=16;}});if(lo){lo+=8;hi+=10;}
+    const tp=+el.querySelector("#esTp").value||0;lo+=tp;hi+=tp;const r=+el.querySelector("#esRate").value||0;
+    el.querySelector("#esH").textContent=lo+" to "+hi;el.querySelector("#esC").textContent="$"+(lo*r).toLocaleString()+" to $"+(hi*r).toLocaleString();
+    el.querySelector("#esW").textContent=hi<=40?"1 to 2 weeks":hi<=80?"2 to 3 weeks":"3 to 5 weeks";};
+  el.querySelectorAll("[data-k]").forEach(x=>x.onchange=()=>{const s=st[x.dataset.i];if(x.dataset.k==="on")s.on=x.checked;else s.cx=x.value;calc();});
+  el.querySelector("#esTp").oninput=calc;el.querySelector("#esRate").oninput=calc;calc();
+};
+
+/* ===== Status-update writer ===== */
+WX.statusWriter=el=>{
+  const L=[
+   {t:"Retailer A cutover Mon 2 Nov: production flows ready; waiting on Retailer A to allow our production connection.",g:1,w:"Fact, date, and who we wait on."},
+   {t:"We have been working really hard all week on many things and everything is going great!",g:0,w:"No facts. Nobody can act on this."},
+   {t:"Supplier B: 855s and 810 pushed to the buyer's QA. 856 failed on N1 segments; Supplier B to resend.",g:1,w:"What happened, what's blocked, and the owner of the next step."},
+   {t:"I think the label problem is probably fixed now.",g:0,w:"Unverified. Check it, or say 'not verified yet'."},
+   {t:"Distributor C: 2 invoices held for the buyer's decision (a credit memo and a non-PO invoice).",g:1,w:"Clear, short, names the decision owner."},
+   {t:"The 856 workflow uses a YAML cron trigger with a workspace-variables lookup.",g:0,w:"Internal tool detail. The client doesn't need it (and some clients shouldn't see tool names)."}
+  ];
+  el.innerHTML=wxShell("Write a pro status update","pick the lines that belong",`<p class="wx-note" style="margin-top:0">A good update is <b>short</b>: facts, dates, blockers, and <b>who owns the next step</b>. Click the lines you'd post, then check.</p>${L.map((l,i)=>`<div class="sw-line" data-i="${i}"><span>☐</span><span>${l.t}</span></div>`).join("")}<div class="wx-row" style="margin-top:10px"><button class="wx-btn pri" id="swChk">Check my update</button></div><p class="wx-note" id="swOut"></p>`);
+  const pick={};
+  el.querySelectorAll(".sw-line").forEach(d=>d.onclick=()=>{const i=d.dataset.i;pick[i]=!pick[i];d.classList.toggle("on",pick[i]);d.firstChild.textContent=pick[i]?"☑":"☐";});
+  el.querySelector("#swChk").onclick=()=>{let ok=0;L.forEach((l,i)=>{const d=el.querySelector(`.sw-line[data-i="${i}"]`);const right=!!pick[i]===!!l.g;if(right)ok++;d.classList.remove("on");d.classList.add(right?"good-r":"bad-r");d.title=l.w;
+    if(!d.querySelector(".why"))d.insertAdjacentHTML("beforeend",`<span class="why" style="margin-left:auto;color:var(--muted);font-size:12px">${l.w}</span>`);});
+    el.querySelector("#swOut").innerHTML=`<b>${ok} / ${L.length}</b> right. Green = right call, red = reconsider (hover/see note).`;};
+};
+
+/* ===== Mount hook ===== */
+function mountWidgets(root){root.querySelectorAll("[data-widget]").forEach(el=>{const f=WX[el.dataset.widget];if(!f||el.dataset.mounted)return;el.dataset.mounted="1";el.classList.add("wx");try{f(el);}catch(e){el.innerHTML='<div class="wx-body">Widget failed to load.</div>';console.error(e);}});}
 
 /* ================= STORY CHAIN ================= */
 const STORY={
@@ -2005,7 +2663,15 @@ m22:"Rules live inside the documents. Go deep on the ones that pass or fail most
 m23:"You don't do all this by hand — the team's skills and tools carry the load.",
 m24:"A core habit of the job: keep real partners, money, and trust safe.",
 mAI1:"You know the craft. Now see how our team does it far faster — with AI wired into our live systems.",
-mAI2:"The tools that make it work: Claude connected to our systems, reusable skills, the Workato skill, and memories."
+mAI2:"The tools that make it work: Claude connected to our systems, reusable skills, the Workato skill, and memories.",
+fk1:"You know the craft. Now the field kit: read any transaction and find the truth in two minutes.",
+fk2:"You can see the error. Now decide who should fix it, and check our side first.",
+fk3:"Some clients are platforms with APIs. Learn to speak their language: acks, invoices, money.",
+fk4:"Cross the Atlantic: EDIFACT, GLNs and Orderful EU.",
+fk5:"Goods move with labels. Make labels, lots and warehouse documents match.",
+fk6:"Before any build: find the real system, scope it, estimate it, and write a work order.",
+fk7:"Projects are run by habits: sweeps, verified facts and short updates.",
+fk8:"The last habit: slow down at one-way doors and protect trust."
 };
 
 /* ================= APP ENGINE ================= */
@@ -2267,6 +2933,7 @@ function renderModule(id){
       ${next?`<a class="pg next" data-go="${next.id}"><small>Next →</small><div>${next.title}</div></a>`:`<a class="pg next" data-go="exam"><small>Next →</small><div>Final Certification Exam</div></a>`}
     </div>`;
   mountQuiz(m);
+  mountWidgets(main);
   main.querySelectorAll("[data-go]").forEach(el=>el.onclick=()=>go(el.dataset.go));
 }
 
@@ -2350,7 +3017,20 @@ const GLOSSARY=[
 ["VICS / UCS","Retail X12 subset (004010VICS) / grocery subset. Retail defaults to VICS."],
 ["Consolidation","How split SOs regroup outbound: None / Parent 850 / Ship To."],
 ["DC vs Store (SDQ)","In Nordstrom-style 850s, N1*ST is the DC (ship-to); SDQ gives per-store quantities. Split by store."],
-["BOL","Bill of Lading → 856 BSN05; one unique BOL per PO per Ship-To across a consolidation group."]
+["BOL","Bill of Lading → 856 BSN05; one unique BOL per PO per Ship-To across a consolidation group."],
+["EDIFACT","The international (European) EDI standard: ORDERS, ORDRSP, DESADV, INVOIC, INSDES, CONTRL."],
+["GLN","Global Location Number, 13 digits, identifies a company/location. Qualifier 14 in UNB, code 9 in NAD."],
+["D96A / EANCOM","An EDIFACT directory version (D96A) and the retail subset (association code EAN001)."],
+["Orderful EU","A separate Orderful platform (ui-eu / api-eu) with its own users and orgs."],
+["Mosaic toggle","Per-channel switch: ON = simplified JSON via a transformation; OFF = standard JSON. ON with no transformation = failed delivery."],
+["Audit Log","The clock icon on a transaction: its true timeline (created, validated, sent, failed, resent)."],
+["Auto Send","Relationship switch per stream (Test/Live). OFF = documents wait as Pending until someone sends them."],
+["N2","X12 numeric type with two implied decimals: 1569 = 15.69."],
+["Credit memo","An 810 with BIG07 = CR and negative amounts. Needs an agreed way to send."],
+["MH10 / GS1-128 label","The standard shipping label with an SSCC barcode; must match the 856/945."],
+["940 / 945","Warehouse shipping order (brand → 3PL) / warehouse shipping advice (3PL → brand)."],
+["M2 / M3 / GLR","Tracker milestones: building/testing / test complete, go-live phase / go-live ready."],
+["T&M","Time and materials: billed for the hours actually worked, at an hourly rate."]
 ];
 function renderGlossary(){
   document.getElementById("main").innerHTML=`
@@ -2386,7 +3066,15 @@ const EXAM=[
 {q:"A retailer fines the vendor for a late or wrong 856. That fine is called:",opts:["A refund","A chargeback","A 997","A VAN fee"],a:1,why:"A chargeback — which is why EDI accuracy protects the customer's money."},
 {q:"In AS2, the partner sends back a signed receipt proving they received the message. It's called:",opts:["An MDN","A VAN","An ISA","A 940"],a:0,why:"The MDN is AS2's signed 'I received it' receipt."},
 {q:"A new client says 'onboard our 25 partners by Jan 1.' Best first step?",opts:["Start building immediately","Gather the TP list + ISA IDs + documents + connections, confirm scope, and plan waves","Pick one partner at random","Wait for them to chase you"],a:1,why:"Understand and confirm scope before building; break it into waves working back from the date."},
-{q:"OrderStream/Rithum and Dsco rejections show up where?",opts:["In Orderful","In the portal's File Error Log and by email, not in Orderful","In NetSuite","Nowhere"],a:1,why:"Portal/drop-ship rejections appear in the portal + email, not in Orderful."}
+{q:"OrderStream/Rithum and Dsco rejections show up where?",opts:["In Orderful","In the portal's File Error Log and by email, not in Orderful","In NetSuite","Nowhere"],a:1,why:"Portal/drop-ship rejections appear in the portal + email, not in Orderful."},
+{q:"A ship notice shows Invalid + Pending. What happened?",opts:["Delivered and rejected","It failed validation, so it was never sent","It's waiting for a 997","It was delivered twice"],a:1,why:"Invalid blocks delivery; Pending = not sent."},
+{q:"Where do you diagnose a validation error in Orderful?",opts:["Data View","Rules Editor (original payload) and its Errors tab","Partnerships","Email"],a:1,why:"Rules Editor shows the original payload; Errors shows current errors."},
+{q:"N1*Z7***003 fails validation. Why?",opts:["Name missing","Qualifier and code must be sent together (N103/N104)","Z7 is not a code","Too long"],a:1,why:"X12 syntax pair rule; the sender fixes it."},
+{q:"TDS*2869 on an 810 is:",opts:["$2,869.00","$28.69","2869 units","An error"],a:1,why:"N2: two implied decimals."},
+{q:"A buyer API accepts one confirmation per PO. Before posting you:",opts:["Post and fix later","Check the payload carefully; a second post gets 409","Post twice to be safe","Skip the vendor order number"],a:1,why:"One-way door: verify first."},
+{q:"In an EDIFACT UNB header, a GLN uses qualifier:",opts:["ZZ","14","92","01"],a:1,why:"14 = GLN in UNB."},
+{q:"Milestone 3 (M3) on the tracker means:",opts:["Live","Testing in the test environment complete, go-live phase","Kickoff","Contract signed"],a:1,why:"M3 is not live yet."},
+{q:"A buyer wants card number + security code in every 850. Right response?",opts:["Map it","Flag the risk and propose safer options before mapping anything","Ignore it","Email it"],a:1,why:"EDI is stored in plain text; security codes must not be stored."}
 ];
 function renderExam(){
   const main=document.getElementById("main");
