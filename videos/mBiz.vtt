@@ -1,0 +1,67 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:05.950
+Before we touch any software, let's understand the business. Why does this job exist at all?
+
+00:00:05.950 --> 00:00:10.176
+It all comes down to two companies that want to trade with each other.
+
+00:00:10.176 --> 00:00:15.951
+Meet Glacier Coolers. They make coolers. They are the vendor, sometimes called the supplier.
+
+00:00:15.951 --> 00:00:20.926
+And meet BigBox Retail, a big store chain. They are the retailer, the buyer.
+
+00:00:20.926 --> 00:00:25.551
+BigBox wants Glacier's coolers on its shelves, so shoppers can buy them.
+
+00:00:25.551 --> 00:00:31.826
+When two companies exchange business documents like this, each one calls the other a trading partner.
+
+00:00:31.826 --> 00:00:40.101
+At LYSI, our client is usually the vendor, like Glacier. And the trading partner is usually the retailer they sell to.
+
+00:00:40.101 --> 00:00:44.776
+Now, every sale follows the same simple cycle. Think of a restaurant.
+
+00:00:44.776 --> 00:00:50.401
+First, the retailer places an order. That's the customer telling the waiter what they want.
+
+00:00:50.401 --> 00:00:56.026
+Second, the vendor ships the goods, and tells the retailer exactly what is in each box.
+
+00:00:56.026 --> 00:00:59.126
+Third, the vendor sends a bill, the invoice.
+
+00:00:59.126 --> 00:01:04.276
+And fourth, the retailer pays. Order, ship, bill, pay. Then it starts again.
+
+00:01:04.276 --> 00:01:10.226
+Here's the problem. A big retailer does this with thousands of vendors, every single day.
+
+00:01:10.226 --> 00:01:15.351
+Doing it by email, phone, or paper would be slow, and full of typing mistakes.
+
+00:01:15.351 --> 00:01:23.526
+So instead, the two computers talk directly, using a strict shared format. That's EDI, Electronic Data Interchange.
+
+00:01:23.526 --> 00:01:35.376
+Each step becomes a standard document with a number. The order is an eight fifty. The ship notice is an eight fifty six. The invoice is an eight ten. And the payment is an eight twenty.
+
+00:01:35.376 --> 00:01:39.626
+You'll hear those numbers every day, so it's worth remembering them now.
+
+00:01:39.626 --> 00:01:47.826
+But retailers are strict. If a ship notice is late, or wrong, they charge the vendor a fine. That fine is called a chargeback.
+
+00:01:47.826 --> 00:01:54.901
+A few small mistakes, repeated across many orders, can cost a vendor real money. So accuracy matters.
+
+00:01:54.901 --> 00:02:04.826
+That's where we come in. Glacier's system and BigBox's system sit on each side, and Orderful sits in the middle, translating and checking every document.
+
+00:02:04.826 --> 00:02:12.076
+Our job is to connect them, test them, and keep the documents flowing correctly, so our client gets paid on time.
+
+00:02:12.076 --> 00:02:18.376
+Order, ship, bill, pay. Keep that cycle in mind, and everything else in this course will make sense.
