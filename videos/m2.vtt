@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.575
+A client has been live for a year. One morning, the retailer says our acknowledgments are being rejected.
+
+00:00:06.575 --> 00:00:14.875
+The problem was on the outside of the file. The acknowledgments were addressed to the retailer's test I D. So you must read the envelope.
+
+00:00:14.875 --> 00:00:23.250
+Think of shipping letters overseas. Each letter goes in a folder, and the folders go in a sealed crate, addressed to another company.
+
+00:00:23.250 --> 00:00:30.875
+The crate is the interchange. I S A opens it, and I E A seals it. It carries the sender and the receiver.
+
+00:00:30.875 --> 00:00:38.900
+Each folder is a functional group, from G S to G E. One folder holds one kind of document, like purchase orders.
+
+00:00:38.900 --> 00:00:45.550
+And each letter is a transaction set, from S T to S E. One purchase order, or one invoice.
+
+00:00:45.550 --> 00:00:54.200
+Inside, each line is a segment. Values are split by a star, and each line ends with a tilde. Meaning comes from position.
+
+00:00:54.200 --> 00:01:02.626
+So B E G zero three is the third value of B E G, the P O number. Two stars in a row mean an empty value.
+
+00:01:02.626 --> 00:01:09.376
+The file also declares its own separators, inside the I S A line. So never hard-code them.
+
+00:01:09.376 --> 00:01:17.176
+The I S A is always exactly one hundred and six characters. Values are padded, so trimmed spaces break it.
+
+00:01:17.176 --> 00:01:24.676
+It tells you who sent it, who it's for, the control number, and one letter for usage. T for test, P for production.
+
+00:01:24.676 --> 00:01:33.576
+Each I D travels with a qualifier that says what kind of I D it is. Z Z means mutually defined. Twelve means a phone number.
+
+00:01:33.576 --> 00:01:40.126
+Always write them as a pair. The same number with Z Z, or with zero one, is two different addresses.
+
+00:01:40.126 --> 00:01:49.576
+Each closing segment counts what's inside, and repeats the control number. S E counts segments. G E counts documents. I E A counts groups.
+
+00:01:49.576 --> 00:01:56.001
+Control numbers should be unique. So a corrected file needs a fresh control number when you resend it.
+
+00:01:56.001 --> 00:02:04.601
+Many companies use a separate test I D, often the live I D with a T on the end. Test data must never reach a live stream.
+
+00:02:04.601 --> 00:02:12.326
+The receiver answers with a nine ninety seven. It points back to your control numbers, and says accepted or rejected.
+
+00:02:12.326 --> 00:02:19.301
+But a nine ninety seven only proves the file arrived well formed. Not that the order makes business sense.
+
+00:02:19.301 --> 00:02:26.226
+A file can be perfect X twelve and still break the partner's own rules. Most of our fixing work is there.
+
+00:02:26.226 --> 00:02:33.026
+So read X twelve from the outside in. Who to whom, test or live, which document, and do the counts add up?
+
+00:02:33.026 --> 00:02:37.101
+Next, we step into NetSuite, the client's system of record.
+

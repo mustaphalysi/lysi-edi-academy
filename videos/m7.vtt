@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.125
+Your first connector project. Orderful shows the retailer's eight fifty as valid, but no Sales Order appeared in NetSuite. Where did it stop?
+
+00:00:09.125 --> 00:00:15.225
+To answer, you need to know how the Suite App moves a document into NetSuite, and back out again.
+
+00:00:15.225 --> 00:00:23.875
+A Suite App is an app installed inside NetSuite. Orderful's Suite App is like an interpreter who works inside the client's office.
+
+00:00:23.875 --> 00:00:32.675
+It collects incoming E D I, turns it into NetSuite records, and writes outgoing documents when the warehouse ships or accounting bills.
+
+00:00:32.675 --> 00:00:42.225
+Its key record is the E D I transaction record: one document, with its Jason, its direction, its I S A I Ds, and a status.
+
+00:00:42.225 --> 00:00:50.200
+Inbound first. The eight fifty is validated in Orderful and waits in the client's poller inbox. Delivery shows Sent.
+
+00:00:50.200 --> 00:00:58.750
+The Suite App's poller reads it, creates an E D I transaction record, and approves the delivery. Now Orderful shows Delivered.
+
+00:00:58.750 --> 00:01:06.425
+Then processing finds the customer, matches each line to an item, resolves the ship-to, and creates the Sales Order.
+
+00:01:06.425 --> 00:01:14.100
+A join record links the Sales Order and the E D I record. The status becomes Success, or Error with a message.
+
+00:01:14.100 --> 00:01:20.200
+Outbound now. Someone creates an Item Fulfillment or an Invoice, and ticks a ready checkbox.
+
+00:01:20.200 --> 00:01:27.875
+A script builds the message Jason, creates an E D I record with status Ready To Send, and posts it to Orderful.
+
+00:01:27.875 --> 00:01:34.450
+Which I S A I Ds get stamped? The connector looks in several places, and the first hit wins.
+
+00:01:34.450 --> 00:01:43.825
+First the enabled transaction type, then the customer or vendor, then the subsidiary, then the company settings. Test mode picks the test I D.
+
+00:01:43.825 --> 00:01:52.875
+A real lesson: a live nine ninety seven went to a partner's test I D. Walk the chain from the top, and switch test mode off at go-live.
+
+00:01:52.875 --> 00:01:59.225
+You can also customize both directions with Jason-ah-tah, set on the enabled transaction type.
+
+00:01:59.225 --> 00:02:10.500
+But here is the silent trap. Transform syntax only runs when the Jason-ah-tah version is set to version two. On version one, nothing happens, and there is no error.
+
+00:02:10.500 --> 00:02:20.575
+Another common one: item lookup missing. The partner's part number matches no NetSuite item, so no Sales Order. Add an item lookup, then reprocess.
+
+00:02:20.575 --> 00:02:28.425
+So, back to our missing Sales Order. Check the poller, then the E D I record's status and message, then the item match.
+
+00:02:28.425 --> 00:02:37.500
+Remember: inbound is poll, record, Sales Order. Outbound is ready box, record, post. I S A I Ds: first hit wins.
+
+00:02:37.500 --> 00:02:40.275
+Next, we meet Workato and StackSync.
+

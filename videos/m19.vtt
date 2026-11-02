@@ -1,0 +1,65 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.600
+A shopper buys a cooler on a retailer's website. The retailer never touches it. It ships from our client's warehouse straight to the shopper. That's drop-ship.
+
+00:00:09.600 --> 00:00:15.925
+If the ship notice is late or wrong, the shopper has no tracking, and the client's scorecard drops.
+
+00:00:15.925 --> 00:00:20.275
+Think of a food delivery app. You order in the app, and a restaurant cooks.
+
+00:00:20.275 --> 00:00:28.950
+The app never cooks, but it judges the restaurant on speed, and hides the ones that keep cancelling. Drop-ship platforms work like that app.
+
+00:00:28.950 --> 00:00:37.376
+Compared with bulk, the ship-to is a home address, orders are one or two units, and you must ship fast, often within one to three days.
+
+00:00:37.376 --> 00:00:44.326
+The documents change. The eight fifty six carries a tracking number for each package, and the eight ten bills it.
+
+00:00:44.326 --> 00:00:52.526
+The eight forty six inventory feed is critical. Drop-ship sells what you say you have. A stale feed means cancelled orders.
+
+00:00:52.526 --> 00:01:02.026
+Cancellations travel differently per partner: an eight seventy, or a cancel line inside the eight fifty six. Never assume. Read the guide.
+
+00:01:02.026 --> 00:01:11.576
+Many retailers use a platform in the middle: Rithum, formed from CommerceHub and ChannelAdvisor, with its OrderStream and Dsco platforms.
+
+00:01:11.576 --> 00:01:18.576
+So the flow is: retailer, then Rithum, then Orderful, then the client's system, like NetSuite or Shopify.
+
+00:01:18.576 --> 00:01:26.551
+Now the biggest trap. The platform accepts your file. Delivered, nine ninety seven accepted. All green in Orderful.
+
+00:01:26.551 --> 00:01:33.351
+Then it rejects it at the business level: a wrong tracking format, a cancelled line, or a quantity mismatch.
+
+00:01:33.351 --> 00:01:43.776
+That rejection lives in the platform's File Error Log and emails, not in Orderful. So check the log after every test, and make sure someone reads those emails.
+
+00:01:43.776 --> 00:01:50.776
+Each partner has special rules. One retailer used no eight fifty five, only the nine ninety seven.
+
+00:01:50.776 --> 00:01:59.626
+It used fill-or-kill: ship the whole open quantity of a line, or cancel all of it, in one submission. And ship before you invoice.
+
+00:01:59.626 --> 00:02:07.826
+Drop-ship also adds a packing slip in the box, with the retailer's branding. Its data must match the order and the ship notice.
+
+00:02:07.826 --> 00:02:16.951
+A real lesson. Three test orders reached the client's store marked shipping not required. The store closed them, so no ship notice could be made.
+
+00:02:16.951 --> 00:02:22.801
+The fix was the item setting. So check the test items before you ask for test orders.
+
+00:02:22.801 --> 00:02:30.351
+And once the platform activates the account, every order is a real customer order. There is no second rehearsal.
+
+00:02:30.351 --> 00:02:37.351
+In one line: keep inventory fresh, tracking right, and check the platform's error log, not just Orderful.
+
+00:02:37.351 --> 00:02:39.726
+Next, the troubleshooting runbook.
+

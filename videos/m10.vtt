@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.200
+A new client sells to big retailers, but runs on a web store and a small inventory app. No NetSuite, so no Suite App.
+
+00:00:08.200 --> 00:00:17.175
+Something still has to pick up each eight fifty, create the store order, and send the ship notice and invoice back. That's an integration platform.
+
+00:00:17.175 --> 00:00:26.025
+Think of it as plumbing with a control room. Pipes connect systems, valves decide when things flow, and the control room shows every run.
+
+00:00:26.025 --> 00:00:33.600
+We use two. Workato runs many existing integrations, which we maintain. New builds now go to StackSync.
+
+00:00:33.600 --> 00:00:41.100
+In Workato, one automation is a recipe. It reads like a short story: when this happens, do this, then this.
+
+00:00:41.100 --> 00:00:47.250
+The trigger starts it. A polling trigger asks every few minutes: anything new since last time?
+
+00:00:47.250 --> 00:00:56.700
+Actions are the steps: search, create, update, or run some code. Datapills carry fields, like the P O number, from one step into the next.
+
+00:00:56.700 --> 00:01:04.000
+Each run of a recipe is a job. A job keeps the input and output of every step. This is where you debug.
+
+00:01:04.000 --> 00:01:11.025
+Open the failed step. Read what it got, and what came back. Then walk back to the step that made the bad input.
+
+00:01:11.025 --> 00:01:19.375
+Decide if it is a data, mapping, or connection problem. Fix it in the right place, and check the result in the destination system.
+
+00:01:19.375 --> 00:01:28.025
+A trap: after you click Repeat job, the old page still shows the old error. The new run is a new row at the top of the jobs list.
+
+00:01:28.025 --> 00:01:36.025
+StackSync works in a similar way. A workflow is a chain of modules, with a trigger, usually a schedule, and an on off switch.
+
+00:01:36.025 --> 00:01:43.700
+Credentials live in connections, shared settings live in workspace variables, and past runs are in the Log Explorer.
+
+00:01:43.700 --> 00:01:52.750
+Lessons learned the hard way. A schedule trigger made in the YAML editor looked right, but never fired. Create triggers in the designer.
+
+00:01:52.750 --> 00:01:59.875
+The run panel can say Processing long after a run finished. Verify by side effects and the Log Explorer.
+
+00:01:59.875 --> 00:02:06.000
+New workflows are created switched on. Switch them off straight away, then turn them on on purpose.
+
+00:02:06.000 --> 00:02:14.925
+Design every flow to be safe to re-run. For example, tag each order with its P O number, and skip any P O that already has one.
+
+00:02:14.925 --> 00:02:22.550
+Never let errors pass silently, and keep test and live separate: separate connections, separate workflows, clear names.
+
+00:02:22.550 --> 00:02:31.125
+Remember: Workato is recipes, triggers, datapills, and jobs. StackSync is workflows, modules, and the Log Explorer.
+
+00:02:31.125 --> 00:02:35.650
+That completes the platforms track. Next: onboarding a client.
+
