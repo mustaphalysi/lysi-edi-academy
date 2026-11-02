@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.425
+Two people on the team hit the same trap, two months apart. Publishing a guideline quietly orphaned a relationship, and wiped its delivery channels.
+
+00:00:09.425 --> 00:00:16.850
+The first time cost a full retest. The second time, a saved memory made the assistant warn before the publish.
+
+00:00:16.850 --> 00:00:25.200
+Picture the A I as a skilled contractor joining your team. Connectors are the keys to specific rooms, like email or Slack.
+
+00:00:25.200 --> 00:00:33.675
+Skills are the team's written procedures. Memories are the lessons in their notebook. The project brain is the case file for each client.
+
+00:00:33.675 --> 00:00:38.275
+And the house rules are pinned on the wall, read at the start of every session.
+
+00:00:38.275 --> 00:00:46.450
+Connectors use M C P, an open standard for plugging tools into an A I, like search email, or read a Slack channel.
+
+00:00:46.450 --> 00:00:54.325
+The A I can only do what its connectors allow, with the permissions of the account that connected them. So use your own account.
+
+00:00:54.325 --> 00:01:06.475
+Careful: messaging connectors often have a send tool. Once, an assistant posted a reply straight into a Slack thread. Now the rule is absolute: drafts in the chat, a human sends.
+
+00:01:06.475 --> 00:01:13.701
+A skill is a folder with a skill file: a name, when to use it, step by step instructions, and often scripts.
+
+00:01:13.701 --> 00:01:21.527
+Good skills do one recurring job, carry the guardrails, like dry-run by default, and bake in the traps nobody would guess.
+
+00:01:21.527 --> 00:01:27.227
+The tokens skills use live in private files, readable only by you. Never in chat.
+
+00:01:27.227 --> 00:01:36.052
+A memory is a short file the assistant reads in future sessions. It records a durable lesson, why it matters, and how to apply it.
+
+00:01:36.052 --> 00:01:45.102
+Save team rules, gotchas and process steps. Never save secrets, or fast-changing project state. That goes in the project brain.
+
+00:01:45.102 --> 00:01:52.928
+Keep memories true. When a fact changes, update or delete it. A stale memory is worse than none, because it's believed.
+
+00:01:52.928 --> 00:01:59.278
+A good session starts with the house rules and the project brain, then sweeps the latest email and Slack.
+
+00:01:59.278 --> 00:02:05.628
+Skills do the guarded work. Anything that writes to production or sends a message stops for a human.
+
+00:02:05.628 --> 00:02:15.278
+At the end, the log gets a dated entry of what was verified, and any new lesson becomes a memory. Skip that, and the next session starts from scratch.
+
+00:02:15.278 --> 00:02:23.403
+One more trap: a browser connector was signed into the wrong mailbox, so searches came back empty. Check the account first.
+
+00:02:23.403 --> 00:02:31.453
+Remember: connectors are the hands, skills the procedures, memories and the brain the past, and house rules keep it consistent.
+
+00:02:31.453 --> 00:02:36.178
+Next, track seven: the field kit, starting with reading a transaction.
+

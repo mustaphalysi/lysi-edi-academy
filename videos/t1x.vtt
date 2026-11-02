@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.500
+Kickoff call. The retailer's sheet lists ten document numbers. The client asks you, "Which of these do we really need, and what do they do?"
+
+00:00:08.500 --> 00:00:13.525
+Here is the whole family in one place, so no number on a spec surprises you.
+
+00:00:13.525 --> 00:00:20.175
+Think of the documents as short sentences in a conversation. Every document answers one question.
+
+00:00:20.175 --> 00:00:27.975
+"I want to buy" is the eight fifty. "Here's what I can do" is the eight fifty five. "It's on the way" is the eight fifty six.
+
+00:00:27.975 --> 00:00:34.800
+"Pay me" is the eight ten. "Here's your money" is the eight twenty. And "Got your file" is the nine ninety seven.
+
+00:00:34.800 --> 00:00:44.100
+There are many more. The eight forty six shares stock levels. The eight thirty two shares a catalog with prices. The eight sixty changes an order.
+
+00:00:44.100 --> 00:00:53.400
+The numbers also live in rough neighborhoods. The two hundreds are about trucks and carriers. The seven hundreds are shipping logistics with the retailer.
+
+00:00:53.400 --> 00:01:02.225
+The eight hundreds are the commerce core. Orders, shipping, billing, and stock. The nine hundreds are warehouse documents and acknowledgments.
+
+00:01:02.225 --> 00:01:09.625
+So a nine forty five is about a warehouse, and a two fourteen is about a truck. It's a memory aid, not a law.
+
+00:01:09.625 --> 00:01:19.225
+Documents also point at each other. The P O number from the eight fifty is repeated in the eight fifty five, the eight fifty six, and the eight ten.
+
+00:01:19.225 --> 00:01:26.451
+And the invoice number from the eight ten is what the eight twenty payment refers to. This thread connects one order.
+
+00:01:26.451 --> 00:01:33.776
+When a retailer says "we can't find your invoice", ask which number they search by. Usually the thread broke at one link.
+
+00:01:33.776 --> 00:01:40.376
+A big beginner mistake. One green tick does not mean done. A partner can say no at three levels.
+
+00:01:40.376 --> 00:01:47.276
+First, the envelope. The nine ninety seven says the file arrived and is well formed. That takes minutes.
+
+00:01:47.276 --> 00:01:55.626
+Second, the content. An eight twenty four application advice says "we read it, and something is wrong." That takes hours or days.
+
+00:01:55.626 --> 00:01:59.826
+Third, the money. A chargeback, or a short payment. Weeks later.
+
+00:01:59.826 --> 00:02:11.326
+A real lesson. A retailer sent a clean nine ninety seven for every routing request, then rejected many with eight twenty fours. The team only watched the nine ninety sevens.
+
+00:02:11.326 --> 00:02:17.751
+And not every partner wants every document. Scope each partner from its own spec, and confirm.
+
+00:02:17.751 --> 00:02:24.951
+Know each document by the question it answers. And remember the three layers. Received, acceptable, and paid.
+
+00:02:24.951 --> 00:02:30.776
+Next, we open the envelope itself. X twelve, segments, and the I S A header.
+

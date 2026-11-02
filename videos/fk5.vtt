@@ -1,0 +1,56 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.825
+Physical goods move with labels, and labels must match the E D I. A wrong label is a classic chargeback.
+
+00:00:06.825 --> 00:00:15.200
+Here's a real case, with names changed. A packaging three P L ships vitamins for a brand, to a big retailer in Canada.
+
+00:00:15.200 --> 00:00:21.025
+Think of the brand as the boss, and the three P L as the warehouse crew that does the shipping.
+
+00:00:21.025 --> 00:00:26.575
+The brand sends a nine forty, the warehouse shipping order: ship these items to this store.
+
+00:00:26.575 --> 00:00:34.875
+The three P L ships, then replies with a nine forty five, the warehouse shipping advice: these pallets, these lots, this carrier.
+
+00:00:34.875 --> 00:00:44.625
+Notice that the retailer is not a trading partner here. It's just the ship-to on the nine forty. Check it, to know which retailer and country you're labelling for.
+
+00:00:44.625 --> 00:00:51.525
+Now, labels. Templates differ by level, carton or pallet, and by pack method, single item or mixed.
+
+00:00:51.525 --> 00:00:59.775
+Orderful has a free label library with certified templates per retailer. Each one lists its required and optional fields.
+
+00:00:59.775 --> 00:01:12.275
+So read the field list before you promise anything. In our case, the pallet single template had one lot field. The pallet mixed template had none. And there was no carton template for Canada at all.
+
+00:01:12.275 --> 00:01:20.900
+Here's the key rule: a label template holds one lot. So when a pallet carries several lots, the lot goes on each case label instead.
+
+00:01:20.900 --> 00:01:25.150
+That's the brand's or the packer's case labelling, not the pallet label.
+
+00:01:25.150 --> 00:01:34.375
+In the nine forty five, send the pallet I D once, the S S C C. Then one W twelve line per lot, each with its own lot and quantity.
+
+00:01:34.375 --> 00:01:43.125
+Check that the partner's spec allows those loops to repeat. And test the first real mixed lot shipment on the test stream, before go-live.
+
+00:01:43.125 --> 00:01:51.300
+One big warning. The S S C C on the label must match the S S C C in the eight fifty six or the nine forty five.
+
+00:01:51.300 --> 00:01:59.625
+Make every S S C C unique, built from the company's G S 1 prefix. Reusing one is a chargeback waiting to happen.
+
+00:01:59.625 --> 00:02:09.900
+So before you answer any label question, check three things: the real retailer and country, which templates exist with which fields, and what the partner's spec allows.
+
+00:02:09.900 --> 00:02:19.526
+To recap: labels must match the E D I. One lot per label, mixed lots on the cases, and one pallet I D with one W twelve per lot.
+
+00:02:19.526 --> 00:02:24.101
+Next, we'll learn to scope work, write estimates, and build work orders.
+
