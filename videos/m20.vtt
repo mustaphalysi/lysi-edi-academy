@@ -1,0 +1,68 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:09.150
+Eight forty A M. A message from the client: urgent! The retailer has no ship notices since Tuesday, and chargebacks start Friday.
+
+00:00:09.150 --> 00:00:15.000
+A runbook turns that panic into a calm list of checks, that always ends in a clear answer.
+
+00:00:15.000 --> 00:00:23.750
+Think of a triage nurse in an emergency room. They don't operate. They ask the same questions in the same order, and take the vital signs.
+
+00:00:23.750 --> 00:00:32.325
+In E D I, the vital signs are the three statuses on every Orderful transaction: Validation, Delivery, and Acknowledgment.
+
+00:00:32.325 --> 00:00:37.625
+Step zero: get the facts. Which client, which partner, which document, and since when?
+
+00:00:37.625 --> 00:00:45.350
+Then, which lane? Test or live, sandbox or production. Half of all false alarms come from looking at the wrong lane.
+
+00:00:45.350 --> 00:00:52.150
+And set a severity now. S one means live business has stopped. S two means money is at risk soon.
+
+00:00:52.150 --> 00:00:59.175
+Next, find the transaction by its business number. If it doesn't exist at all, the problem is upstream.
+
+00:00:59.175 --> 00:01:04.450
+Read the statuses from left to right. The first one that isn't healthy is your branch.
+
+00:01:04.450 --> 00:01:13.275
+Branch V, validation. Read the errors in the Rules Editor. And never edit a partner's shared guideline to make an error go away.
+
+00:01:13.275 --> 00:01:22.175
+Branch D, delivery. Valid but Pending often means Auto Send is off. Failed usually means a channel problem, like a certificate.
+
+00:01:22.175 --> 00:01:28.250
+Delivered, but the partner has nothing? The live channel may keep documents inside the platform.
+
+00:01:28.250 --> 00:01:36.325
+Branch A, acknowledgment. Overdue means no nine ninety seven came back. Prove the file really left, then ask the partner.
+
+00:01:36.325 --> 00:01:43.975
+Then decide whose fix it is. Check both organizations, the client's and the partner's, before you say it's not ours.
+
+00:01:43.975 --> 00:01:48.850
+Fix it, and prove it with a fresh document, not by re-reading the old one.
+
+00:01:48.850 --> 00:01:58.425
+Escalate S one and S two issues with one screen of facts: what's happening, the impact, what you verified, what you need, and the next update time.
+
+00:01:58.425 --> 00:02:02.600
+Mark every guess clearly: likely cause, not yet verified.
+
+00:02:02.600 --> 00:02:11.900
+A real lesson. A team chased the wrong cause for nine days, blaming the partner's gateway. The Rules Editor showed the full payload all along.
+
+00:02:11.900 --> 00:02:18.850
+Our own guideline was the problem. So check every view, and both organizations, before you name a cause.
+
+00:02:18.850 --> 00:02:27.025
+After a serious issue, write a root cause analysis. Ask why, again and again, until you reach a process you can change.
+
+00:02:27.025 --> 00:02:33.800
+In one line: facts first, then the lane, then the three statuses from left to right, and always a fresh proof.
+
+00:02:33.800 --> 00:02:38.675
+That completes track five. Next, we learn to read trading partner specs.
+

@@ -1,0 +1,62 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.226
+Technical skill gets you hired. Reliability makes you senior.
+
+00:00:04.226 --> 00:00:10.876
+Clients and partners trust you when every message is correct, short, and on time. These are the habits.
+
+00:00:10.876 --> 00:00:19.302
+Think of an airline pilot. Before every flight, the pilot walks around the plane and runs a checklist, even after a thousand flights.
+
+00:00:19.302 --> 00:00:27.577
+Your checklist is the daily sweep. First, email: new replies on every project thread, and Orderful notifications.
+
+00:00:27.577 --> 00:00:34.177
+Then Slack: your project channels, and the team-wide channels where escalations land. Read those first.
+
+00:00:34.177 --> 00:00:42.252
+Then the platform: re-check any status you're about to report. And write down what you verified in the project notes, the same day.
+
+00:00:42.252 --> 00:00:49.327
+Here's the big rule. Never report platform state from memory. It was fixed yesterday is not a fact today.
+
+00:00:49.327 --> 00:00:56.052
+Re-check Orderful, in both orgs, the client's and the partner's, before you tell anyone something is done.
+
+00:00:56.052 --> 00:01:02.902
+Status updates should be short. One line per partner: what happened, what's blocked, and who owns the next step.
+
+00:01:02.902 --> 00:01:07.402
+No tool names in client channels, no feelings, and no guesses.
+
+00:01:07.402 --> 00:01:16.352
+When you draft an email, use simple English and short sentences. Always say which thread and message to reply on, and who goes in cc.
+
+00:01:16.352 --> 00:01:22.378
+One email, one ask, with the exact data: the segment, the P O, or the invoice number.
+
+00:01:22.378 --> 00:01:27.978
+And if something goes wrong, like a duplicate post, say it plainly, and say what to ignore.
+
+00:01:27.978 --> 00:01:35.403
+Now, the tracker milestones. M two means the integration is built, and testing with the partner is underway.
+
+00:01:35.403 --> 00:01:42.353
+M three means testing is complete, and the partner enters the go-live phase. It does not mean live yet.
+
+00:01:42.353 --> 00:01:46.353
+Go-live ready means ready to switch to production, with a date.
+
+00:01:46.353 --> 00:01:53.028
+Careful with counts. A date column is not proof of when a row changed. Check the sheet's version history.
+
+00:01:53.028 --> 00:02:04.978
+And when you inherit a project, read the history, re-verify the platform, introduce yourself on the client thread, and list what's open. Clients forgive a handover. They don't forgive silence.
+
+00:02:04.978 --> 00:02:14.653
+To recap: sweep daily, verify before you report, write short updates with owners, draft with the exact thread, and use milestones correctly.
+
+00:02:14.653 --> 00:02:18.903
+Next, the last module: safety, trust, and one-way doors.
+
