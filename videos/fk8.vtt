@@ -1,0 +1,59 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:06.425
+Some actions can be undone. Some can't. Pros know the difference and slow down at the one-way doors.
+
+00:00:06.425 --> 00:00:12.125
+Think of a door that locks behind you. You check your pockets before you walk through, not after.
+
+00:00:12.125 --> 00:00:21.250
+First, payment card data does not belong in E D I files. A buyer once wanted to send a single-use card inside each eight fifty.
+
+00:00:21.250 --> 00:00:32.700
+But E D I files are stored in plain text: by the platform, in the A S 2 logs, and by the partner. And card security codes must not be stored after authorization.
+
+00:00:32.700 --> 00:00:42.125
+So we did not just map it. We offered options. Number and expiry only, with no security code, if the supplier confirms it can process that.
+
+00:00:42.125 --> 00:00:51.400
+Or the last four digits plus a reference, with the full card sent through the supplier's secure payment channel. Or the supplier's existing method.
+
+00:00:51.400 --> 00:01:00.800
+And never copy card numbers, security codes, passwords, or A P I keys into notes, chats, tickets, or files. Not even just for testing.
+
+00:01:00.800 --> 00:01:10.400
+Next, test versus live. The envelope decides the stream: the I S A I Ds, and the test or production flag in I S A fifteen.
+
+00:01:10.400 --> 00:01:19.350
+Before you call traffic live, compare the envelope of the test-period files with the current ones. And never put test data into the live stream.
+
+00:01:19.350 --> 00:01:25.600
+Before a test order goes out, tell the partner its P O number, so they can find it and cancel it.
+
+00:01:25.600 --> 00:01:32.800
+Now, the classic one-way doors. A one-per-P O confirmation can't be re-sent, so check the payload first.
+
+00:01:32.800 --> 00:01:40.150
+Posting invoices by hand can put duplicates in the buyer's books. One job per document, then check the job list.
+
+00:01:40.150 --> 00:01:50.000
+Editing a shared partner guideline breaks other suppliers, so don't. And publishing a guideline can orphan the relationship, so re-check it right after.
+
+00:01:50.000 --> 00:01:56.800
+Fulfilling a test order with tracking sends a real ship notice to the retailer. Which brings us to cleanup.
+
+00:01:56.800 --> 00:02:06.375
+Old test orders left fulfilled in a store can be picked up by a live flow. Cancel test orders on both sides: the retailer portal and the store.
+
+00:02:06.375 --> 00:02:14.875
+Last, public versus private. Training pages, public repos, and shared links are public. Use fake names and numbers there.
+
+00:02:14.875 --> 00:02:20.301
+Real client data, people's emails, and I Ds stay in private project notes.
+
+00:02:20.301 --> 00:02:31.801
+To recap: slow down at one-way doors. No card data in E D I, prove test versus live from the envelope, check before one-shot posts, and keep real data private.
+
+00:02:31.801 --> 00:02:35.427
+That's the end of the field kit. Go use it, carefully.
+
